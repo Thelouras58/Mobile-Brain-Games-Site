@@ -1,6 +1,6 @@
 # Site settings
 title: Mobile Brain Games
-email: your-email@domain.com
+email: thelouras058@gmail.om
 url: https://thelouras.gr/Mobile-Brain-Games-Site/
 description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
 keywords: "your keywords, separated by commas"
@@ -40,15 +40,15 @@ footer:
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter
-    url: http://twitter.com/jekyllrb
+    url: https://twitter.com/MobBrainGames
   - title: facebook
     url:
   - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
+    url: 
   - title: bitbucket
-    url: http://bitbucket.org/jekyll
+    url: 
   - title: github
-    url: http://github.com/jekyll
+    url: https://github.com/Thelouras58
 
 # Postal address (add as many lines as necessary)
 address:
