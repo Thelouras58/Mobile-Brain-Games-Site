@@ -1,5 +1,5 @@
-# PatternLock-BrainGames
-The code of the site for Mobile Brain Games 
+# Mobile Brain Games
+The source code of the site for Mobile Brain Games 
 
  Download The first app of Mobile Brain Games
  
