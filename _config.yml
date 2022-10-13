@@ -4,7 +4,7 @@ email: thelouras058@gmail.om
 url: https://thelouras.gr/Mobile-Brain-Games-Site/
 description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
 keywords: "your keywords, separated by commas"
-skills: "Web Developer - Graphic Artist - User Experience Designer"
+skills: "Practice your cognitive skills hrough mobile apps "
 meta_author: LastName FirstName
 
 # Google webmaster tools
@@ -41,12 +41,8 @@ footer:
 social:
   - title: twitter
     url: https://twitter.com/MobBrainGames
-  - title: facebook
-    url:
-  - title: stack-overflow
-    url: 
-  - title: bitbucket
-    url: 
+  - title: instagram 
+    url: https://www.instagram.com/mobile_brain_games/
   - title: github
     url: https://github.com/Thelouras58
 
