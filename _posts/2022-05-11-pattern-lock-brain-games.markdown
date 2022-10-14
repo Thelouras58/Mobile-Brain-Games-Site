@@ -2,7 +2,7 @@
 layout: default
 modal-id: 1
 date: 2022-05-11
-img: game.png
+img: playstore.png
 alt: image-alt
 project-date: May 2022
 client: Start Bootstrap
