@@ -1,11 +1,10 @@
 ---
 layout: default
-modal-id: 1
-date: 2014-07-18
+modal-id: 2
+date: 2022-05-11
 img: game.png
 alt: image-alt
 project-date: May 2022
-client: 
 category: Pattern Lock Brain Games
 description: Pattern Lock Brain Games is my first personal production project. It’s an Android application that incudes a mini-game collection that requires a variety of thinking skills. The games are divided into 3 different categories, namely: Problem Solving, Memory and Brain Processing Speed.
 ---
