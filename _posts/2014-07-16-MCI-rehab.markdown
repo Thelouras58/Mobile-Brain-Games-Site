@@ -2,7 +2,7 @@
 layout: default
 modal-id: 3
 date: 2014-07-17
-img: mci.png
+img: mci .png
 alt: image-alt
 project-date: Late 2023
 category: MCI Rehab Brain games for the elderly 
