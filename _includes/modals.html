@@ -30,12 +30,9 @@
                 <strong>{{ post.project-date }}</strong>
               </li>
               {% endif %}
-              {% if post.category %}
-              <li>Game:
-                <strong>{{ post.category }}</strong>
-              </li>
-              {% endif %}
+   
               {% if post.download %}
+              <br/>
               <li>
                  <a href={{ post.download }} >
                     <img src="https://raw.githubusercontent.com/lucasnlm/antimine-android/master/.github/google_play.png" alt="Get it on Google Play" height="80"/>
