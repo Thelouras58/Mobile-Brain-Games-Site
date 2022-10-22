@@ -7,7 +7,8 @@ alt: image-alt
 project-date: May 2022
 client: 5000
 category: Pattern Lock Brain Games
-description: A brain-training puzzle game that activates your mind as you play. When you've got a spare moment, on your daily commute, or before going to bed, why not experience what it feels like to activate you mind? download now https://play.google.com/store/apps/details?id=thelouras.pattern.game
+download: https://play.google.com/store/apps/details?id=thelouras.pattern.game"
+description: A brain-training puzzle game that activates your mind as you play. When you've got a spare moment, on your daily commute, or before going to bed, why not experience what it feels like to activate you mind?
 ---
 
 <a href="https://play.google.com/store/apps/details?id=thelouras.pattern.game">
