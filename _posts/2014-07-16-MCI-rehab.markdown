@@ -6,5 +6,5 @@ img: mci .png
 alt: image-alt
 project-date: Late 2023
 category: MCI Rehab Brain games for the elderly 
-description: Train you cognnitive skills throw a variety of games
+description: Train you cognitive skills throw a variety of games
 ---
