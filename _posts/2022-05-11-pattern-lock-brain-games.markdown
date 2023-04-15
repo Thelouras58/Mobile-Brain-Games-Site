@@ -1,7 +1,7 @@
 ---
 layout: default
 modal-id: 1
-date: 2022-05-11
+date: 2023-10-01
 img: playstore.png
 alt: image-alt
 project-date: May 2022
