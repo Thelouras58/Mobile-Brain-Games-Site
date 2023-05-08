@@ -6,5 +6,5 @@ img: oneriddle.png
 alt: image-alt
 project-date: Coming Soon
 category: One Riddle per Day
-description: Train your brain every day with fun riddles and brain teaser games!
+description: Playing a brain game a day might keep the physician away
 ---
