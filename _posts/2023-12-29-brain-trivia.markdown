@@ -6,6 +6,6 @@ img: trivia.png
 alt: image-alt
 project-date: Coming Soon
 category: Trivia, Learn about your brain
-description: Trivia questions about the brain. 
+description: Trivia questions about the brain
 ---
 
