@@ -1,13 +1,13 @@
 <!-- Footer -->
 <footer>
-   <div class="footer-above d-flex justify-content-center align-items-center"> 
+   <div class="footer-above text-center"> 
     <div class="container">
      <div class="row">
          <div class="footer-col col-md-4 text-center">
            <h3>{{ site.footer.social }}</h3>
              {% for network in site.social %}
                 <a href="{{ network.url }}" class="btn-social btn-outline"><i
-                    class="fa-brands fa-fw fa-{{ network.title }}"></i></a>
+                    class="fa-brands fa-fw fa-{{ network.title }} text-center"></i></a>
              {% endfor %}
          </div>
       </div>
