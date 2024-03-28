@@ -2,14 +2,14 @@
 <footer>
    <div class="footer-above d-flex justify-content-center align-items-center"> 
     <div class="container">
-      <div class="row">
-       
-          <h3>{{ site.footer.social }}</h3>
-            {% for network in site.social %}
-               <a href="{{ network.url }}" class="btn-social btn-outline"><i
-                   class="fa-brands fa-fw fa-{{ network.title }}"></i></a>
-            {% endfor %}
-        
+     <div class="row">
+         <div class="footer-col col-md-4">
+           <h3>{{ site.footer.social }}</h3>
+             {% for network in site.social %}
+                <a href="{{ network.url }}" class="btn-social btn-outline"><i
+                    class="fa-brands fa-fw fa-{{ network.title }}"></i></a>
+             {% endfor %}
+         </div>
       </div>
     </div>
   </div>
