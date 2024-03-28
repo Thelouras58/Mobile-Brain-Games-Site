@@ -3,19 +3,19 @@
   <div class="footer-above">
     <div class="container">
       <div class="row">
+        <center>
         <div class="footer-col col-md-4">
           <h3>{{ site.footer.social }}</h3>
           <ul class="list-inline">
             {% for network in site.social %}
-             <center>
             <li>
                <a href="{{ network.url }}" class="btn-social btn-outline"><i
                    class="fa-brands fa-fw fa-{{ network.title }}"></i></a>
              </li>
-               </center> 
             {% endfor %}
           </ul>
         </div>
+       </center>
       </div>
     </div>
   </div>
