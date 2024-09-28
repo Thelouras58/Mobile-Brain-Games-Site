@@ -6,5 +6,5 @@ img: calmquest.png
 alt: image-alt
 project-date: Sep 2024
 category: Relax and Play
-description: Coming Soon
+description: Closed Beta - Coming Soon
 ---
