@@ -6,5 +6,6 @@ img: calmquest.png
 alt: image-alt
 project-date: Sep 2024
 category: Relax and Play
-description: Closed Beta - Coming Soon
+download: https://play.google.com/store/apps/details?id=mobile.brain.games.antistress.anti_stress_game
+description: Soft Open Beta Release
 ---
