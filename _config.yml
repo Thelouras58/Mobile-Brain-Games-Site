@@ -36,12 +36,15 @@ footer:
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
+  - title: mail
+    url: hello@mobilebraingames.com
   - title: twitter
     url: https://twitter.com/MobBrainGames
   - title: instagram 
     url: https://www.instagram.com/mobile_brain_games/
   - title: github
     url: https://github.com/Thelouras58
+  
 
 # Postal address (add as many lines as necessary)
 #address:
