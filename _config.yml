@@ -1,11 +1,11 @@
 # Site settings
 title: Mobile Brain Games 
-email: thelouras058@gmail.com
+email: hello@mobilebraingames.com
 url: https://mobilebraingames.com/
-description: "Keep your mind sharp and active with our collection of serious games!"
-keywords: "mobile brain games, cognitive skills, serious games, mobile games, brain teaser, cognitive training"
+description: "Keep your mind sharp and active with our collection of brain games!"
+keywords: "free mobile brain games, brain teaser, brain games app, best mind games android"
 skills: "Keep your mind sharp and active with our collection of serious games!"
-meta_author: Thelouras Kostas
+meta_author: Mobile Brain Games
 
 # Google webmaster tools
 google_verify:
@@ -15,10 +15,6 @@ google_verify:
 # - disqus : replace contact form by disqus thread
 # - comment the line below if you want to stick with the default PHP contact form
 contact: static
-
-# If you use disqus you need disqus shortname
-# https://help.disqus.com/customer/portal/articles/466208
-disqus_shortname: myshortname
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
@@ -42,6 +38,8 @@ social:
     url: https://www.instagram.com/mobile_brain_games/
   - title: github
     url: https://github.com/Thelouras58
+  - title: linkedin
+    url: https://www.linkedin.com/company/mobile-brain-games
   
 
 # Postal address (add as many lines as necessary)
