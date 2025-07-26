@@ -1,3 +1,3 @@
-# Website of the  Mobile Brain Games
+# Website of Mobile Brain Games
 
 https://mobilebraingames.com
