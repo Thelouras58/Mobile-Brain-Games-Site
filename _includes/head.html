@@ -7,6 +7,21 @@
   <meta name="keywords" content="{{ site.keywords }}" />
   {% if site.meta_author %}
   <meta name="author" content="{{ site.meta_author }}">{% endif %}
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}">
+  <meta property="og:title" content="{{ site.title }}">
+  <meta property="og:description" content="{{ site.description }}">
+  <meta property="og:image" content="{{ site.url }}{{ site.social_image }}">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="{{ site.url }}">
+  <meta property="twitter:title" content="{{ site.title }}">
+  <meta property="twitter:description" content="{{ site.description }}">
+  <meta property="twitter:image" content="{{ site.url }}{{ site.social_image }}">
+
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="RSS" href="feed.xml">
   <link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl }}/img/fav.png">
