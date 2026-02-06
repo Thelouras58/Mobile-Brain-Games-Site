@@ -10,17 +10,17 @@
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="{{ site.url }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
   <meta property="og:title" content="{{ site.title }}">
   <meta property="og:description" content="{{ site.description }}">
-  <meta property="og:image" content="{{ site.url }}{{ site.social_image }}">
+  <meta property="og:image" content="{{ site.social_image | absolute_url }}">
 
   <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="{{ site.url }}">
+  <meta property="twitter:card" content="summary">
+  <meta property="twitter:url" content="{{ page.url | absolute_url }}">
   <meta property="twitter:title" content="{{ site.title }}">
   <meta property="twitter:description" content="{{ site.description }}">
-  <meta property="twitter:image" content="{{ site.url }}{{ site.social_image }}">
+  <meta property="twitter:image" content="{{ site.social_image | absolute_url }}">
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="RSS" href="feed.xml">
