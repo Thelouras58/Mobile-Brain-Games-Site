@@ -62,3 +62,12 @@ defaults:
       type: "posts"
     values:
       permalink: ""
+
+# Tell Jekyll not to process the Flutter folder
+exclude:
+  - numbergameforkids
+
+# Ensure Jekyll doesn't delete the folder during build
+keep_files:
+  - numbergameforkids
+
