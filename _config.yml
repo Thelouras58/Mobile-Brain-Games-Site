@@ -63,8 +63,8 @@ defaults:
     values:
       permalink: ""
 
-# Tell Jekyll not to process the Flutter folder
-exclude:
+# Ensure Jekyll includes the Flutter folder but doesn't process it as Liquid
+include:
   - numbergameforkids
 
 # Ensure Jekyll doesn't delete the folder during build
