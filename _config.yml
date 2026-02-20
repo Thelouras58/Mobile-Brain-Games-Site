@@ -66,8 +66,10 @@ defaults:
 # Ensure Jekyll includes the Flutter folder but doesn't process it as Liquid
 include:
   - numbergameforkids
+  - simplememorygameforkids
 
 # Ensure Jekyll doesn't delete the folder during build
 keep_files:
   - numbergameforkids
+  - simplememorygameforkids
 
