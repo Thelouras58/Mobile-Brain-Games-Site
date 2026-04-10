@@ -64062,7 +64062,7 @@ $1(a){return new A.f5(new A.R3(B.k1),new A.FH(),B.cd,$.aJ())},
 $S:414}
 A.E0.prototype={
 N(a){var s=null
-return new A.u7(B.AL,"QuickMath Core",A.ack(s,A.aer(B.T,s,s,B.at),new A.nG(A.Qy(s,s,s,s,s,s,s,s,s,s,s,s,B.Ai,s,s,s,s,s,s,s)),!0),!1,s)}}
+return new A.u7(B.AL,"QuickMaths",A.ack(s,A.aer(B.T,s,s,B.at),new A.nG(A.Qy(s,s,s,s,s,s,s,s,s,s,s,s,B.Ai,s,s,s,s,s,s,s)),!0),!1,s)}}
 A.rX.prototype={}
 A.ig.prototype={
 H(){return"GameMode."+this.b}}
