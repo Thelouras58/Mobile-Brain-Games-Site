@@ -1,7 +1,7 @@
 ---
 layout: default
 modal-id: 9
-date: 2026-04-10
+date: 2019-04-10
 img: math.png
 alt: image-alt
 project-date: Oct 2026
