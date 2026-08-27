@@ -1,7 +1,7 @@
 ---
 layout: default
 modal-id: 7
-date: 2021-09-12
+date: 2021-08-09
 img: trivia.png
 alt: image-alt
 project-date: May 2024
