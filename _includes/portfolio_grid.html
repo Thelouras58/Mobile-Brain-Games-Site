@@ -1,31 +1,33 @@
-<!-- Portfolio Grid Section -->
-<section id="portfolio">
-  <div class="container portfolio-flex-grid">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2>Applications</h2>
-        <hr class="star-primary">
+<section class="section" id="games" aria-labelledby="games-heading">
+  <div class="content-width">
+    <p class="eyebrow">Game collection</p>
+    <h2 id="games-heading">Find a game for your next break</h2>
+    <p class="section-intro">Discover games for quick challenges, longer sessions, and everything in between.</p>
+    <aside class="featured-game" aria-labelledby="premium-heading">
+      <div>
+        <p class="eyebrow">Featured game</p>
+        <h3 id="premium-heading">Mobile Brain Games Premium</h3>
+        <p>Our main Mobile Brain Games experience.</p>
       </div>
-    </div>
-      <div class="row" style="margin-bottom: 30px;">
-      <div class="col-lg-12 text-center">
-        <a href="https://play.google.com/store/apps/details?id=mobile.brain.games.mobile_brain_games_premium" class="btn btn-lg btn-success" style="font-size: 24px; padding: 15px 30px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); white-space: normal; word-wrap: break-word;">
-          <i class="fab fa-google-play"></i> Mobile Brain Games Premium
-        </a>
-      </div>
-    </div>
-    <div class="portfolio-flex-row">
-      {% for post in site.posts %}
-      <div class="portfolio-flex-item portfolio-item">
-        <a href="#portfolioModal-{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
-          <div class="caption">
-            <div class="caption-content">
-              <i class="fa fa-search-plus fa-3x"></i>
-            </div>
+      <a class="button" href="https://play.google.com/store/apps/details?id=mobile.brain.games.mobile_brain_games_premium" data-google-play-app="mobile-brain-games-premium" target="_blank" rel="noopener">Explore Premium <span aria-hidden="true">→</span></a>
+    </aside>
+    <div class="game-grid">
+      {% assign ordered_games = site.posts | sort: "home_order" %}
+      {% for post in ordered_games %}
+      {% if post.portfolio_visible != false %}
+      <article class="game-card">
+        <a href="{{ post.url | relative_url }}" aria-label="Learn about {{ post.app_name }}">
+          <div class="game-card__media">
+            <img src="{{ '/img/portfolio/' | append: post.img | relative_url }}" alt="{{ post.alt }}" loading="lazy" decoding="async" width="640" height="640">
           </div>
-          <img src="img/portfolio/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
+          <div class="game-card__content">
+            <h3>{{ post.app_name }}</h3>
+            <p>{{ post.card_description }}</p>
+            <span>Explore {{ post.app_name }} <span aria-hidden="true">→</span></span>
+          </div>
         </a>
-      </div>
+      </article>
+      {% endif %}
       {% endfor %}
     </div>
   </div>

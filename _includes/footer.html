@@ -1,36 +1,13 @@
-<!-- Footer -->
-<footer>
-    <div class="footer-above text-center" style="padding-bottom: 76px;"> 
-    <div class="container">
-     <div class="row">
-         <div class="col-lg-12 text-center" style="padding-right: 10px;">
-           <h3>{{ site.footer.social }}</h3>
-             {% for network in site.social %}
-                <a href="{{ network.url }}" class="btn-social btn-outline"><i
-                    class="fa-brands fa-fw fa-{{ network.title }} text-center"></i></a>
-             {% endfor %}
-         </div>
-      </div>
-    </div>
-  </div>
-  <div class="footer-below">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          hello@mobilebraingames.com
-          Copyright &copy; {{ site.footer.copyright }} 
-          Best brain games for daily routine.
-          Brain workout, cognitive health, daily mind training.
-          Brain games for seniors, cognitive development for kids, adult brain training.
-        </div>
-      </div>
-    </div>
+<footer class="site-footer">
+  <div class="content-width">
+    <p class="site-footer__brand">{{ site.title }}</p>
+    <p>Free Android puzzle, memory, word, maths, and reaction games.</p>
+    <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+    <nav aria-label="Social profiles">
+      {% for network in site.social %}
+      <a href="{{ network.url }}" rel="me noopener noreferrer" target="_blank">{{ network.title | capitalize }}</a>{% unless forloop.last %} <span aria-hidden="true">·</span> {% endunless %}
+      {% endfor %}
+    </nav>
+    <p class="site-footer__legal">Copyright © {{ site.footer.copyright }}</p>
   </div>
 </footer>
-
-<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-<div class="scroll-top page-scroll visible-xs visible-sm">
-  <a class="btn btn-primary" href="#page-top">
-    <i class="fa fa-chevron-up"></i>
-  </a>
-</div>

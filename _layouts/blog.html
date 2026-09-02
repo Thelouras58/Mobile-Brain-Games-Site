@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang }}">
+{% include head.html %}
+<body>
+  {% include nav.html %}
+  <main class="blog-page">
+    <article class="content-width content-width--narrow prose blog-page__article">
+      <p class="breadcrumb"><a href="{{ '/' | relative_url }}">Home</a> <span aria-hidden="true">/</span> <a href="{{ '/blog/' | relative_url }}">Blog</a></p>
+      <p class="eyebrow">Mobile Brain Games blog</p>
+      <h1>{{ page.title }}</h1>
+      <p class="lead">{{ page.description }}</p>
+      {{ content }}
+    </article>
+  </main>
+  {% include footer.html %}
+  {% include js.html %}
+</body>
+</html>

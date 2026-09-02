@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang }}">
+{% include head.html %}
+<body>
+  {% include nav.html %}
+  <main>
+    {% include header.html %}
+    {% include portfolio_grid.html %}
+    {% include about.html %}
+  </main>
+  {% include footer.html %}
+  {% include js.html %}
+</body>
+</html>

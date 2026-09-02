@@ -7,4 +7,14 @@
   gtag('js', new Date());
 
   gtag('config', 'G-JT3YJPBX97');
+
+  document.addEventListener('click', function (event) {
+    var cta = event.target.closest('[data-google-play-app]');
+    if (cta) {
+      gtag('event', 'google_play_click', {
+        app_slug: cta.dataset.googlePlayApp,
+        placement: cta.dataset.googlePlayPlacement || 'unknown'
+      });
+    }
+  });
 </script>
