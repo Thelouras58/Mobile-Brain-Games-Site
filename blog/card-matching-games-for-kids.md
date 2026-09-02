@@ -1,8 +1,9 @@
 ---
-layout: guide
+layout: blog
 title: "Card-Matching Games for Kids and Families"
-description: "A simple introduction to card-matching games and a related Android game from Mobile Brain Games."
-permalink: /guides/card-matching-games-for-kids/
+description: "A simple introduction to card-matching games and a related title from Mobile Brain Games."
+permalink: /blog/card-matching-games-for-kids/
+date: 2026-08-29
 ---
 
 ## How card matching works
@@ -13,4 +14,4 @@ Turn over a card, remember its position, and look for its matching pair. Card-ma
 
 Players can take their time learning the board or try to finish a round faster. The goal is simply to find the pairs and enjoy the next challenge.
 
-Try [Simple Memory Game]({{ '/games/simple-memory-game/' | relative_url }}) for a colourful Android card-matching game.
+Try [Simple Memory Game]({{ '/games/simple-memory-game/' | relative_url }}) for a colourful card-matching game.

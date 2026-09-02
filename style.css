@@ -45,7 +45,7 @@ h3{font-size:1.2rem}
 .game-card__content p{margin:.25rem 0 1rem;color:var(--muted)}
 .game-card__content span{font-weight:750;color:var(--accent-dark)}
 .breadcrumb{padding-top:1.5rem;font-size:.92rem;color:var(--muted)}
-.app-page__article,.guide-page__article{padding:2.5rem 0 4rem}
+.app-page__article,.guide-page__article,.blog-page__article{padding:2.5rem 0 4rem}
 .app-page__intro{display:grid;grid-template-columns:minmax(160px,250px) 1fr;gap:2rem;align-items:center;margin-bottom:3rem}
 .app-page__intro img{width:100%;border-radius:1rem;background:var(--surface)}
 .prose{font-size:1.06rem}

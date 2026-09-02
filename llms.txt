@@ -5,7 +5,8 @@
 ## Main pages
 
 - [Mobile Brain Games](https://mobilebraingames.com/): Android game collection and publisher overview.
-- [Game guides](https://mobilebraingames.com/guides/): Short guides to the game types in the collection.
+- [Blog](https://mobilebraingames.com/blog/): Posts about the game types in the collection.
+- [Which Mobile Brain Game Should You Play?](https://mobilebraingames.com/blog/which-mobile-brain-game-should-you-play/): An overview of the collection, game formats, and related titles.
 
 ## Android games
 
