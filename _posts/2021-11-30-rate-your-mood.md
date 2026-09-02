@@ -10,6 +10,10 @@ alt: "Rate Your Mood app icon"
 social_image: /img/portfolio/mood.png
 game_type: Daily mood check-in
 audience: Android users who enjoy a simple daily reflection
+cognitive_skills:
+  - Self-reflection
+  - Emotional awareness
+  - Expressive vocabulary
 card_description: "A simple daily mood check-in for Android."
 summary: "A simple Android mood check-in for recording how you feel each day."
 download: https://play.google.com/store/apps/details?id=mobile.brain.games.rateyourmood.rate_your_mood

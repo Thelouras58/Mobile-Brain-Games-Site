@@ -53,6 +53,10 @@ h3{font-size:1.2rem}
 .prose h2{margin-top:2.5rem;font-size:1.7rem}
 .prose h3{margin-top:1.75rem}
 .prose li+li{margin-top:.35rem}
+.app-page__skills{margin-top:3rem;padding:1.5rem;border:1px solid var(--line);border-radius:.65rem;background:var(--surface)}
+.app-page__skills p{margin:.25rem 0 1rem;color:var(--muted)}
+.skill-list{display:flex;flex-wrap:wrap;gap:.65rem;margin:0;padding:0;list-style:none}
+.skill-list li{padding:.45rem .7rem;border-radius:999px;background:#fff;border:1px solid var(--line);font-weight:650}
 .app-page__details{margin-top:3rem;padding:1.5rem;border:1px solid var(--line);border-radius:.65rem}
 .app-page__details dl{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:0}
 .app-page__details dt{font-size:.8rem;font-weight:800;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}

@@ -10,6 +10,10 @@ alt: "Simple Memory Game card matching app icon"
 social_image: /img/portfolio/simplememorygame.png
 game_type: Card-matching puzzle
 audience: Kids, families, and anyone who enjoys memory matching
+cognitive_skills:
+  - Visual memory
+  - Concentration
+  - Matching and categorisation
 card_description: "A colourful card-matching game for Android."
 summary: "A simple Android card-matching game with colourful pairs and quick rounds."
 download: https://play.google.com/store/apps/details?id=mobile.brain.games.simplememorygame.simple_memory_game

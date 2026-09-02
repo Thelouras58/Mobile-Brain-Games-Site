@@ -10,6 +10,10 @@ alt: "Pattern Lock Brain Games app icon"
 social_image: /img/portfolio/playstore.png
 game_type: Pattern and number puzzles
 audience: Anyone who enjoys short pattern challenges
+cognitive_skills:
+  - Visual working memory
+  - Pattern recognition
+  - Attention to detail
 card_description: "Pattern and number puzzles for a quick Android challenge."
 summary: "A free Android puzzle game with pattern and number challenges for a short, focused play session."
 description: "Play free Android pattern and number puzzles with Pattern Lock: Brain Games from Mobile Brain Games."

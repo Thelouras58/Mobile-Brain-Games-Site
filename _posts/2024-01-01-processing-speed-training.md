@@ -10,6 +10,10 @@ alt: "Processing Speed Training app icon"
 social_image: /img/portfolio/flame.png
 game_type: Speed challenge
 audience: Players who enjoy fast Android game rounds
+cognitive_skills:
+  - Visual attention
+  - Response speed
+  - Decision-making
 card_description: "A fast-paced Android game challenge."
 summary: "A quick Android game for players who enjoy speed-based challenges."
 download: https://play.google.com/store/apps/details?id=mobile.brain.games.flame

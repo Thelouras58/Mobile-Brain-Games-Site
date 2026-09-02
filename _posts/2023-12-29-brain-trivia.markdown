@@ -10,6 +10,10 @@ alt: "Brain Trivia quiz game app icon"
 social_image: /img/portfolio/trivia.png
 game_type: Trivia quiz
 audience: Players who enjoy brain-themed quiz questions
+cognitive_skills:
+  - Recall
+  - Reading comprehension
+  - Question analysis
 card_description: "A brain-themed trivia game for Android."
 summary: "An Android trivia game with questions about the brain and related topics."
 download: https://play.google.com/store/apps/details?id=mobile.brain.games.brain_trivia

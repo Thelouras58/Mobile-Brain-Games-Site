@@ -18,6 +18,13 @@
         </div>
       </div>
       <div class="prose">{{ content }}</div>
+      <section class="app-page__skills" aria-labelledby="skills-heading">
+        <h2 id="skills-heading">Skills engaged while playing</h2>
+        <p>Playing can engage these skills through the game's activities. This is not a medical, diagnostic, or therapeutic claim.</p>
+        <ul class="skill-list">
+          {% for skill in page.cognitive_skills %}<li>{{ skill }}</li>{% endfor %}
+        </ul>
+      </section>
       <section class="app-page__details" aria-labelledby="details-heading">
         <h2 id="details-heading">Game details</h2>
         <dl>

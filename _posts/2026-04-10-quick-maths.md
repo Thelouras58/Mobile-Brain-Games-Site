@@ -10,6 +10,10 @@ alt: "Quick Maths game app icon"
 social_image: /img/portfolio/math.png
 game_type: Maths game
 audience: Kids who enjoy quick maths challenges
+cognitive_skills:
+  - Mental arithmetic
+  - Number sense
+  - Working memory
 card_description: "A quick maths game for kids on Android."
 summary: "An Android maths game with short challenges for kids."
 download: https://play.google.com/store/apps/details?id=mobile.brain.games.quickmaths
