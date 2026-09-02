@@ -51,4 +51,11 @@ Every game page explains the title's format and provides the relevant store dest
 
 [Mobile Brain Games Premium](https://play.google.com/store/apps/details?id=mobile.brain.games.mobile_brain_games_premium) is the featured Mobile Brain Games experience. It is highlighted on the homepage as the main place to begin exploring the collection.
 
+## Read more by game type
+
+- Looking for a quick language challenge? Read [Fast Word Games for Short Breaks]({{ '/blog/fast-word-games-for-short-breaks/' | relative_url }}).
+- For family-friendly number play, see [Quick Maths Games for Kids: Short Number Challenges]({{ '/blog/quick-maths-games-for-kids/' | relative_url }}).
+- Curious about quiz-style play? Explore [Brain Trivia Games: Questions for Curious Players]({{ '/blog/brain-trivia-games-for-curious-players/' | relative_url }}).
+- Prefer a gentler session? Try [Relaxing Puzzle Games for a Calmer Play Break]({{ '/blog/relaxing-puzzle-games-for-a-calmer-play-break/' | relative_url }}).
+
 For more short reads, visit the [Mobile Brain Games blog]({{ '/blog/' | relative_url }}).

@@ -30,9 +30,10 @@
   "@type": "BlogPosting",
   "headline": {{ page.title | jsonify }},
   "description": {{ page.description | jsonify }},
+  "image": {{ page.social_image | default: site.social_image | absolute_url | jsonify }},
   "url": {{ page.url | absolute_url | jsonify }},
-  "datePublished": {{ page.date | default: site.time | date_to_xmlschema | jsonify }},
-  "dateModified": {{ page.date | default: site.time | date_to_xmlschema | jsonify }},
+  "datePublished": {{ page.date | date_to_xmlschema | jsonify }}{% if page.date_modified %},
+  "dateModified": {{ page.date_modified | date_to_xmlschema | jsonify }}{% endif %},
   "author": {"@type": "Organization", "name": {{ site.title | jsonify }}},
   "publisher": {"@type": "Organization", "name": {{ site.title | jsonify }}, "logo": {"@type": "ImageObject", "url": {{ site.social_image | absolute_url | jsonify }}}
 }
