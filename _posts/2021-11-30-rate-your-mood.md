@@ -2,6 +2,7 @@
 layout: app
 title: "Rate Your Mood: Daily Mood Tracker for Android"
 app_name: "Rate Your Mood"
+home_order: 9
 permalink: /games/rate-your-mood/
 slug: rate-your-mood
 img: mood.png

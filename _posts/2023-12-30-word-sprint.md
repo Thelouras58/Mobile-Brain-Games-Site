@@ -2,6 +2,7 @@
 layout: app
 title: "Word Sprint: Fast Word Game for Android"
 app_name: "Word Sprint"
+home_order: 3
 permalink: /games/word-sprint/
 slug: word-sprint
 img: wordsprint.png

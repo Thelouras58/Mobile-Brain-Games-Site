@@ -2,6 +2,7 @@
 layout: app
 title: "CalmQuest: Relaxing Android Puzzle Games"
 app_name: "CalmQuest"
+home_order: 8
 permalink: /games/calmquest/
 slug: calmquest
 img: calmquest.png

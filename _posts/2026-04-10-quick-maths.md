@@ -2,6 +2,7 @@
 layout: app
 title: "Quick Maths: Maths Game for Kids on Android"
 app_name: "Quick Maths"
+home_order: 5
 permalink: /games/quick-maths/
 slug: quick-maths
 img: math.png

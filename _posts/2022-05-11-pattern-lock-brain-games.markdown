@@ -2,6 +2,7 @@
 layout: app
 title: "Pattern Lock: Free Android Pattern Memory Game"
 app_name: "Pattern Lock: Brain Games"
+home_order: 1
 permalink: /games/pattern-lock-brain-games/
 slug: pattern-lock-brain-games
 img: playstore.png

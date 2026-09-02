@@ -2,6 +2,7 @@
 layout: app
 title: "Simple Memory Game: Card Matching Game for Android"
 app_name: "Simple Memory Game"
+home_order: 2
 permalink: /games/simple-memory-game/
 slug: simple-memory-game
 img: simplememorygame.png

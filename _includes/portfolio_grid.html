@@ -2,12 +2,23 @@
   <div class="content-width">
     <p class="eyebrow">Game collection</p>
     <h2 id="games-heading">Find a game for your next break</h2>
-    <p class="section-intro">Each game has its own page with a clear overview, helpful details, and a direct Google Play link.</p>
+    <p class="section-intro">Discover games for quick challenges, longer sessions, and everything in between.</p>
+    <aside class="featured-game" aria-labelledby="premium-heading">
+      <div>
+        <p class="eyebrow">Featured game</p>
+        <h3 id="premium-heading">Mobile Brain Games Premium</h3>
+        <p>Our main Mobile Brain Games experience.</p>
+      </div>
+      <a class="button" href="https://play.google.com/store/apps/details?id=mobile.brain.games.mobile_brain_games_premium" data-google-play-app="mobile-brain-games-premium" target="_blank" rel="noopener">Explore Premium <span aria-hidden="true">→</span></a>
+    </aside>
     <div class="game-grid">
-      {% for post in site.posts %}
+      {% assign ordered_games = site.posts | sort: "home_order" %}
+      {% for post in ordered_games %}
       <article class="game-card">
         <a href="{{ post.url | relative_url }}" aria-label="Learn about {{ post.app_name }}">
-          <img src="{{ '/img/portfolio/' | append: post.img | relative_url }}" alt="{{ post.alt }}" loading="lazy" decoding="async" width="640" height="640">
+          <div class="game-card__media">
+            <img src="{{ '/img/portfolio/' | append: post.img | relative_url }}" alt="{{ post.alt }}" loading="lazy" decoding="async" width="640" height="640">
+          </div>
           <div class="game-card__content">
             <h3>{{ post.app_name }}</h3>
             <p>{{ post.card_description }}</p>

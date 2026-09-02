@@ -2,6 +2,7 @@
 layout: app
 title: "Brain Trivia: Android Quiz Game"
 app_name: "Brain Trivia"
+home_order: 7
 permalink: /games/brain-trivia/
 slug: brain-trivia
 img: trivia.png

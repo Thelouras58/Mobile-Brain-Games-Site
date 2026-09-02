@@ -2,6 +2,7 @@
 layout: app
 title: "Processing Speed Training: Fast Android Game"
 app_name: "Processing Speed Training"
+home_order: 6
 permalink: /games/processing-speed-training/
 slug: processing-speed-training
 img: flame.png
