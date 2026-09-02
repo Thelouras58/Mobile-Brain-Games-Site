@@ -1,10 +1,11 @@
 # Site settings
-title: Mobile Brain Games 
+title: Mobile Brain Games
 email: hello@mobilebraingames.com
 url: https://mobilebraingames.com
-description: "Keep your mind sharp and active with our collection of brain games!"
-keywords: "free mobile games for brain, brain games app, best mind games android, best mobile games for your brain, free mobile brain games"
-skills: "Keep your mind sharp and active with our collection of serious games!"
+lang: en
+description: "Explore free Android puzzle, memory, word, and reaction games from Mobile Brain Games."
+keywords: "Android brain games, memory games, puzzle games, word games, reaction games"
+skills: "Free Android games for memory, patterns, words, reaction time, and quick thinking."
 meta_author: Mobile Brain Games
 social_image: img/profile.png
 
@@ -54,14 +55,9 @@ social:
 # Build settings
 markdown: kramdown
 permalink: pretty
-
-#for posts
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      permalink: ""
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
 
 # Ensure Jekyll includes the Flutter folder but doesn't process it as Liquid
 include:
@@ -72,4 +68,3 @@ include:
 keep_files:
   - numbergameforkids
   - simplememorygameforkids
-

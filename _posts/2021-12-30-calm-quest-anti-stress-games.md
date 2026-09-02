@@ -1,11 +1,21 @@
 ---
-layout: default
-modal-id: 4
-date: 2020-02-02
+layout: app
+title: "CalmQuest: Relaxing Android Puzzle Games"
+app_name: "CalmQuest"
+permalink: /games/calmquest/
+slug: calmquest
 img: calmquest.png
-alt: image-alt
-project-date: Sep 2024
-category: Relax and Play
+alt: "CalmQuest app icon"
+social_image: /img/portfolio/calmquest.png
+game_type: Relaxing casual games
+audience: Players looking for calm puzzle-game breaks
+card_description: "Relaxing Android games for a calm break."
+summary: "A collection of relaxed Android game challenges for a calmer play session."
 download: https://play.google.com/store/apps/details?id=mobile.brain.games.antistress.anti_stress_game
-description: Soft Open Beta Release
+description: "Explore CalmQuest, a collection of relaxing Android game challenges."
+cta_copy: "Open Google Play to install CalmQuest."
 ---
+
+## Relax and play
+
+CalmQuest is a collection of relaxed game challenges for players who want an uncomplicated Android puzzle-game break.

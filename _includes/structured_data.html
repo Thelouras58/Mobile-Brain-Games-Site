@@ -1,0 +1,26 @@
+{% if page.download %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": {{ page.app_name | jsonify }},
+  "applicationCategory": "GameApplication",
+  "operatingSystem": "Android",
+  "url": {{ page.url | absolute_url | jsonify }},
+  "downloadUrl": {{ page.download | jsonify }},
+  "description": {{ page.description | jsonify }},
+  "image": {{ page.social_image | default: site.social_image | absolute_url | jsonify }}
+}
+</script>
+{% elsif page.url == '/' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": {{ site.title | jsonify }},
+  "url": {{ site.url | jsonify }},
+  "logo": {{ site.social_image | absolute_url | jsonify }},
+  "sameAs": [{% for network in site.social %}{{ network.url | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}]
+}
+</script>
+{% endif %}

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang }}">
+{% include head.html %}
+<body>
+  {% include nav.html %}
+  <main class="app-page">
+    <div class="content-width breadcrumb"><a href="{{ '/' | relative_url }}">Home</a> <span aria-hidden="true">/</span> <a href="{{ '/#games' | relative_url }}">Games</a> <span aria-hidden="true">/</span> {{ page.app_name }}</div>
+    <article class="content-width content-width--narrow app-page__article">
+      <div class="app-page__intro">
+        <img src="{{ '/img/portfolio/' | append: page.img | relative_url }}" alt="{{ page.alt }}" width="640" height="640" decoding="async">
+        <div>
+          <p class="eyebrow">Free Android game</p>
+          <h1>{{ page.app_name }}</h1>
+          <p class="lead">{{ page.summary }}</p>
+          <a class="button" href="{{ page.download }}" target="_blank" rel="noopener noreferrer" data-google-play-app="{{ page.slug }}" data-google-play-placement="app-hero">Get {{ page.app_name }} on Google Play</a>
+        </div>
+      </div>
+      <div class="prose">{{ content }}</div>
+      <section class="app-page__details" aria-labelledby="details-heading">
+        <h2 id="details-heading">Game details</h2>
+        <dl>
+          <div><dt>Platform</dt><dd>Android</dd></div>
+          <div><dt>Game type</dt><dd>{{ page.game_type }}</dd></div>
+          <div><dt>Best for</dt><dd>{{ page.audience }}</dd></div>
+        </dl>
+      </section>
+      <section class="app-page__cta" aria-labelledby="download-heading">
+        <h2 id="download-heading">Ready to play?</h2>
+        <p>{{ page.cta_copy }}</p>
+        <a class="button" href="{{ page.download }}" target="_blank" rel="noopener noreferrer" data-google-play-app="{{ page.slug }}" data-google-play-placement="app-bottom">Download {{ page.app_name }} on Google Play</a>
+      </section>
+    </article>
+    <section class="section section--muted" aria-labelledby="more-games-heading">
+      <div class="content-width">
+        <h2 id="more-games-heading">Explore more Mobile Brain Games</h2>
+        <div class="related-links">
+          {% for post in site.posts limit: 4 %}
+          {% unless post.url == page.url %}<a href="{{ post.url | relative_url }}">{{ post.app_name }}</a>{% endunless %}
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+  </main>
+  {% include footer.html %}
+  {% include js.html %}
+</body>
+</html>

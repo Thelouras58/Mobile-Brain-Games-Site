@@ -1,0 +1,24 @@
+# Mobile Brain Games
+
+> Mobile Brain Games publishes free Android puzzle, memory, word, maths, reaction, and trivia games.
+
+## Main pages
+
+- [Mobile Brain Games](https://mobilebraingames.com/): Android game collection and publisher overview.
+- [Game guides](https://mobilebraingames.com/guides/): Short guides to the game types in the collection.
+
+## Android games
+
+- [Pattern Lock: Brain Games](https://mobilebraingames.com/games/pattern-lock-brain-games/): Pattern and number puzzles.
+- [Simple Memory Game](https://mobilebraingames.com/games/simple-memory-game/): Card-matching game.
+- [Quick Tap](https://mobilebraingames.com/games/quick-tap/): Fast reaction game.
+- [Word Sprint](https://mobilebraingames.com/games/word-sprint/): Word puzzle game.
+- [Processing Speed Training](https://mobilebraingames.com/games/processing-speed-training/): Speed challenge game.
+- [Quick Maths](https://mobilebraingames.com/games/quick-maths/): Maths game for kids.
+- [Brain Trivia](https://mobilebraingames.com/games/brain-trivia/): Brain-themed quiz game.
+- [CalmQuest](https://mobilebraingames.com/games/calmquest/): Relaxing casual games.
+- [Rate Your Mood](https://mobilebraingames.com/games/rate-your-mood/): Daily mood check-in.
+
+## Contact
+
+- [Email Mobile Brain Games](mailto:hello@mobilebraingames.com)
