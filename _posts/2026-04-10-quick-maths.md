@@ -5,7 +5,7 @@ app_name: "Quick Maths"
 home_order: 5
 permalink: /games/quick-maths/
 slug: quick-maths
-img: math.png
+img: math.webp
 alt: "Quick Maths game app icon"
 social_image: /img/portfolio/math.png
 game_type: Maths game
@@ -17,7 +17,7 @@ cognitive_skills:
 card_description: "A quick maths game for kids on Android."
 summary: "An Android maths game with short challenges for kids."
 download: https://play.google.com/store/apps/details?id=mobile.brain.games.quickmaths
-description: "Play Quick Maths, a free Android maths game for kids."
+description: "Discover Quick Maths, an Android number game with short arithmetic challenges for kids who enjoy puzzle-style play."
 cta_copy: "Open Google Play to install Quick Maths."
 ---
 

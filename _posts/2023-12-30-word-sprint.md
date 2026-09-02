@@ -17,7 +17,7 @@ cognitive_skills:
 card_description: "A quick word game for Android puzzle fans."
 summary: "A fast Android word game for players who enjoy finding words."
 download: https://play.google.com/store/apps/details?id=mobile.brain.games.wordsprint.word_sprint
-description: "Play Word Sprint, a free Android word game from Mobile Brain Games."
+description: "Discover Word Sprint, an Android word game with quick word-finding rounds for players who enjoy short language puzzles."
 cta_copy: "Open Google Play to install Word Sprint."
 ---
 

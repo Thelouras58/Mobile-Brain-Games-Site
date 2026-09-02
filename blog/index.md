@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Mobile Brain Games Blog"
+title: "Mobile Brain Games Blog: Puzzle & Memory Game Posts"
 description: "Posts about puzzle, memory, word, maths, and reaction games from Mobile Brain Games."
 permalink: /blog/
 ---
@@ -9,7 +9,7 @@ permalink: /blog/
 
 The Mobile Brain Games blog shares practical overviews of the game collection and the different challenge styles it includes.
 
-- [Which Mobile Brain Game Should You Play?]({{ '/blog/which-mobile-brain-game-should-you-play/' | relative_url }}) — a clear overview of the memory, pattern, word, reaction, maths, trivia, and calm games in the collection.
-- [Pattern Memory Games: A Simple Recall Challenge]({{ '/blog/pattern-memory-games/' | relative_url }})
-- [Card-Matching Games for Kids and Families]({{ '/blog/card-matching-games-for-kids/' | relative_url }})
-- [Quick Reaction Games for Short Breaks]({{ '/blog/quick-reaction-games/' | relative_url }})
+{% assign blog_posts = site.blog | sort: "date" | reverse %}
+{% for post in blog_posts %}
+- [{{ post.title }}]({{ post.url | relative_url }}) — {{ post.description }}
+{% endfor %}

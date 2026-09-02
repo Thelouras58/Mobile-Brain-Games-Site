@@ -1,6 +1,6 @@
 ---
 layout: app
-title: "Pattern Lock: Free Android Pattern Memory Game"
+title: "Pattern Lock: Android Pattern Memory Game"
 app_name: "Pattern Lock: Brain Games"
 home_order: 1
 permalink: /games/pattern-lock-brain-games/
@@ -15,9 +15,9 @@ cognitive_skills:
   - Pattern recognition
   - Attention to detail
 card_description: "Pattern and number puzzles for a quick Android challenge."
-summary: "A free Android puzzle game with pattern and number challenges for a short, focused play session."
-description: "Play free Android pattern and number puzzles with Pattern Lock: Brain Games from Mobile Brain Games."
-keywords: "pattern memory game Android, number puzzle game, free brain games"
+summary: "An Android puzzle game with pattern and number challenges for a short, focused play session."
+description: "Explore Pattern Lock: Brain Games, an Android puzzle with visual patterns and number challenges for short, focused sessions."
+keywords: "pattern memory game Android, number puzzle game, brain games"
 download: https://play.google.com/store/apps/details?id=thelouras.pattern.game
 cta_copy: "Open Google Play to install Pattern Lock: Brain Games and start a new pattern challenge."
 ---

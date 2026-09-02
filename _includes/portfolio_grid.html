@@ -14,6 +14,7 @@
     <div class="game-grid">
       {% assign ordered_games = site.posts | sort: "home_order" %}
       {% for post in ordered_games %}
+      {% if post.portfolio_visible != false %}
       <article class="game-card">
         <a href="{{ post.url | relative_url }}" aria-label="Learn about {{ post.app_name }}">
           <div class="game-card__media">
@@ -26,6 +27,7 @@
           </div>
         </a>
       </article>
+      {% endif %}
       {% endfor %}
     </div>
   </div>

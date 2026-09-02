@@ -55,6 +55,15 @@ social:
 # Build settings
 markdown: kramdown
 permalink: pretty
+collections:
+  blog:
+    output: true
 plugins:
   - jekyll-sitemap
   - jekyll-feed
+feed:
+  collections:
+    blog:
+      path: /feed.xml
+    posts:
+      path: /feed/games.xml

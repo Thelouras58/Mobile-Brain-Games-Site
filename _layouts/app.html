@@ -11,20 +11,13 @@
           <img src="{{ '/img/portfolio/' | append: page.img | relative_url }}" alt="{{ page.alt }}" width="640" height="640" decoding="async">
         </div>
         <div>
-          <p class="eyebrow">Free Android game</p>
+          <p class="eyebrow">Android game</p>
           <h1>{{ page.app_name }}</h1>
           <p class="lead">{{ page.summary }}</p>
           <a class="button" href="{{ page.download }}" target="_blank" rel="noopener noreferrer" data-google-play-app="{{ page.slug }}" data-google-play-placement="app-hero">Get {{ page.app_name }} on Google Play</a>
         </div>
       </div>
       <div class="prose">{{ content }}</div>
-      <section class="app-page__skills" aria-labelledby="skills-heading">
-        <h2 id="skills-heading">Skills engaged while playing</h2>
-        <p>Playing can engage these skills through the game's activities. This is not a medical, diagnostic, or therapeutic claim.</p>
-        <ul class="skill-list">
-          {% for skill in page.cognitive_skills %}<li>{{ skill }}</li>{% endfor %}
-        </ul>
-      </section>
       <section class="app-page__details" aria-labelledby="details-heading">
         <h2 id="details-heading">Game details</h2>
         <dl>
@@ -32,6 +25,13 @@
           <div><dt>Game type</dt><dd>{{ page.game_type }}</dd></div>
           <div><dt>Best for</dt><dd>{{ page.audience }}</dd></div>
         </dl>
+      </section>
+      <section class="app-page__skills" aria-labelledby="skills-heading">
+        <h2 id="skills-heading">Skills engaged while playing</h2>
+        <p>Playing can engage these skills through the game's activities. This is not a medical, diagnostic, or therapeutic claim.</p>
+        <ul class="skill-list">
+          {% for skill in page.cognitive_skills %}<li>{{ skill }}</li>{% endfor %}
+        </ul>
       </section>
       <section class="app-page__cta" aria-labelledby="download-heading">
         <h2 id="download-heading">Ready to play?</h2>
@@ -43,8 +43,13 @@
       <div class="content-width">
         <h2 id="more-games-heading">Explore more Mobile Brain Games</h2>
         <div class="related-links">
-          {% for post in site.posts limit: 4 %}
-          {% unless post.url == page.url %}<a href="{{ post.url | relative_url }}">{{ post.app_name }}</a>{% endunless %}
+          {% assign ordered_games = site.posts | sort: "home_order" %}
+          {% assign related_count = 0 %}
+          {% for post in ordered_games %}
+          {% if post.url != page.url and related_count < 4 %}
+          <a href="{{ post.url | relative_url }}">{{ post.app_name }}</a>
+          {% assign related_count = related_count | plus: 1 %}
+          {% endif %}
           {% endfor %}
         </div>
       </div>

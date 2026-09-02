@@ -17,7 +17,7 @@ cognitive_skills:
 card_description: "A brain-themed trivia game for Android."
 summary: "An Android trivia game with questions about the brain and related topics."
 download: https://play.google.com/store/apps/details?id=mobile.brain.games.brain_trivia
-description: "Play Brain Trivia, a free Android quiz game from Mobile Brain Games."
+description: "Explore Brain Trivia, an Android quiz game with short question-and-answer challenges about the brain and related topics."
 cta_copy: "Open Google Play to install Brain Trivia."
 ---
 

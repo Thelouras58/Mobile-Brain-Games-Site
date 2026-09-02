@@ -17,8 +17,8 @@ cognitive_skills:
 card_description: "A colourful card-matching game for Android."
 summary: "A simple Android card-matching game with colourful pairs and quick rounds."
 download: https://play.google.com/store/apps/details?id=mobile.brain.games.simplememorygame.simple_memory_game
-description: "Play a free Android card-matching game with Simple Memory Game from Mobile Brain Games."
-keywords: "memory matching game Android, card matching game for kids, free memory game"
+description: "Play Simple Memory Game, an Android card-matching puzzle with colourful pairs and repeatable rounds for kids and families."
+keywords: "memory matching game Android, card matching game for kids, memory game"
 cta_copy: "Open Google Play to install Simple Memory Game and begin matching cards."
 ---
 
