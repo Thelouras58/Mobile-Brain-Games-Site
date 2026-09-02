@@ -27,6 +27,9 @@ h3{font-size:1.2rem}
 .button{display:inline-block;padding:.75rem 1rem;border-radius:.4rem;background:var(--accent);color:#fff!important;font-weight:750;text-decoration:none}
 .button:hover{background:var(--accent-dark)}
 .button--light{background:#fff;color:var(--accent-dark)!important}
+.button--secondary{background:var(--ink)}
+.button--secondary:hover{background:var(--secondary-dark,#233140)}
+.button-group{display:flex;flex-wrap:wrap;align-items:center;gap:.75rem}
 .section{padding:5rem 0}
 .section--accent{background:#e4f4ef}
 .section--muted{background:var(--surface)}
