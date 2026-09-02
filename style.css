@@ -47,7 +47,8 @@ h3{font-size:1.2rem}
 .breadcrumb{padding-top:1.5rem;font-size:.92rem;color:var(--muted)}
 .app-page__article,.guide-page__article,.blog-page__article{padding:2.5rem 0 4rem}
 .app-page__intro{display:grid;grid-template-columns:minmax(160px,250px) 1fr;gap:2rem;align-items:center;margin-bottom:3rem}
-.app-page__intro img{width:100%;border-radius:1rem;background:var(--surface)}
+.app-page__icon{width:100%;aspect-ratio:1/1;overflow:hidden;border-radius:1rem;background:var(--surface)}
+.app-page__icon img{display:block;width:100%;height:100%;object-fit:cover}
 .prose{font-size:1.06rem}
 .prose h2{margin-top:2.5rem;font-size:1.7rem}
 .prose h3{margin-top:1.75rem}
@@ -63,4 +64,4 @@ h3{font-size:1.2rem}
 .site-footer a{color:#fff}
 .site-footer__brand{margin:0;font-weight:800;color:#fff}
 .site-footer__legal{margin-bottom:0;font-size:.9rem;color:#aebbc2}
-@media (max-width:620px){.site-nav__links{gap:.8rem;font-size:.9rem}.hero__content{padding:4rem 0}.section{padding:3.5rem 0}.featured-game{align-items:flex-start;flex-direction:column}.app-page__intro{grid-template-columns:1fr}.app-page__intro img{max-width:220px}.app-page__details dl{grid-template-columns:1fr}}
+@media (max-width:620px){.site-nav__links{gap:.8rem;font-size:.9rem}.hero__content{padding:4rem 0}.section{padding:3.5rem 0}.featured-game{align-items:flex-start;flex-direction:column}.app-page__intro{grid-template-columns:1fr}.app-page__icon{max-width:220px}.app-page__details dl{grid-template-columns:1fr}}
