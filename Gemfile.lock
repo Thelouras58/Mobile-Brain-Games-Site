@@ -14,17 +14,27 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (6.1.7.10)
-      concurrent-ruby (~> 1.0, >= 1.0.2)
+    activesupport (7.2.3.1)
+      base64
+      benchmark (>= 0.3)
+      bigdecimal
+      concurrent-ruby (~> 1.0, >= 1.3.1)
+      connection_pool (>= 2.2.5)
+      drb
       i18n (>= 1.6, < 2)
-      minitest (>= 5.1)
-      tzinfo (~> 2.0)
-      zeitwerk (~> 2.3)
+      logger (>= 1.4.2)
+      minitest (>= 5.1, < 6)
+      securerandom (>= 0.3)
+      tzinfo (~> 2.0, >= 2.0.5)
     addressable (2.9.0)
       public_suffix (>= 2.0.2, < 8.0)
     base64 (0.3.0)
+    benchmark (0.5.0)
+    bigdecimal (4.1.2)
     colorator (1.1.0)
     concurrent-ruby (1.3.8)
+    connection_pool (3.0.2)
+    drb (2.2.3)
     em-websocket (0.5.3)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
@@ -55,7 +65,7 @@ GEM
       typhoeus (~> 1.3)
       yell (~> 2.0)
     http_parser.rb (0.8.1)
-    i18n (1.14.8)
+    i18n (1.15.2)
       concurrent-ruby (~> 1.0)
     jekyll (4.3.4)
       addressable (~> 2.4)
@@ -101,7 +111,7 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.10)
     logger (1.7.0)
     mercenary (0.4.0)
-    minitest (5.25.4)
+    minitest (5.27.0)
     nokogiri (1.19.4-arm64-darwin)
       racc (~> 1.4)
     nokogiri (1.19.4-x86_64-linux-gnu)
@@ -130,6 +140,7 @@ GEM
     sawyer (0.9.3)
       addressable (>= 2.3.5)
       faraday (>= 0.17.3, < 3)
+    securerandom (0.4.1)
     terminal-table (3.0.2)
       unicode-display_width (>= 1.1.1, < 3)
     typhoeus (1.6.0)
@@ -139,7 +150,6 @@ GEM
     unicode-display_width (2.6.0)
     webrick (1.8.2)
     yell (2.2.2)
-    zeitwerk (2.6.18)
 
 PLATFORMS
   arm64-darwin-25
