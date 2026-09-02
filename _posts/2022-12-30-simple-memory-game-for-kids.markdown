@@ -27,4 +27,4 @@ The game uses a clear card-matching format that is easy to understand for kids a
 
 ## More games to try
 
-For visual-pattern challenges, see [Pattern Lock: Brain Games]({{ '/games/pattern-lock-brain-games/' | relative_url }}). You can also play the browser version of Simple Memory Game at [mobilebraingames.com/simplememorygameforkids]({{ '/simplememorygameforkids/' | relative_url }}).
+For visual-pattern challenges, see [Pattern Lock: Brain Games]({{ '/games/pattern-lock-brain-games/' | relative_url }}). For a faster game, try [Quick Tap]({{ '/games/quick-tap/' | relative_url }}).
