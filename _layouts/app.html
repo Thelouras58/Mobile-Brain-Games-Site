@@ -11,17 +11,20 @@
           <img src="{{ '/img/portfolio/' | append: page.img | relative_url }}" alt="{{ page.alt }}" width="640" height="640" decoding="async">
         </div>
         <div>
-          <p class="eyebrow">Android game</p>
+          <p class="eyebrow">{% if page.web_play_url %}Android and web game{% else %}Android game{% endif %}</p>
           <h1>{{ page.app_name }}</h1>
           <p class="lead">{{ page.summary }}</p>
-          <a class="button" href="{{ page.download }}" target="_blank" rel="noopener noreferrer" data-google-play-app="{{ page.slug }}" data-google-play-placement="app-hero">Get {{ page.app_name }} on Google Play</a>
+          <div class="button-group">
+            <a class="button" href="{{ page.download }}" target="_blank" rel="noopener noreferrer" data-google-play-app="{{ page.slug }}" data-google-play-placement="app-hero">{% if page.web_play_url %}Download for Android{% else %}Get {{ page.app_name }} on Google Play{% endif %}</a>
+            {% if page.web_play_url %}<a class="button button--secondary" href="{{ page.web_play_url | relative_url }}">Play on Web</a>{% endif %}
+          </div>
         </div>
       </div>
       <div class="prose">{{ content }}</div>
       <section class="app-page__details" aria-labelledby="details-heading">
         <h2 id="details-heading">Game details</h2>
         <dl>
-          <div><dt>Platform</dt><dd>Android</dd></div>
+          <div><dt>Platform</dt><dd>{% if page.web_play_url %}Android and Web{% else %}Android{% endif %}</dd></div>
           <div><dt>Game type</dt><dd>{{ page.game_type }}</dd></div>
           <div><dt>Best for</dt><dd>{{ page.audience }}</dd></div>
         </dl>
@@ -36,7 +39,10 @@
       <section class="app-page__cta" aria-labelledby="download-heading">
         <h2 id="download-heading">Ready to play?</h2>
         <p>{{ page.cta_copy }}</p>
-        <a class="button" href="{{ page.download }}" target="_blank" rel="noopener noreferrer" data-google-play-app="{{ page.slug }}" data-google-play-placement="app-bottom">Download {{ page.app_name }} on Google Play</a>
+        <div class="button-group">
+          <a class="button" href="{{ page.download }}" target="_blank" rel="noopener noreferrer" data-google-play-app="{{ page.slug }}" data-google-play-placement="app-bottom">{% if page.web_play_url %}Download for Android{% else %}Download {{ page.app_name }} on Google Play{% endif %}</a>
+          {% if page.web_play_url %}<a class="button button--secondary" href="{{ page.web_play_url | relative_url }}">Play on Web</a>{% endif %}
+        </div>
       </section>
     </article>
     <section class="section section--muted" aria-labelledby="more-games-heading">
