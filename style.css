@@ -68,4 +68,4 @@ h3{font-size:1.2rem}
 .site-footer a{color:#fff}
 .site-footer__brand{margin:0;font-weight:800;color:#fff}
 .site-footer__legal{margin-bottom:0;font-size:.9rem;color:#aebbc2}
-@media (max-width:620px){.site-nav__links{gap:.8rem;font-size:.9rem}.hero__content{padding:4rem 0}.section{padding:3.5rem 0}.featured-game{align-items:flex-start;flex-direction:column}.app-page__intro{grid-template-columns:1fr}.app-page__icon{max-width:220px}.app-page__details dl{grid-template-columns:1fr}}
+@media (max-width:620px){.site-nav__links{gap:.8rem;font-size:.9rem}.hero__content{padding:4rem 0}.section{padding:3.5rem 0}.featured-game{align-items:flex-start;flex-direction:column}.game-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:.75rem;margin-top:1.5rem}.game-card__content{padding:.75rem}.game-card__content h3{font-size:1rem}.game-card__content p{display:none}.game-card__content span{font-size:.85rem}.app-page__intro{grid-template-columns:1fr}.app-page__icon{max-width:220px}.app-page__details dl{grid-template-columns:1fr}}
