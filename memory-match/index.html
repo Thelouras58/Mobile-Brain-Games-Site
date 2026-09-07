@@ -62,6 +62,13 @@
   <div id="loading" role="status" aria-label="Loading Memory Match">
     <div class="spinner" aria-hidden="true"></div>
   </div>
+  <script>
+    // Flutter does not remove custom HTML loaders. Hide ours only after the
+    // application has rendered its first frame.
+    window.addEventListener('flutter-first-frame', function () {
+      document.getElementById('loading')?.remove();
+    });
+  </script>
   <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>
