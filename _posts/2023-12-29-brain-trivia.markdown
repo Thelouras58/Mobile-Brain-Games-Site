@@ -24,3 +24,15 @@ cta_copy: "Open Google Play to install Brain Trivia."
 ## Test your trivia knowledge
 
 Brain Trivia is an Android quiz game for players who enjoy short question-and-answer challenges about the brain and related topics.
+
+## How a quiz round works
+
+Read the question, consider the answer, and move to the next prompt. The format is built for players who like a question-and-answer puzzle rather than a visual matching or fast-tapping task. A short quiz round can be a simple way to explore a new fact during a game break.
+
+## Curiosity first
+
+Brain Trivia is a casual game for curious players. Its questions are not medical advice, a source for personal health decisions, or a complete explanation of the brain and related subjects.
+
+## Continue exploring
+
+[Brain Trivia Games: Questions for Curious Players]({{ '/blog/brain-trivia-games-for-curious-players/' | relative_url }}) explains how to enjoy quiz rounds and find reliable further reading. For word-focused play, see [Word Sprint]({{ '/games/word-sprint/' | relative_url }}).

@@ -24,3 +24,15 @@ cta_copy: "Open Google Play to install Word Sprint."
 ## Find words and keep moving
 
 Word Sprint is an Android word game for players who enjoy quick word-finding challenges and short rounds.
+
+## What to expect
+
+Each round centres on looking at the available letters, trying combinations, and moving on to the next word-focused puzzle. The short format makes it easy to begin with one round and decide whether to continue. There is no need for a long setup before the word-finding challenge begins.
+
+## For players who enjoy language puzzles
+
+Word Sprint suits players who like spotting letter patterns and trying familiar words in a focused game session. It is a casual word puzzle for enjoyment, not a measure of vocabulary or language ability.
+
+## Explore word-game ideas
+
+Read [Fast Word Games for Short Breaks]({{ '/blog/fast-word-games-for-short-breaks/' | relative_url }}) for practical approaches to short word-finding rounds. For a question-and-answer puzzle, try [Brain Trivia]({{ '/games/brain-trivia/' | relative_url }}).

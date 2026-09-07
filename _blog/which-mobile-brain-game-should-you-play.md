@@ -4,6 +4,7 @@ title: "Which Mobile Brain Game Should You Play?"
 description: "Explore the Mobile Brain Games collection: pattern, memory, word, reaction, maths, trivia, and calm games for different play styles."
 permalink: /blog/which-mobile-brain-game-should-you-play/
 date: 2026-09-02
+date_modified: 2026-09-07
 keywords: "brain games, memory games, pattern games, word games, reaction games, puzzle games"
 ---
 

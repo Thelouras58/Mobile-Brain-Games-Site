@@ -31,6 +31,14 @@ Simple Memory Game is an Android game about finding matching pairs. Turn over a 
 
 The game uses a clear card-matching format that is easy to understand for kids and enjoyable for families or anyone looking for a calm puzzle. Each round gives players another chance to improve their own time and score.
 
+## How to begin a round
+
+Start by turning over two cards and looking for the matching pair. When the cards differ, notice their pictures and positions before trying again. Players can move at their own pace, and families can take turns or talk through what they remember. The web version lets visitors try the card-matching format in a browser.
+
+## A game for visual puzzle fans
+
+Simple Memory Game is for people who enjoy familiar matching rules and colourful visual pairs. It is intended as a casual game, not an assessment of memory or a substitute for educational support.
+
 ## More games to try
 
-For visual-pattern challenges, see [Pattern Lock: Brain Games]({{ '/games/pattern-lock-brain-games/' | relative_url }}). For a faster game, try [Quick Tap]({{ '/games/quick-tap/' | relative_url }}).
+For family-play ideas, see [Card-Matching Games for Kids and Families]({{ '/blog/card-matching-games-for-kids/' | relative_url }}). For visual-pattern challenges, see [Pattern Lock: Brain Games]({{ '/games/pattern-lock-brain-games/' | relative_url }}). For a faster game, try [Quick Tap]({{ '/games/quick-tap/' | relative_url }}).
