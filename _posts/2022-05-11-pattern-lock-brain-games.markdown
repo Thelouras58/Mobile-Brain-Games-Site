@@ -30,6 +30,14 @@ Pattern Lock: Brain Games is a short-form Android puzzle game built around remem
 
 Choose a challenge, study the pattern or number sequence, then reproduce it as accurately as you can. The format is designed for quick rounds, whether you have a few minutes at home, on a commute, or between tasks.
 
+## What a round feels like
+
+The task stays focused: pay attention to the prompt, decide on the route or number sequence, and make your response. A new round gives you another visual puzzle without a long setup. Players can take their time with an unfamiliar pattern or return for a fresh attempt when they want a short challenge.
+
+## Who it is for
+
+Pattern Lock: Brain Games is for players who enjoy visual patterns, simple rules, and number-based puzzles. It is a game for entertainment and casual puzzle play, not a test or measure of memory.
+
 ## Explore related games
 
-If you enjoy visual recall, try [Simple Memory Game]({{ '/games/simple-memory-game/' | relative_url }}). For a faster challenge, explore [Quick Tap]({{ '/games/quick-tap/' | relative_url }}).
+Read [Pattern Memory Games: How They Work + 5 Challenges to Try]({{ '/blog/pattern-memory-games/' | relative_url }}) for ideas on approaching a visual sequence. If you enjoy visual recall, try [Simple Memory Game]({{ '/games/simple-memory-game/' | relative_url }}). For a faster challenge, explore [Quick Tap]({{ '/games/quick-tap/' | relative_url }}).

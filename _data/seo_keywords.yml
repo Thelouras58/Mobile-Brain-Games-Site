@@ -1,0 +1,31 @@
+# One primary search intent per landing page. Secondary terms may be used only
+# where they describe a verified feature of the corresponding game.
+pattern-memory:
+  page: /blog/pattern-memory-games/
+  primary: pattern memory game
+  secondary: pattern memory game Android
+card-matching:
+  page: /blog/card-matching-games-for-kids/
+  primary: memory matching game
+  secondary: card matching game for kids
+word-sprint:
+  page: /blog/fast-word-games-for-short-breaks/
+  primary: fast word game Android
+reaction:
+  page: /blog/quick-reaction-games/
+  primary: quick reaction games
+  secondary: reaction time game Android
+brain-trivia:
+  page: /blog/brain-trivia-games-for-curious-players/
+  primary: brain trivia questions game
+quick-maths:
+  page: /blog/quick-maths-games-for-kids/
+  primary: maths games for kids Android
+  secondary: quick maths games for kids
+calmquest:
+  page: /blog/relaxing-puzzle-games-for-a-calmer-play-break/
+  primary: relaxing puzzle games Android
+collection:
+  page: /blog/which-mobile-brain-game-should-you-play/
+  primary: mobile brain games
+  secondary: brain games

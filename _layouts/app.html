@@ -62,6 +62,15 @@
     </section>
   </main>
   {% include footer.html %}
+  <aside class="android-smart-banner" data-android-smart-banner data-banner-key="mbg-banner-{{ page.slug }}" hidden aria-label="Download {{ page.app_name }}">
+    <img class="android-smart-banner__icon" src="{{ '/img/portfolio/' | append: page.img | relative_url }}" alt="" width="64" height="64">
+    <div class="android-smart-banner__content">
+      <strong>{{ page.app_name }}</strong>
+      <span>Available on Google Play</span>
+    </div>
+    <a class="button android-smart-banner__cta" href="{{ page.download }}" target="_blank" rel="noopener noreferrer" data-google-play-app="{{ page.slug }}" data-google-play-placement="android-smart-banner">Get it</a>
+    <button class="android-smart-banner__dismiss" type="button" aria-label="Dismiss download banner">×</button>
+  </aside>
   {% include js.html %}
 </body>
 </html>

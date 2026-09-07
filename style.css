@@ -53,6 +53,7 @@ h3{font-size:1.2rem}
 .app-page__icon{width:100%;aspect-ratio:1/1;overflow:hidden;border-radius:1rem;background:var(--surface)}
 .app-page__icon img{display:block;width:100%;height:100%;object-fit:cover}
 .prose{font-size:1.06rem}
+.article-meta{margin:1.25rem 0 2.5rem;color:var(--muted);font-size:.95rem}
 .prose h2{margin-top:2.5rem;font-size:1.7rem}
 .prose h3{margin-top:1.75rem}
 .prose li+li{margin-top:.35rem}
@@ -71,4 +72,14 @@ h3{font-size:1.2rem}
 .site-footer a{color:#fff}
 .site-footer__brand{margin:0;font-weight:800;color:#fff}
 .site-footer__legal{margin-bottom:0;font-size:.9rem;color:#aebbc2}
+.android-smart-banner{position:fixed;right:0;bottom:0;left:0;z-index:10;display:flex;align-items:center;gap:.7rem;padding:.75rem max(1rem,env(safe-area-inset-right)) calc(.75rem + env(safe-area-inset-bottom)) max(1rem,env(safe-area-inset-left));background:rgba(255,255,255,.98);border-top:1px solid var(--line);box-shadow:0 -8px 24px rgba(23,43,58,.13)}
+.android-smart-banner[hidden]{display:none}
+.android-smart-banner__icon{width:48px;height:48px;flex:none;border-radius:.65rem;object-fit:cover}
+.android-smart-banner__content{min-width:0;flex:1;line-height:1.25}
+.android-smart-banner__content strong,.android-smart-banner__content span{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.android-smart-banner__content span{margin-top:.18rem;color:var(--muted);font-size:.84rem}
+.android-smart-banner__cta{flex:none;padding:.65rem .8rem}
+.android-smart-banner__dismiss{width:44px;height:44px;flex:none;border:0;border-radius:.35rem;background:transparent;color:var(--muted);font-size:1.7rem;line-height:1;cursor:pointer}
+.android-smart-banner__dismiss:hover{background:var(--surface);color:var(--ink)}
+body.has-android-smart-banner{padding-bottom:calc(76px + env(safe-area-inset-bottom))}
 @media (max-width:620px){.site-nav__links{gap:.8rem;font-size:.9rem}.hero__content{padding:4rem 0}.section{padding:3.5rem 0}.featured-game{align-items:flex-start;flex-direction:column}.game-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:.75rem;margin-top:1.5rem}.game-card__content{padding:.75rem}.game-card__content h3{font-size:1rem}.game-card__content p{display:none}.game-card__content span{font-size:.85rem}.app-page__intro{grid-template-columns:1fr}.app-page__icon{max-width:220px}.app-page__details dl{grid-template-columns:1fr}}

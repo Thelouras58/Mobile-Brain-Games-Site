@@ -25,3 +25,15 @@ cta_copy: "Open Google Play to install Rate Your Mood."
 ## A simple daily check-in
 
 Rate Your Mood offers a quick way to record how you feel each day. Return whenever you want a brief personal check-in.
+
+## How to use the check-in
+
+Open the app when you want to note how you feel, choose the response that best reflects that moment, and return on another day if you want to add another entry. The format is deliberately simple, so it can fit into a short daily routine.
+
+## A personal reflection tool
+
+Rate Your Mood is for personal reflection and recording. It is not medical advice, a diagnostic tool, or a substitute for professional support. If you have a health concern, seek advice from a qualified professional or an appropriate local service.
+
+## Explore other Mobile Brain Games
+
+For a relaxed casual-game break, see [CalmQuest]({{ '/games/calmquest/' | relative_url }}). To compare the collection’s puzzle and game styles, read [Which Mobile Brain Game Should You Play?]({{ '/blog/which-mobile-brain-game-should-you-play/' | relative_url }}).
