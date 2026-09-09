@@ -18,8 +18,10 @@ h3{font-size:1.2rem}
 .site-nav__links{display:flex;gap:1.25rem}
 .site-nav__links a{display:inline-flex;align-items:center;min-height:44px;text-decoration:none;font-weight:650}
 .hero{background:var(--accent);color:#fff}
-.hero__content{padding:5.5rem 0;text-align:center;max-width:820px}
+.hero__content{padding:5.5rem 0;text-align:center}
 .hero h1{color:#fff}
+.hero__heading{font-size:clamp(1rem,4.8vw,4.25rem)}
+.hero__heading span{display:block;white-space:nowrap}
 .hero__content>p:not(.eyebrow){font-size:1.2rem;margin:1rem auto 2rem;max-width:680px}
 .hero__logo{width:94px;height:94px;border-radius:22px;margin-bottom:1.5rem}
 .eyebrow{margin:0 0 .65rem;color:var(--accent-dark);font-size:.8rem;font-weight:800;letter-spacing:.11em;text-transform:uppercase}
