@@ -17,7 +17,7 @@ cognitive_skills:
 card_description: "Pattern and number puzzles for a quick Android challenge."
 summary: "An Android puzzle game with pattern and number challenges for a short, focused play session."
 description: "Explore Pattern Lock: Brain Games, an Android puzzle with visual patterns and number challenges for short, focused sessions."
-keywords: "pattern memory game Android, number puzzle game, brain games"
+keywords: "pattern memory game Android, number puzzle game, free brain games"
 download: https://play.google.com/store/apps/details?id=thelouras.pattern.game
 cta_copy: "Open Google Play to install Pattern Lock: Brain Games and start a new pattern challenge."
 ---
