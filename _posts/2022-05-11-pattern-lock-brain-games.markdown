@@ -17,14 +17,14 @@ cognitive_skills:
 card_description: "Pattern and number puzzles for a quick Android challenge."
 summary: "An Android puzzle game with pattern and number challenges for a short, focused play session."
 description: "Explore Pattern Lock: Brain Games, an Android puzzle with visual patterns and number challenges for short, focused sessions."
-keywords: "pattern memory game Android, number puzzle game, free brain games"
+keywords: "pattern memory game Android, number puzzle game, pattern recall game, free brain games, concentration game, working memory"
 download: https://play.google.com/store/apps/details?id=thelouras.pattern.game
 cta_copy: "Open Google Play to install Pattern Lock: Brain Games and start a new pattern challenge."
 ---
 
 ## What is Pattern Lock: Brain Games?
 
-Pattern Lock: Brain Games is a short-form Android puzzle game built around remembering and reproducing visual patterns. It also includes number-based challenges for players who enjoy an extra layer of speed and accuracy.
+Pattern Lock: Brain Games is a short-form Android puzzle game built around remembering and reproducing visual patterns. It also includes number-based challenges for players who enjoy an extra layer of speed, accuracy, pattern recall and problem solving.
 
 ## How to play
 
@@ -36,7 +36,7 @@ The task stays focused: pay attention to the prompt, decide on the route or numb
 
 ## Who it is for
 
-Pattern Lock: Brain Games is for players who enjoy visual patterns, simple rules, and number-based puzzles. It is a game for entertainment and casual puzzle play, not a test or measure of memory.
+Pattern Lock: Brain Games is for players who enjoy visual patterns, simple rules, and number-based puzzles. It is a free game for entertainment and casual puzzle play for daily brain training!
 
 ## Explore related games
 
