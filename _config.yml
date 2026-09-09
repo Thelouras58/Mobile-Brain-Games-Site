@@ -42,15 +42,6 @@ social:
     url: https://github.com/Thelouras58
   - title: linkedin
     url: https://www.linkedin.com/company/mobile-brain-games
-  
-
-# Postal address (add as many lines as necessary)
-#address:
- # - line: 3481 Melrose Place
-  #- line: Beverly Hills, CA 90210
-
-# Credits content
-#credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
 
 # Build settings
 markdown: kramdown
