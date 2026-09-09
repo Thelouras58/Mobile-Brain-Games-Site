@@ -12,10 +12,11 @@ game_type: Card-matching puzzle
 audience: Kids, families, and anyone who enjoys memory matching
 cognitive_skills:
   - Visual memory
+  - Short-term memory
   - Concentration
   - Matching and categorisation
-card_description: "A colourful card-matching game for Android."
-summary: "A simple Android card-matching game with colourful pairs and quick rounds."
+card_description: "A free card-matching game for Android."
+summary: "A simple and free Android card-matching game with colourful pairs and quick rounds."
 download: https://play.google.com/store/apps/details?id=mobile.brain.games.simplememorygame.simple_memory_game
 web_play_url: /memory-match/
 description: "Play Simple Memory Game, an Android card-matching puzzle with colourful pairs and repeatable rounds for kids and families."
@@ -37,7 +38,7 @@ Start by turning over two cards and looking for the matching pair. When the card
 
 ## A game for visual puzzle fans
 
-Simple Memory Game is for people who enjoy familiar matching rules and colourful visual pairs. It is intended as a casual game, not an assessment of memory or a substitute for educational support.
+This Game is for people who enjoy familiar matching rules and colourful visual pairs. It is intended as a casual game, not an assessment of memory or a substitute for educational support.
 
 ## More games to try
 
