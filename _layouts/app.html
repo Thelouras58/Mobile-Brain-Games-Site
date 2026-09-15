@@ -3,19 +3,21 @@
 {% include head.html %}
 <body>
   {% include nav.html %}
+  {% assign app_icon = page.icon %}
+  {% if app_icon == nil %}{% assign app_icon = '/img/portfolio/' | append: page.img %}{% endif %}
   <main class="app-page">
     <div class="content-width breadcrumb"><a href="{{ '/' | relative_url }}">Home</a> <span aria-hidden="true">/</span> <a href="{{ '/#games' | relative_url }}">Games</a> <span aria-hidden="true">/</span> {{ page.app_name }}</div>
     <article class="content-width content-width--narrow app-page__article">
       <div class="app-page__intro">
         <div class="app-page__icon">
-          <img src="{{ '/img/portfolio/' | append: page.img | relative_url }}" alt="{{ page.alt }}" width="640" height="640" decoding="async">
+          <img src="{{ app_icon | relative_url }}" alt="{{ page.alt }}" width="640" height="640" decoding="async">
         </div>
         <div>
           <p class="eyebrow">{% if page.web_play_url %}Android and web game{% else %}Android game{% endif %}</p>
           <h1>{{ page.app_name }}</h1>
           <p class="lead">{{ page.summary }}</p>
           <div class="button-group">
-            <a class="button" href="{{ page.download }}" target="_blank" rel="noopener noreferrer" data-google-play-app="{{ page.slug }}" data-google-play-placement="app-hero">{% if page.web_play_url %}Download for Android{% else %}Get {{ page.app_name }} on Google Play{% endif %}</a>
+            <a class="button" href="{{ page.download }}" target="_blank" rel="noopener noreferrer" data-google-play-app="{{ page.slug }}" data-google-play-placement="app-hero">{% if page.web_play_url %}Download for Android{% elsif page.cta_label %}{{ page.cta_label }}{% else %}Get {{ page.app_name }} on Google Play{% endif %}</a>
             {% if page.web_play_url %}<a class="button button--secondary" href="{{ page.web_play_url | relative_url }}">Play on Web</a>{% endif %}
           </div>
         </div>
@@ -40,7 +42,7 @@
         <h2 id="download-heading">Ready to play?</h2>
         <p>{{ page.cta_copy }}</p>
         <div class="button-group">
-          <a class="button" href="{{ page.download }}" target="_blank" rel="noopener noreferrer" data-google-play-app="{{ page.slug }}" data-google-play-placement="app-bottom">{% if page.web_play_url %}Download for Android{% else %}Download {{ page.app_name }} on Google Play{% endif %}</a>
+          <a class="button" href="{{ page.download }}" target="_blank" rel="noopener noreferrer" data-google-play-app="{{ page.slug }}" data-google-play-placement="app-bottom">{% if page.web_play_url %}Download for Android{% elsif page.cta_label %}{{ page.cta_label }}{% else %}Download {{ page.app_name }} on Google Play{% endif %}</a>
           {% if page.web_play_url %}<a class="button button--secondary" href="{{ page.web_play_url | relative_url }}">Play on Web</a>{% endif %}
         </div>
       </section>
@@ -63,7 +65,7 @@
   </main>
   {% include footer.html %}
   <aside class="android-smart-banner" data-android-smart-banner data-banner-key="mbg-banner-{{ page.slug }}" hidden aria-label="Download {{ page.app_name }}">
-    <img class="android-smart-banner__icon" src="{{ '/img/portfolio/' | append: page.img | relative_url }}" alt="" width="64" height="64">
+    <img class="android-smart-banner__icon" src="{{ app_icon | relative_url }}" alt="" width="64" height="64">
     <div class="android-smart-banner__content">
       <strong>{{ page.app_name }}</strong>
       <span>Available on Google Play</span>

@@ -5,11 +5,11 @@
     <p class="section-intro">Discover games for quick challenges, longer sessions, and everything in between.</p>
     <aside class="featured-game" aria-labelledby="premium-heading">
       <div>
-        <p class="eyebrow">Featured game</p>
+        <p class="eyebrow">Premium edition</p>
         <h3 id="premium-heading">Mobile Brain Games Premium</h3>
-        <p>Our main Mobile Brain Games experience.</p>
+        <p>The complete Mobile Brain Games experience, with more ways to play and a fresh daily challenge waiting on Android.</p>
       </div>
-      <a class="button" href="https://play.google.com/store/apps/details?id=mobile.brain.games.mobile_brain_games_premium" data-google-play-app="mobile-brain-games-premium" target="_blank" rel="noopener">Explore Premium <span aria-hidden="true">→</span></a>
+      <a class="button button--premium" href="{{ '/games/mobile-brain-games-premium/' | relative_url }}" data-premium-placement="home-featured"><span class="button__icon" aria-hidden="true">→</span> Explore Premium</a>
     </aside>
     <div class="game-grid">
       {% assign ordered_games = site.posts | sort: "home_order" %}

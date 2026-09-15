@@ -26,11 +26,14 @@ h3{font-size:1.2rem}
 .hero__logo{width:94px;height:94px;border-radius:22px;margin-bottom:1.5rem}
 .eyebrow{margin:0 0 .65rem;color:var(--accent-dark);font-size:.8rem;font-weight:800;letter-spacing:.11em;text-transform:uppercase}
 .hero .eyebrow{color:#d7fff5}
-.button{display:inline-block;padding:.75rem 1rem;border-radius:.4rem;background:var(--accent);color:#fff!important;font-weight:750;text-decoration:none}
+.button{display:inline-flex;align-items:center;justify-content:center;gap:.45rem;padding:.75rem 1rem;border-radius:.4rem;background:var(--accent);color:#fff!important;font-weight:750;text-decoration:none}
 .button:hover{background:var(--accent-dark)}
 .button--light{background:#fff;color:var(--accent-dark)!important}
 .button--secondary{background:var(--ink)}
 .button--secondary:hover{background:var(--secondary-dark,#233140)}
+.button--premium{background:#172b3a;box-shadow:0 10px 22px rgba(23,43,58,.18)}
+.button--premium:hover{background:#0f1f2b}
+.button__icon{display:inline-grid;place-items:center;width:1.35rem;height:1.35rem;border-radius:999px;background:#f7c948;color:#172b3a;font-size:.82rem;line-height:1}
 .button-group{display:flex;flex-wrap:wrap;align-items:center;gap:.75rem}
 .section{padding:5rem 0}
 .section--accent{background:#e4f4ef}
@@ -52,8 +55,8 @@ h3{font-size:1.2rem}
 .breadcrumb{padding-top:1.5rem;font-size:.92rem;color:var(--muted)}
 .app-page__article,.guide-page__article,.blog-page__article{padding:2.5rem 0 4rem}
 .app-page__intro{display:grid;grid-template-columns:minmax(160px,250px) 1fr;gap:2rem;align-items:center;margin-bottom:3rem}
-.app-page__icon{width:100%;aspect-ratio:1/1;overflow:hidden;border-radius:1rem;background:var(--surface)}
-.app-page__icon img{display:block;width:100%;height:100%;object-fit:cover}
+.app-page__icon{display:grid;place-items:center;width:100%;aspect-ratio:1/1;overflow:hidden;border-radius:1rem;background:var(--surface)}
+.app-page__icon img{display:block;width:100%;height:100%;object-fit:contain}
 .prose{font-size:1.06rem}
 .article-meta{margin:1.25rem 0 2.5rem;color:var(--muted);font-size:.95rem}
 .prose h2{margin-top:2.5rem;font-size:1.7rem}
@@ -76,7 +79,7 @@ h3{font-size:1.2rem}
 .site-footer__legal{margin-bottom:0;font-size:.9rem;color:#aebbc2}
 .android-smart-banner{position:fixed;right:0;bottom:0;left:0;z-index:10;display:flex;align-items:center;gap:.7rem;padding:.75rem max(1rem,env(safe-area-inset-right)) calc(.75rem + env(safe-area-inset-bottom)) max(1rem,env(safe-area-inset-left));background:rgba(255,255,255,.98);border-top:1px solid var(--line);box-shadow:0 -8px 24px rgba(23,43,58,.13)}
 .android-smart-banner[hidden]{display:none}
-.android-smart-banner__icon{width:48px;height:48px;flex:none;border-radius:.65rem;object-fit:cover}
+.android-smart-banner__icon{width:48px;height:48px;flex:none;border-radius:.65rem;object-fit:contain}
 .android-smart-banner__content{min-width:0;flex:1;line-height:1.25}
 .android-smart-banner__content strong,.android-smart-banner__content span{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .android-smart-banner__content span{margin-top:.18rem;color:var(--muted);font-size:.84rem}
