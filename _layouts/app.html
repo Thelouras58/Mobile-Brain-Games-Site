@@ -14,7 +14,7 @@
         </div>
         <div>
           <p class="eyebrow">{% if page.web_play_url %}Android and web game{% else %}Android game{% endif %}</p>
-          <h1>{{ page.app_name }}</h1>
+          <h1>{{ page.h1 | default: page.app_name }}</h1>
           <p class="lead">{{ page.summary }}</p>
           <div class="button-group">
             <a class="button" href="{{ page.download }}" target="_blank" rel="noopener noreferrer" data-google-play-app="{{ page.slug }}" data-google-play-placement="app-hero">{% if page.web_play_url %}Download for Android{% elsif page.cta_label %}{{ page.cta_label }}{% else %}Get {{ page.app_name }} on Google Play{% endif %}</a>
