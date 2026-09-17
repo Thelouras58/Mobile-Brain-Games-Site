@@ -6,7 +6,7 @@
   {% assign app_icon = page.icon %}
   {% if app_icon == nil %}{% assign app_icon = '/img/portfolio/' | append: page.img %}{% endif %}
   <main class="app-page">
-    <div class="content-width breadcrumb"><a href="{{ '/' | relative_url }}">Home</a> <span aria-hidden="true">/</span> <a href="{{ '/#games' | relative_url }}">Games</a> <span aria-hidden="true">/</span> {{ page.app_name }}</div>
+    <div class="content-width breadcrumb"><a href="{{ '/' | relative_url }}">Home</a> <span aria-hidden="true">/</span> <a href="{{ '/games/' | relative_url }}">Games</a> <span aria-hidden="true">/</span> {{ page.app_name }}</div>
     <article class="content-width content-width--narrow app-page__article">
       <div class="app-page__intro">
         <div class="app-page__icon">
@@ -16,20 +16,31 @@
           <p class="eyebrow">{% if page.web_play_url %}Android and web game{% else %}Android game{% endif %}</p>
           <h1>{{ page.h1 | default: page.app_name }}</h1>
           <p class="lead">{{ page.summary }}</p>
+          {% if page.store_name and page.store_name != page.app_name %}<p class="store-alias">Listed on Google Play as <strong>{{ page.store_name }}</strong>.</p>{% endif %}
           <div class="button-group">
             <a class="button" href="{{ page.download }}" target="_blank" rel="noopener noreferrer" data-google-play-app="{{ page.slug }}" data-google-play-placement="app-hero">{% if page.web_play_url %}Download for Android{% elsif page.cta_label %}{{ page.cta_label }}{% else %}Get {{ page.app_name }} on Google Play{% endif %}</a>
             {% if page.web_play_url %}<a class="button button--secondary" href="{{ page.web_play_url | relative_url }}">Play on Web</a>{% endif %}
           </div>
         </div>
       </div>
+      {% if page.screenshot %}
+      <figure class="app-screenshot">
+        <img src="{{ page.screenshot | relative_url }}" alt="{{ page.screenshot_alt }}" loading="lazy" decoding="async" width="{{ page.screenshot_width }}" height="{{ page.screenshot_height }}">
+        <figcaption>Screenshot from the app's Google Play listing.</figcaption>
+      </figure>
+      {% endif %}
       <div class="prose">{{ content }}</div>
       <section class="app-page__details" aria-labelledby="details-heading">
-        <h2 id="details-heading">Game details</h2>
+        <h2 id="details-heading">{% if page.slug == 'rate-your-mood' %}App details{% else %}Game details{% endif %}</h2>
         <dl>
           <div><dt>Platform</dt><dd>{% if page.web_play_url %}Android and Web{% else %}Android{% endif %}</dd></div>
           <div><dt>Game type</dt><dd>{{ page.game_type }}</dd></div>
           <div><dt>Best for</dt><dd>{{ page.audience }}</dd></div>
+          <div><dt>Download cost</dt><dd>Free to install{% if page.store_purchases %}; {{ page.store_purchases | downcase }}{% endif %}</dd></div>
+          {% if page.store_ads %}<div><dt>Ads</dt><dd>{{ page.store_ads }}</dd></div>{% endif %}
+          {% if page.store_offline %}<div><dt>Offline play</dt><dd>{{ page.store_offline }}</dd></div>{% endif %}
         </dl>
+        <p class="source-note">Store details checked {{ page.verified_on | date: "%B %-d, %Y" }}. <a href="{{ page.download }}" target="_blank" rel="noopener noreferrer" data-google-play-app="{{ page.slug }}" data-google-play-placement="store-details">Check the current Google Play listing</a> for availability and changes.</p>
       </section>
       <section class="app-page__skills" aria-labelledby="skills-heading">
         <h2 id="skills-heading">Skills engaged while playing</h2>
@@ -51,13 +62,14 @@
       <div class="content-width">
         <h2 id="more-games-heading">Explore more Mobile Brain Games</h2>
         <div class="related-links">
-          {% assign ordered_games = site.posts | sort: "home_order" %}
-          {% assign related_count = 0 %}
-          {% for post in ordered_games %}
-          {% if post.url != page.url and related_count < 4 %}
-          <a href="{{ post.url | relative_url }}">{{ post.app_name }}</a>
-          {% assign related_count = related_count | plus: 1 %}
-          {% endif %}
+          {% for related_slug in page.related_game_slugs %}
+            {% assign related_game = site.posts | where: 'slug', related_slug | first %}
+            {% if related_game %}<a href="{{ related_game.url | relative_url }}">{{ related_game.app_name }}</a>{% endif %}
+          {% endfor %}
+          {% for article_url in page.related_article_urls %}
+            {% assign related_article = site.blog | where: 'url', article_url | first %}
+            {% unless related_article %}{% assign related_article = site.pages | where: 'url', article_url | first %}{% endunless %}
+            {% if related_article %}<a href="{{ related_article.url | relative_url }}">{{ related_article.title }}</a>{% endif %}
           {% endfor %}
         </div>
       </div>
@@ -65,7 +77,7 @@
   </main>
   {% include footer.html %}
   <aside class="android-smart-banner" data-android-smart-banner data-banner-key="mbg-banner-{{ page.slug }}" hidden aria-label="Download {{ page.app_name }}">
-    <img class="android-smart-banner__icon" src="{{ app_icon | relative_url }}" alt="" width="64" height="64">
+    <img class="android-smart-banner__icon" src="{{ app_icon | relative_url }}" alt="{{ page.app_name }} app icon" width="64" height="64">
     <div class="android-smart-banner__content">
       <strong>{{ page.app_name }}</strong>
       <span>Available on Google Play</span>

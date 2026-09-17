@@ -5,6 +5,16 @@ app_name: "Brain Trivia"
 home_order: 7
 permalink: /games/brain-trivia/
 slug: brain-trivia
+directory_group: words-and-maths
+offer_price: 0
+verified_on: 2026-09-17
+last_modified_at: 2026-09-17
+store_name: Neuroscience Quiz - Trivia
+related_game_slugs:
+  - word-sprint
+  - quick-maths
+related_article_urls:
+  - /blog/brain-trivia-games-for-curious-players/
 img: trivia.png
 alt: "Brain Trivia quiz game app icon"
 social_image: /img/portfolio/trivia.png

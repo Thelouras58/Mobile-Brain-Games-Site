@@ -5,6 +5,16 @@ app_name: "Word Sprint"
 home_order: 3
 permalink: /games/word-sprint/
 slug: word-sprint
+directory_group: words-and-maths
+offer_price: 0
+verified_on: 2026-09-17
+last_modified_at: 2026-09-17
+store_name: Fast Word Puzzle Game
+related_game_slugs:
+  - brain-trivia
+  - quick-tap
+related_article_urls:
+  - /blog/fast-word-games-for-short-breaks/
 img: wordsprint.png
 alt: "Word Sprint word game app icon"
 social_image: /img/portfolio/wordsprint.png

@@ -1,12 +1,28 @@
 ---
 layout: app
-title: "Mobile Brain Training Games! Daily Brain Training for Android"
+title: "Mobile Brain Training Games! | Android Game Collection"
 app_name: "Mobile Brain Games Premium"
 h1: "Mobile Brain Games Premium: Daily Brain Training for Android"
 home_order: 0
 portfolio_visible: false
 permalink: /games/mobile-brain-games-premium/
 slug: mobile-brain-games-premium
+directory_group: collection
+offer_price: 0
+verified_on: 2026-09-17
+last_modified_at: 2026-09-17
+store_name: "Mobile Brain Training Games!"
+store_purchases: Optional in-app purchases
+screenshot: /img/screenshots/brain-games.jpg
+screenshot_width: 266
+screenshot_height: 592
+screenshot_alt: Mobile Brain Training Games catalogue with memory and attention games
+related_game_slugs:
+  - simple-memory-game
+  - quick-maths
+  - pattern-lock-brain-games
+related_article_urls:
+  - /parents/
 icon: /img/portfolio/mobile-brain-games-premium.png
 alt: "Mobile Brain Games Premium - High contrast daily brain training and memory game for Android"
 social_image: /img/portfolio/mobile-brain-games-premium.png
@@ -18,36 +34,33 @@ cognitive_skills:
   - Processing speed
   - Executive function
   - Language and vocabulary
-summary: "A daily Android brain game with 20+ quick challenges to practise memory, focus, processing speed, executive function, and language."
+summary: "An Android collection of short memory, focus, speed, rule-switching, and word games. Free to install, with optional Premium upgrades."
+card_description: "A free-to-install collection of short games with optional Premium upgrades."
 download: https://play.google.com/store/apps/details?id=mobile.brain.games.mobile_brain_games_premium
-description: "Sharpen focus and memory with Mobile Brain Games Premium: 20+ accessible, high-contrast daily brain challenges for Android."
+description: "Explore short daily games in Mobile Brain Training Games! for Android. Free to install, with optional in-app Premium games and features."
 keywords: "Mobile Brain Games Premium, Android brain training game, brain games premium, memory games Android, focus games Android, daily brain workout, processing speed game, executive function game, language games Android, Google Play brain games"
-cta_copy: "Ready for a smarter break? Get Mobile Brain Games Premium on Google Play and make your next few minutes count. Availability, pricing, and offers can vary by country or region."
+cta_copy: "Open Google Play to install the free app. Optional Premium upgrades are available in the app; check current pricing before buying."
 cta_label: "Start Playing on Google Play"
 ---
 
-## Your Daily Brain Workout
+## What does the free app include?
 
-With 20+ games, you can practise memory, attention, processing speed, executive function, language, reading, writing, speaking, and math in short, focused sessions. Each daily brain workout gives you a different kind of challenge, so you can keep your routine fresh and find the play styles that suit you best.
+The Google Play listing calls this app **Mobile Brain Training Games!** It offers a daily sequence of three short games from its wider catalogue. Listed free modes include Pattern Recall, Quick Tap, Focus Finder, Rule Switcher, and Word Sprint. The activities involve remembering a pattern, responding to a visual prompt, finding a target, switching rules, or working with words.
 
-The experience is designed for casual play. It can help you practise remembering patterns, spotting targets, reacting quickly, switching rules, and working with words, but it is not a medical, diagnostic, or therapeutic tool.
+The games are for play and do not establish a medical, diagnostic, or therapeutic benefit.
 
-## Track Progress With the Cognitive Balance Radar Chart
+## What does Premium unlock?
 
-Track your streaks, explore your category breakdowns, and use the Cognitive Balance Radar Chart to understand your strengths across different kinds of games. The goal is simple: keep playing, notice what clicks, and make your next challenge count.
+Optional in-app purchases unlock additional games—including Memory Flow, Rapid Radar, Focus Frenzy, Priority Pop, and Compound Crash—plus unlimited daily play and deeper progress views. The store lists the app as free to install with in-app purchases. Check current prices and terms on your device before buying.
 
-Premium brings the complete Mobile Brain Games experience to Android, with advanced challenges such as Memory Flow, Rapid Radar, Focus Frenzy, Priority Pop, and Compound Crash, plus unlimited daily play and deeper progress insights.
+## How do the progress views work?
 
-## Highly Accessible Design for Readable Play
+The app shows streaks, game-category breakdowns, and a Cognitive Balance Radar Chart. These describe your in-game activity; they are not an assessment of cognitive health or ability.
 
-Mobile Brain Games Premium is designed with accessible play in mind, including high-contrast themes, bold typography, and large touch targets. The format works well for players who want a clear Google Play brain game that is easy to start, easy to read, and built around short daily sessions.
+## Is it suitable for family play?
 
-Progress features such as streak tracking, category breakdowns, and the Cognitive Balance Radar Chart give regular players a simple way to follow their activity over time.
-
-## Executive Function, Memory, Focus, and Language Games
-
-If you are comparing Android brain games, start here when you want one app that brings together memory games, focus games, processing speed challenges, executive function puzzles, reading, writing, speaking, and math games.
+The listing describes high-contrast themes, bold text, and large touch targets. A parent can start with the free games and judge whether the pace and wording suit their child. See the [family guide]({{ '/parents/' | relative_url }}) for a comparison with simpler matching and maths games.
 
 ## Available on Google Play
 
-Mobile Brain Games Premium is available through Google Play for Android devices. Store availability, in-app purchases, prices, and offers may differ by country, region, device, age, and Google Play account settings, so always check the live listing before installing or purchasing.
+Store availability and upgrade prices may differ by region, device, age, and account settings. The [Google Play listing]({{ page.download }}) has the current details.
