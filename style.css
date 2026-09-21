@@ -67,7 +67,7 @@ h3{font-size:1.2rem}
 .skill-list{display:flex;flex-wrap:wrap;gap:.65rem;margin:0;padding:0;list-style:none}
 .skill-list li{padding:.45rem .7rem;border-radius:999px;background:#fff;border:1px solid var(--line);font-weight:650}
 .app-page__details{margin-top:3rem;padding:1.5rem;border:1px solid var(--line);border-radius:.65rem}
-.app-page__details dl{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:0}
+.app-page__details dl{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin:0}
 .app-page__details dt{font-size:.8rem;font-weight:800;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
 .app-page__details dd{margin:.2rem 0 0}
 .app-page__cta{margin-top:2rem;padding:2rem;border-radius:.65rem;background:#e4f4ef}
@@ -87,4 +87,21 @@ h3{font-size:1.2rem}
 .android-smart-banner__dismiss{width:44px;height:44px;flex:none;border:0;border-radius:.35rem;background:transparent;color:var(--muted);font-size:1.7rem;line-height:1;cursor:pointer}
 .android-smart-banner__dismiss:hover{background:var(--surface);color:var(--ink)}
 body.has-android-smart-banner{padding-bottom:calc(76px + env(safe-area-inset-bottom))}
-@media (max-width:620px){.site-nav__links{gap:.8rem;font-size:.9rem}.hero__content{padding:4rem 0}.section{padding:3.5rem 0}.featured-game{align-items:flex-start;flex-direction:column}.game-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:.75rem;margin-top:1.5rem}.game-card__content{padding:.75rem}.game-card__content h3{font-size:1rem}.game-card__content p{display:none}.game-card__content span{font-size:.85rem}.app-page__intro{grid-template-columns:1fr}.app-page__icon{max-width:220px}.app-page__details dl{grid-template-columns:1fr}}
+.store-alias,.source-note,.app-screenshot figcaption,.section-next{color:var(--muted);font-size:.95rem}
+.app-screenshot{margin:2rem 0;text-align:center}
+.guide-page__article{padding-top:1rem}
+.app-screenshot img{display:block;max-width:min(100%,300px);height:auto;margin:auto;border:1px solid var(--line);border-radius:1rem}
+.app-screenshot figcaption{margin-top:.5rem}
+.article-figure{margin:2rem auto;text-align:center}
+.article-figure img{display:block;max-width:min(100%,300px);height:auto;margin:auto;border:1px solid var(--line);border-radius:.6rem}
+.article-figure figcaption{margin-top:.5rem;color:var(--muted);font-size:.9rem}
+.source-note{margin:1.3rem 0 0}
+.section-next{margin:2rem 0 0}
+.plain-list{list-style:none;margin:1.5rem 0;padding:0;display:grid;gap:1rem}
+.plain-list li{padding:1rem;border:1px solid var(--line);border-radius:.5rem}
+.plain-list p{margin:.25rem 0 0}
+.fact-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin:1.5rem 0}
+.fact-grid>div{padding:1rem;background:var(--surface);border-radius:.5rem}
+.fact-grid dt{font-weight:750}
+.fact-grid dd{margin:.3rem 0 0}
+@media (max-width:620px){.site-nav__inner{flex-wrap:wrap;justify-content:center;gap:0;min-height:4.5rem;padding:.5rem 0}.site-nav__brand{width:100%;text-align:center}.site-nav__links{justify-content:center;flex-wrap:wrap;gap:.7rem;font-size:.9rem}.site-nav__links a{min-height:34px}.hero__content{padding:4rem 0}.hero__heading span{white-space:normal}.section{padding:3.5rem 0}.featured-game{align-items:flex-start;flex-direction:column}.game-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:.75rem;margin-top:1.5rem}.game-card__content{padding:.75rem}.game-card__content h3{font-size:1rem}.game-card__content p{display:none}.game-card__content span{font-size:.85rem}.app-page__intro{grid-template-columns:1fr}.app-page__icon{max-width:220px}.app-page__details dl,.fact-grid{grid-template-columns:1fr}}

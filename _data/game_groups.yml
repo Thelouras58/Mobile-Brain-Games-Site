@@ -1,0 +1,15 @@
+- id: collection
+  title: Full collection
+  description: A starting point for several kinds of short puzzle challenges.
+- id: memory
+  title: Memory and patterns
+  description: Matching pairs and reproducing visual patterns.
+- id: words-and-maths
+  title: Words, numbers, and trivia
+  description: Letter puzzles, timed arithmetic, and quiz questions.
+- id: reactions
+  title: Reaction games
+  description: Short, fast prompts and touch responses.
+- id: calm-and-reflection
+  title: Calm play and reflection
+  description: A relaxed game collection and a separate mood check-in app.
