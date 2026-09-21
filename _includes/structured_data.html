@@ -1,52 +1,62 @@
-{% if page.download %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": {{ page.app_name | jsonify }},
-  "applicationCategory": "GameApplication",
-  "operatingSystem": "Android",
-  "url": {{ page.url | absolute_url | jsonify }},
-  "downloadUrl": {{ page.download | jsonify }},
-  "description": {{ page.description | jsonify }},
-  "image": {{ page.social_image | default: site.social_image | absolute_url | jsonify }}
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": {{ site.url | append: '/#organization' | jsonify }},
+      "name": {{ site.title | jsonify }},
+      "url": {{ site.url | append: '/' | jsonify }},
+      "logo": {{ site.social_image | absolute_url | jsonify }},
+      "sameAs": [{% for network in site.social %}{{ network.url | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}]
+    },
+    {
+      "@type": "WebSite",
+      "@id": {{ site.url | append: '/#website' | jsonify }},
+      "name": {{ site.title | jsonify }},
+      "url": {{ site.url | append: '/' | jsonify }},
+      "publisher": {"@id": {{ site.url | append: '/#organization' | jsonify }}}
+    },
+    {
+      "@type": {% if page.layout == 'blog' %}"BlogPosting"{% elsif page.download %}"SoftwareApplication"{% elsif page.url == '/blog/' or page.url == '/games/' %}"CollectionPage"{% else %}"WebPage"{% endif %},
+      "@id": {{ page.url | absolute_url | append: '#main' | jsonify }},
+      "url": {{ page.url | absolute_url | jsonify }},
+      {% if page.layout == 'blog' %}
+      "headline": {{ page.title | jsonify }},
+      "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+      "dateModified": {{ page.last_modified_at | default: page.date | date_to_xmlschema | jsonify }},
+      "author": {"@id": {{ site.url | append: '/#organization' | jsonify }}},
+      "publisher": {"@id": {{ site.url | append: '/#organization' | jsonify }}},
+      "image": {{ page.social_image | default: site.social_image | absolute_url | jsonify }},
+      {% elsif page.download %}
+      "name": {{ page.store_name | default: page.app_name | jsonify }},
+      "alternateName": {{ page.app_name | jsonify }},
+      "applicationCategory": {{ page.schema_category | default: 'GameApplication' | jsonify }},
+      "operatingSystem": "Android",
+      "downloadUrl": {{ page.download | jsonify }},
+      "publisher": {"@id": {{ site.url | append: '/#organization' | jsonify }}},
+      "image": {{ page.social_image | default: site.social_image | absolute_url | jsonify }},
+      {% if page.offer_price != nil %}
+      "offers": {"@type": "Offer", "price": {{ page.offer_price | jsonify }}, "url": {{ page.download | jsonify }}},
+      {% endif %}
+      {% else %}
+      "name": {{ page.title | default: site.title | jsonify }},
+      {% endif %}
+      "description": {{ page.description | default: site.description | jsonify }},
+      "isPartOf": {"@id": {{ site.url | append: '/#website' | jsonify }}}
+    }{% unless page.url == '/' %},
+    {
+      "@type": "BreadcrumbList",
+      "@id": {{ page.url | absolute_url | append: '#breadcrumb' | jsonify }},
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": {{ site.url | append: '/' | jsonify }}}{% if page.layout == 'blog' or page.url == '/blog/' %},
+        {"@type": "ListItem", "position": 2, "name": "Blog", "item": {{ '/blog/' | absolute_url | jsonify }}}{% if page.layout == 'blog' %},
+        {"@type": "ListItem", "position": 3, "name": {{ page.title | jsonify }}, "item": {{ page.url | absolute_url | jsonify }}}{% endif %}{% elsif page.download or page.url == '/games/' %},
+        {"@type": "ListItem", "position": 2, "name": "Games", "item": {{ '/games/' | absolute_url | jsonify }}}{% if page.download %},
+        {"@type": "ListItem", "position": 3, "name": {{ page.app_name | jsonify }}, "item": {{ page.url | absolute_url | jsonify }}}{% endif %}{% else %},
+        {"@type": "ListItem", "position": 2, "name": {{ page.title | jsonify }}, "item": {{ page.url | absolute_url | jsonify }}}{% endif %}
+      ]
+    }{% endunless %}
+  ]
 }
 </script>
-{% elsif page.url == '/blog/' %}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "CollectionPage",
-  "name": {{ page.title | jsonify }},
-  "description": {{ page.description | jsonify }},
-  "url": {{ page.url | absolute_url | jsonify }},
-  "isPartOf": {"@type": "WebSite", "name": {{ site.title | jsonify }}, "url": {{ site.url | jsonify }}}
-}
-</script>
-{% elsif page.layout == 'blog' %}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": {{ page.title | jsonify }},
-  "description": {{ page.description | jsonify }},
-  "image": {{ page.social_image | default: site.social_image | absolute_url | jsonify }},
-  "url": {{ page.url | absolute_url | jsonify }},
-  "datePublished": {{ page.date | date_to_xmlschema | jsonify }}{% if page.date_modified %},
-  "dateModified": {{ page.date_modified | date_to_xmlschema | jsonify }}{% endif %},
-  "author": {"@type": "Organization", "name": {{ site.title | jsonify }}},
-  "publisher": {"@type": "Organization", "name": {{ site.title | jsonify }}, "logo": {"@type": "ImageObject", "url": {{ site.social_image | absolute_url | jsonify }}}
-}
-</script>
-{% elsif page.url == '/' %}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": {{ site.title | jsonify }},
-  "url": {{ site.url | jsonify }},
-  "logo": {{ site.social_image | absolute_url | jsonify }},
-  "sameAs": [{% for network in site.social %}{{ network.url | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}]
-}
-</script>
-{% endif %}

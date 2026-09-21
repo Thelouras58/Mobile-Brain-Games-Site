@@ -7,9 +7,13 @@
 - [Mobile Brain Games](https://mobilebraingames.com/): Android game collection and publisher overview.
 - [Blog](https://mobilebraingames.com/blog/): Posts about the game types in the collection.
 - [Which Mobile Brain Game Should You Play?](https://mobilebraingames.com/blog/which-mobile-brain-game-should-you-play/): An overview of the collection, game formats, and related titles.
+- [Games directory](https://mobilebraingames.com/games/): All currently listed Android apps.
+- [For parents](https://mobilebraingames.com/parents/): Verified details for choosing family-friendly game activities.
+- [About the publisher](https://mobilebraingames.com/about/): Publisher and support details.
 
 ## Android games
 
+- [Mobile Brain Training Games!](https://mobilebraingames.com/games/mobile-brain-games-premium/): Free-to-install collection with optional Premium upgrades.
 - [Pattern Lock: Brain Games](https://mobilebraingames.com/games/pattern-lock-brain-games/): Pattern and number puzzles.
 - [Simple Memory Game](https://mobilebraingames.com/games/simple-memory-game/): Card-matching game.
 - [Quick Tap](https://mobilebraingames.com/games/quick-tap/): Fast reaction game.
@@ -19,6 +23,10 @@
 - [Brain Trivia](https://mobilebraingames.com/games/brain-trivia/): Brain-themed quiz game.
 - [CalmQuest](https://mobilebraingames.com/games/calmquest/): Relaxing casual games.
 - [Rate Your Mood](https://mobilebraingames.com/games/rate-your-mood/): Daily mood check-in.
+
+## Browser play
+
+- [Memory Match](https://mobilebraingames.com/memory-match/): Browser version of the matching game.
 
 ## Contact
 

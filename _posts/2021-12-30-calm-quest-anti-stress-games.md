@@ -5,9 +5,19 @@ app_name: "CalmQuest"
 home_order: 8
 permalink: /games/calmquest/
 slug: calmquest
+directory_group: calm-and-reflection
+offer_price: 0
+verified_on: 2026-09-17
+last_modified_at: 2026-09-17
+store_name: "CalmQuest: Anti-stress Games"
+related_game_slugs:
+  - simple-memory-game
+  - pattern-lock-brain-games
+related_article_urls:
+  - /blog/relaxing-puzzle-games-for-a-calmer-play-break/
 img: calmquest.webp
 alt: "CalmQuest app icon"
-social_image: /img/portfolio/calmquest.png
+social_image: /img/portfolio/calmquest.webp
 game_type: Relaxing casual games
 audience: Players looking for calm puzzle-game breaks
 cognitive_skills:
