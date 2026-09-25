@@ -7,6 +7,7 @@ home_order: 0
 portfolio_visible: false
 permalink: /games/mobile-brain-games-premium/
 slug: mobile-brain-games-premium
+privacy_policy_url: /privacy/mobile-brain-games-premium/
 directory_group: collection
 offer_price: 0
 verified_on: 2026-09-17

@@ -5,6 +5,7 @@ app_name: "Word Sprint"
 home_order: 3
 permalink: /games/word-sprint/
 slug: word-sprint
+privacy_policy_url: /privacy/word-sprint/
 directory_group: words-and-maths
 offer_price: 0
 verified_on: 2026-09-17

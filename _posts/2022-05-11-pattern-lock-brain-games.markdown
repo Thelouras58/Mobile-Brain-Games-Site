@@ -5,6 +5,7 @@ app_name: "Pattern Lock: Brain Games"
 home_order: 1
 permalink: /games/pattern-lock-brain-games/
 slug: pattern-lock-brain-games
+privacy_policy_url: /privacy/pattern-lock-brain-games/
 directory_group: memory
 offer_price: 0
 verified_on: 2026-09-17

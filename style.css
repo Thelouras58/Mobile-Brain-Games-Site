@@ -71,6 +71,9 @@ h3{font-size:1.2rem}
 .app-page__details dt{font-size:.8rem;font-weight:800;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
 .app-page__details dd{margin:.2rem 0 0}
 .app-page__cta{margin-top:2rem;padding:2rem;border-radius:.65rem;background:#e4f4ef}
+.app-page__privacy{margin:1rem 0 0;text-align:center;font-size:.82rem}
+.app-page__privacy a{display:inline-flex;padding:.3rem .55rem;border:1px solid var(--line);border-radius:999px;color:var(--muted);text-decoration:none}
+.app-page__privacy a:hover{border-color:var(--accent);color:var(--accent-dark)}
 .related-links{display:flex;flex-wrap:wrap;gap:.75rem}
 .related-links a{padding:.65rem .85rem;border:1px solid var(--line);border-radius:.4rem;background:#fff;text-decoration:none;font-weight:650}
 .site-footer{padding:3rem 0;background:var(--ink);color:#dbe4e8}

@@ -5,6 +5,7 @@ app_name: "CalmQuest"
 home_order: 8
 permalink: /games/calmquest/
 slug: calmquest
+privacy_policy_url: /privacy/calmquest/
 directory_group: calm-and-reflection
 offer_price: 0
 verified_on: 2026-09-17

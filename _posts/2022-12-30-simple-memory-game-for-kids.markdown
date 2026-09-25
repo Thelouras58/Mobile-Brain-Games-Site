@@ -5,6 +5,7 @@ app_name: "Simple Memory Game"
 home_order: 2
 permalink: /games/simple-memory-game/
 slug: simple-memory-game
+privacy_policy_url: /privacy/simple-memory-game/
 directory_group: memory
 offer_price: 0
 verified_on: 2026-09-17

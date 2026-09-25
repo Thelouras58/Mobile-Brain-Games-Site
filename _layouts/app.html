@@ -57,6 +57,9 @@
           {% if page.web_play_url %}<a class="button button--secondary" href="{{ page.web_play_url | relative_url }}">Play on Web</a>{% endif %}
         </div>
       </section>
+      {% if page.privacy_policy_url %}
+      <p class="app-page__privacy"><a href="{{ page.privacy_policy_url | relative_url }}">Privacy policy</a></p>
+      {% endif %}
     </article>
     <section class="section section--muted" aria-labelledby="more-games-heading">
       <div class="content-width">

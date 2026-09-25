@@ -5,6 +5,7 @@ app_name: "Quick Maths"
 home_order: 5
 permalink: /games/quick-maths/
 slug: quick-maths
+privacy_policy_url: /privacy/quick-maths/
 directory_group: words-and-maths
 offer_price: 0
 verified_on: 2026-09-17

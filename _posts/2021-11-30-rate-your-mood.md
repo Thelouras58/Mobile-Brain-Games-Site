@@ -6,6 +6,7 @@ home_order: 9
 portfolio_visible: false
 permalink: /games/rate-your-mood/
 slug: rate-your-mood
+privacy_policy_url: /privacy/rate-your-mood/
 directory_group: calm-and-reflection
 offer_price: 0
 verified_on: 2026-09-17

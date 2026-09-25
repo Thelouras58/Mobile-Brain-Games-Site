@@ -5,6 +5,7 @@ app_name: "Processing Speed Training"
 home_order: 6
 permalink: /games/processing-speed-training/
 slug: processing-speed-training
+privacy_policy_url: /privacy/processing-speed-training/
 directory_group: reactions
 offer_price: 0
 verified_on: 2026-09-17
