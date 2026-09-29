@@ -5,7 +5,7 @@ description: "Privacy policy for the Processing Speed Training Android app."
 permalink: /privacy/processing-speed-training/
 ---
 
-Konstantinos Thelouras built the Quick Tap: Attention Trainer app, presented on this site as Processing Speed Training.
+Mobile Brain Games built the Quick Tap: Attention Trainer app, presented on this site as Processing Speed Training.
 
 ## Data collection and sharing
 

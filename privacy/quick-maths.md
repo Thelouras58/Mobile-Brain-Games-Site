@@ -5,7 +5,7 @@ description: "Privacy policy for the Quick Maths Android app."
 permalink: /privacy/quick-maths/
 ---
 
-Konstantinos Thelouras built the Quick Maths: Brain Game app.
+Mobile Brain Games built the Quick Maths: Brain Game app.
 
 ## Data collection and sharing
 

@@ -7,7 +7,7 @@ permalink: /privacy/calmquest/
 
 **Effective date: September 20, 2024**
 
-Konstantinos Thelouras built BrainQuest: Anti-stress Games, now presented as CalmQuest, as an ad-supported app. This service is provided at no cost and is intended for use as is.
+Mobile Brain Games built BrainQuest: Anti-stress Games, now presented as CalmQuest, as an ad-supported app. This service is provided at no cost and is intended for use as is.
 
 ## Information collection and use
 

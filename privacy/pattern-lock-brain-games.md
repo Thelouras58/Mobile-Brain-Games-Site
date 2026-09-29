@@ -7,7 +7,7 @@ permalink: /privacy/pattern-lock-brain-games/
 
 **Effective date: March 2, 2023**
 
-Konstantinos Thelouras built Pattern Lock: Brain Games as an ad-supported app. This service is provided at no cost and is intended for use as is.
+Mobile Brain Games built Pattern Lock: Brain Games as an ad-supported app. This service is provided at no cost and is intended for use as is.
 
 ## Information collection and use
 

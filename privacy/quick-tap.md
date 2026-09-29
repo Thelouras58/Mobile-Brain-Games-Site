@@ -5,7 +5,7 @@ description: "Privacy policy for the Quick Tap Android app."
 permalink: /privacy/quick-tap/
 ---
 
-Konstantinos Thelouras built the Brain Game: Focus & Reaction app, presented on this site as Quick Tap.
+Mobile Brain Games built the Brain Game: Focus & Reaction app, presented on this site as Quick Tap.
 
 ## Data collection and sharing
 

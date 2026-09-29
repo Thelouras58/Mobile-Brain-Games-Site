@@ -5,7 +5,7 @@ description: "Privacy policy for the Odd One Out Android app."
 permalink: /privacy/odd-one-out/
 ---
 
-Konstantinos Thelouras built the **Odd One Out** app.
+Mobile Brain Games built the **Odd One Out** app.
 
 ## Data collection and privacy
 

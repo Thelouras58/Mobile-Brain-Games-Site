@@ -5,7 +5,7 @@ description: "Privacy policy for the Rate Your Mood Android app."
 permalink: /privacy/rate-your-mood/
 ---
 
-Konstantinos Thelouras built the Daily Mood Rating app.
+Mobile Brain Games built the Daily Mood Rating app.
 
 ## Data collection and sharing
 

@@ -5,7 +5,7 @@ description: "Privacy policy for the Word Sprint Android app."
 permalink: /privacy/word-sprint/
 ---
 
-Konstantinos Thelouras built the Word Sprint: Brain Game app.
+Mobile Brain Games built the Word Sprint: Brain Game app.
 
 ## Data collection and sharing
 

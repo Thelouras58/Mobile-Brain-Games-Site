@@ -7,7 +7,7 @@ permalink: /privacy/mobile-brain-games-premium/
 
 **Last updated: June 26, 2026**
 
-Konstantinos Thelouras (also referred to as “we”, “us”, or “our”) built the **Mobile Brain Games Premium** app (the “Service”) as a commercial, freemium application for Android and iOS. This page explains the collection, use, and disclosure of personal information when you use the Service, and the terms that govern its use.
+Mobile Brain Games (also referred to as “we”, “us”, or “our”) built the **Mobile Brain Games Premium** app (the “Service”) as a commercial, freemium application for Android and iOS. This page explains the collection, use, and disclosure of personal information when you use the Service, and the terms that govern its use.
 
 ## Privacy policy
 

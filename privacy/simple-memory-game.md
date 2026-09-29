@@ -8,7 +8,7 @@ last_modified_at: 2026-09-29
 
 **Effective date: September 29, 2026**
 
-Konstantinos Thelouras, operating as Mobile Brain Games, provides **Memory Match: Brain Games**, also known as Simple Memory Game. This policy covers the Android app, including its free, ad-supported features and optional one-time Pro purchase.
+Mobile Brain Games provides **Memory Match: Brain Games**, also known as Simple Memory Game. This policy covers the Android app, including its free, ad-supported features and optional one-time Pro purchase.
 
 ## Information collection and use
 
