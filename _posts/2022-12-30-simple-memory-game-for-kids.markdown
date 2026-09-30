@@ -9,10 +9,10 @@ privacy_policy_url: /privacy/simple-memory-game/
 directory_group: memory
 offer_price: 0
 verified_on: 2026-09-17
-last_modified_at: 2026-09-17
+last_modified_at: 2026-09-30
 store_name: "Memory Match: Brain Games"
 store_ads: Contains ads
-store_purchases: "No in-app purchases, according to the Google Play description"
+store_purchases: "Check the current Google Play listing and in-app purchase screen"
 store_offline: "Yes, according to the Google Play description"
 screenshot: /img/screenshots/memory-match.png
 screenshot_width: 402
@@ -28,7 +28,7 @@ img: simplememorygame.png
 alt: "Simple Memory Game card matching app icon"
 social_image: /img/portfolio/simplememorygame.png
 game_type: Card-matching puzzle
-audience: Kids, families, and anyone who enjoys memory matching
+audience: Players and families who enjoy memory matching
 cognitive_skills:
   - Visual memory
   - Short-term memory
@@ -57,7 +57,7 @@ Start by turning over two cards and looking for the matching pair. When the card
 
 ## Are there ads or purchases?
 
-Google Play labels the Android app as containing ads; its description says there are no in-app purchases. Parents should review the current listing and try the game themselves before handing over a device. It is a casual matching game, not an assessment of memory or a substitute for educational support.
+Google Play labels the Android app as containing ads. Purchase information currently differs between the store description and the app's latest privacy information, so check the current listing and the in-app purchase screen before installing. Families should also review the current content rating and intended-audience information. It is a casual matching game, not an assessment of memory or a substitute for educational support.
 
 ## More games to try
 

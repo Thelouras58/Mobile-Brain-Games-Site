@@ -1,31 +1,66 @@
-# One primary search intent per landing page. Secondary terms may be used only
-# where they describe a verified feature of the corresponding game.
-pattern-memory:
+# Search-intent ownership. Each primary term belongs to one canonical page.
+# Secondary terms are used only when they describe a verified feature.
+publisher:
+  page: /
+  primary: Mobile Brain Games
+catalogue:
+  page: /games/
+  primary: Mobile Brain Games Android apps
+collection-app:
+  page: /games/mobile-brain-games-premium/
+  primary: Mobile Brain Training Games Android
+pattern-app:
+  page: /games/pattern-lock-brain-games/
+  primary: pattern lock game Android
+pattern-guide:
   page: /blog/pattern-memory-games/
-  primary: pattern memory game
-  secondary: pattern memory game Android
-card-matching:
+  primary: pattern memory game ideas
+memory-app:
+  page: /games/simple-memory-game/
+  primary: memory matching game Android
+memory-online:
+  page: /memory-match/
+  primary: memory match online
+  secondary: matching pairs online
+memory-guide:
   page: /blog/card-matching-games-for-kids/
-  primary: memory matching game
-  secondary: card matching game for kids
-word-sprint:
-  page: /blog/fast-word-games-for-short-breaks/
+  primary: card matching game rules
+word-app:
+  page: /games/word-sprint/
   primary: fast word game Android
-reaction:
+word-guide:
+  page: /blog/fast-word-games-for-short-breaks/
+  primary: timed word game ideas
+quick-tap-app:
+  page: /games/quick-tap/
+  primary: number grid game Android
+speed-app:
+  page: /games/processing-speed-training/
+  primary: processing speed game Android
+reaction-guide:
   page: /blog/quick-reaction-games/
-  primary: quick reaction games
-  secondary: reaction time game Android
-brain-trivia:
-  page: /blog/brain-trivia-games-for-curious-players/
-  primary: brain trivia questions game
-quick-maths:
+  primary: quick reaction game guide
+maths-app:
+  page: /games/quick-maths/
+  primary: timed maths game Android
+maths-guide:
   page: /blog/quick-maths-games-for-kids/
-  primary: maths games for kids Android
-  secondary: quick maths games for kids
-calmquest:
+  primary: timed maths game for kids guide
+trivia-app:
+  page: /games/brain-trivia/
+  primary: neuroscience trivia game Android
+trivia-guide:
+  page: /blog/brain-trivia-games-for-curious-players/
+  primary: brain trivia questions guide
+calm-app:
+  page: /games/calmquest/
+  primary: relaxing activity game Android
+calm-guide:
   page: /blog/relaxing-puzzle-games-for-a-calmer-play-break/
-  primary: relaxing puzzle games Android
-collection:
+  primary: relaxing puzzle game guide
+mood-app:
+  page: /games/rate-your-mood/
+  primary: daily mood tracker Android
+chooser:
   page: /blog/which-mobile-brain-game-should-you-play/
-  primary: mobile brain games
-  secondary: brain games
+  primary: choose a Mobile Brain Game

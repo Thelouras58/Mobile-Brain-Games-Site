@@ -4,7 +4,7 @@ title: "Pattern Memory Games: How They Work + 5 Challenges to Try"
 description: "Try five specific visual-pattern challenges and learn how Pattern Lock's recall and number modes work on Android."
 permalink: /blog/pattern-memory-games/
 date: 2026-08-30
-last_modified_at: 2026-09-17
+last_modified_at: 2026-09-30
 keywords: "pattern memory game, visual pattern challenges, pattern lock game Android"
 social_image: /img/screenshots/pattern-lock.png
 ---
@@ -27,6 +27,6 @@ There is no need to time these examples. Change the length to fit the player and
 
 ## How does the Android app differ?
 
-[Pattern Lock: Brain Games]({{ '/games/pattern-lock-brain-games/' | relative_url }}) has a **Remember the Pattern** mode, in which players recall a displayed route, and a **Draw the Numbers** mode, in which they reproduce number combinations. The Google Play listing describes three difficulty levels, offline play, and ads. Check the current listing before installing it for a child.
+[Pattern Lock: Brain Games]({{ '/games/pattern-lock-brain-games/' | relative_url }}) has a **Remember the Pattern** mode, in which players recall a displayed route, and a **Draw the Numbers** mode, in which they reproduce number combinations. Release notes also mention Hack The Pattern, while the public description still explains two modes. The listing describes three difficulty levels, offline play, and ads. Its privacy policy says the app is not directed to children under 13; review the current intended audience before family use.
 
 For pair-finding play, see [Card-Matching Games for Kids and Families]({{ '/blog/card-matching-games-for-kids/' | relative_url }}). For help comparing the two apps, visit the [family guide]({{ '/parents/' | relative_url }}).

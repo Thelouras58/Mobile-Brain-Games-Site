@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="{{ page.lang | default: site.lang }}">
 {% include head.html %}
-<body>
+<body data-page-app="{{ page.slug }}">
   {% include nav.html %}
   {% assign app_icon = page.icon %}
   {% if app_icon == nil %}{% assign app_icon = '/img/portfolio/' | append: page.img %}{% endif %}
@@ -19,7 +19,7 @@
           {% if page.store_name and page.store_name != page.app_name %}<p class="store-alias">Listed on Google Play as <strong>{{ page.store_name }}</strong>.</p>{% endif %}
           <div class="button-group">
             <a class="button" href="{{ page.download }}" target="_blank" rel="noopener noreferrer" data-google-play-app="{{ page.slug }}" data-google-play-placement="app-hero">{% if page.web_play_url %}Download for Android{% elsif page.cta_label %}{{ page.cta_label }}{% else %}Get {{ page.app_name }} on Google Play{% endif %}</a>
-            {% if page.web_play_url %}<a class="button button--secondary" href="{{ page.web_play_url | relative_url }}">Play on Web</a>{% endif %}
+            {% if page.web_play_url %}<a class="button button--secondary" href="{{ page.web_play_url | relative_url }}" data-web-play-app="{{ page.slug }}" data-web-play-placement="app-hero">Play on Web</a>{% endif %}
           </div>
         </div>
       </div>
@@ -54,7 +54,7 @@
         <p>{{ page.cta_copy }}</p>
         <div class="button-group">
           <a class="button" href="{{ page.download }}" target="_blank" rel="noopener noreferrer" data-google-play-app="{{ page.slug }}" data-google-play-placement="app-bottom">{% if page.web_play_url %}Download for Android{% elsif page.cta_label %}{{ page.cta_label }}{% else %}Download {{ page.app_name }} on Google Play{% endif %}</a>
-          {% if page.web_play_url %}<a class="button button--secondary" href="{{ page.web_play_url | relative_url }}">Play on Web</a>{% endif %}
+          {% if page.web_play_url %}<a class="button button--secondary" href="{{ page.web_play_url | relative_url }}" data-web-play-app="{{ page.slug }}" data-web-play-placement="app-bottom">Play on Web</a>{% endif %}
         </div>
       </section>
       {% if page.privacy_policy_url %}

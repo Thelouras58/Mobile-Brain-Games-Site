@@ -48,5 +48,6 @@ _flutter.loader.load({
   config: {
     renderer: 'canvaskit',
     canvasKitForceCpuOnly: isAppleWebKit,
+    hostElement: document.getElementById('flutter_host'),
   },
 });

@@ -1,74 +1,179 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
-
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
   <base href="/memory-match/">
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="Memory Match is a fast, responsive card-matching game with multiple difficulties and unlockable themes.">
-  <link rel="canonical" href="https://mobilebraingames.com/memory-match/">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Play Memory Match online for free. Turn over cards, find matching picture pairs, choose a difficulty, and try the Android game when you want offline play.">
   <meta name="theme-color" content="#3F51B5">
-
-  <!-- iOS meta tags & icons -->
+  <title>Play Memory Match Online | Mobile Brain Games</title>
+  <link rel="canonical" href="https://mobilebraingames.com/memory-match/">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="/style.css">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mobilebraingames.com/memory-match/">
+  <meta property="og:title" content="Play Memory Match Online | Mobile Brain Games">
+  <meta property="og:description" content="Turn over cards and find the matching picture pairs in a free browser game.">
+  <meta property="og:image" content="https://mobilebraingames.com/img/screenshots/memory-match.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Play Memory Match Online | Mobile Brain Games">
+  <meta name="twitter:description" content="Turn over cards and find the matching picture pairs in a free browser game.">
+  <meta name="twitter:image" content="https://mobilebraingames.com/img/screenshots/memory-match.png">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="Memory Match">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
-
-  <title>Memory Match | Mobile Brain Games</title>
-  <link rel="manifest" href="manifest.json">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://mobilebraingames.com/memory-match/#game",
+        "name": "Memory Match",
+        "url": "https://mobilebraingames.com/memory-match/",
+        "description": "A free browser card-matching game with several difficulty levels and picture themes.",
+        "applicationCategory": "GameApplication",
+        "operatingSystem": "Web browser",
+        "browserRequirements": "Requires JavaScript",
+        "offers": {"@type": "Offer", "price": 0},
+        "publisher": {"@id": "https://mobilebraingames.com/#organization"}
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://mobilebraingames.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Memory Match", "item": "https://mobilebraingames.com/memory-match/"}
+        ]
+      }
+    ]
+  }
+  </script>
   <style>
-    body {
-      inset: 0; overflow: hidden; margin: 0; padding: 0; position: fixed;
-      background-color: #F5F7FA;
-      color-scheme: light dark;
-    }
-    #loading {
-      align-items: center; display: flex; height: 100%; justify-content: center; width: 100%;
-    }
-    .spinner {
-      width: 50px;
-      height: 50px;
-      border: 5px solid #E8EAF6;
-      border-top: 5px solid #3F51B5;
-      border-right: 5px solid #FFC107;
-      border-radius: 50%;
-      animation: spin 1s linear infinite;
-    }
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
+    .web-game-page{padding-bottom:4rem;background:#f8fafb}
+    .web-game-hero{padding:3.25rem 0 2rem;text-align:center}
+    .web-game-hero .lead{max-width:720px;margin:1rem auto 0}
+    .web-game-shell{overflow:hidden;border:1px solid var(--line);border-radius:1rem;background:#f5f7fa}
+    #flutter_host{position:relative;width:100%;height:min(760px,78vh);min-height:620px;overflow:hidden}
+    #loading{position:absolute;inset:0;z-index:1;display:grid;place-items:center;background:#f5f7fa;color:#273746;text-align:center}
+    .game-loader__spinner{width:48px;height:48px;margin:0 auto 1rem;border:5px solid #e8eaf6;border-top-color:#3f51b5;border-right-color:#ffc107;border-radius:50%;animation:game-spin 1s linear infinite}
+    .game-load-error{max-width:34rem;margin:auto;padding:2rem}
+    .game-guide{display:grid;grid-template-columns:1fr 1fr;gap:2rem;padding-top:3.5rem}
+    .game-guide h2{margin-top:0}
+    .game-guide__panel{padding:1.5rem;border:1px solid var(--line);border-radius:.65rem;background:#fff}
+    .web-game-links{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.25rem}
+    @keyframes game-spin{to{transform:rotate(360deg)}}
+    @media(max-width:720px){#flutter_host{height:690px;min-height:560px}.game-guide{grid-template-columns:1fr}.web-game-hero{padding-top:2.25rem}}
+    @media(prefers-reduced-motion:reduce){.game-loader__spinner{animation:none}}
   </style>
 </head>
-<body>
-  <div id="loading" role="status" aria-label="Loading Memory Match">
-    <div class="spinner" aria-hidden="true"></div>
-  </div>
+<body data-page-app="simple-memory-game">
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="content-width site-nav__inner">
+      <a class="site-nav__brand" href="/">Mobile Brain Games</a>
+      <div class="site-nav__links">
+        <a href="/games/">Games</a>
+        <a href="/parents/">For parents</a>
+        <a href="/blog/">Blog</a>
+      </div>
+    </div>
+  </nav>
+  <main class="web-game-page">
+    <header class="web-game-hero content-width content-width--narrow">
+      <p class="eyebrow">Free browser game</p>
+      <h1>Play Memory Match online</h1>
+      <p class="lead">Turn over two cards, find the matching picture pairs, and clear the board. Choose a difficulty and play without installing an app.</p>
+    </header>
+
+    <section class="content-width" aria-label="Memory Match browser game">
+      <div class="web-game-shell">
+        <div id="flutter_host">
+          <div id="loading" role="status" aria-live="polite">
+            <div>
+              <div class="game-loader__spinner" aria-hidden="true"></div>
+              <strong>Loading Memory Match…</strong>
+              <p>The first load can take a moment.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <noscript><p class="game-load-error">Memory Match needs JavaScript to run. You can still read the rules below or visit the Android game page.</p></noscript>
+    </section>
+
+    <section class="content-width game-guide" aria-label="How to play and game options">
+      <div class="prose">
+        <h2>How to play</h2>
+        <ol>
+          <li>Choose a difficulty and start a round.</li>
+          <li>Select one card, then a second card.</li>
+          <li>A matching pair stays visible. Different cards turn over again.</li>
+          <li>Use the pictures and positions you have seen to find every pair.</li>
+        </ol>
+        <p>The browser game stores game progress on this device. Clearing browser data may reset local progress.</p>
+      </div>
+      <aside class="game-guide__panel">
+        <h2>Prefer the Android game?</h2>
+        <p>Memory Match: Brain Games offers the same pair-finding format as an Android app. Check Google Play for current offline, advertising, purchase, and device details.</p>
+        <div class="web-game-links">
+          <a class="button" href="https://play.google.com/store/apps/details?id=mobile.brain.games.simplememorygame.simple_memory_game" target="_blank" rel="noopener noreferrer" data-google-play-app="simple-memory-game" data-google-play-placement="web-game">Get the Android game</a>
+          <a class="button button--secondary" href="/games/simple-memory-game/" data-app-select="simple-memory-game" data-app-select-placement="web-game">View game details</a>
+        </div>
+      </aside>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="content-width">
+      <p class="site-footer__brand">Mobile Brain Games</p>
+      <p>Short puzzle, memory, word, maths, and reaction games.</p>
+      <p><a href="/games/">Games</a> · <a href="/parents/">For parents</a> · <a href="/blog/">Blog</a></p>
+    </div>
+  </footer>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JT3YJPBX97"></script>
   <script>
-    // Flutter does not remove custom HTML loaders. Hide ours only after the
-    // application has rendered its first frame.
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JT3YJPBX97');
+
+    var loadFinished = false;
+    function reportLoadResult(name, detail) {
+      if (loadFinished) return;
+      loadFinished = true;
+      gtag('event', name, {app_slug: 'simple-memory-game', platform: 'web', detail: detail || ''});
+    }
+    function showLoadError(detail) {
+      reportLoadResult('game_load_error', detail);
+      var loading = document.getElementById('loading');
+      if (loading) loading.innerHTML = '<div class="game-load-error"><h2>The game did not load</h2><p>Check your connection and try again.</p><button class="button" type="button" onclick="location.reload()">Try again</button></div>';
+    }
+
+    gtag('event', 'game_load_start', {app_slug: 'simple-memory-game', platform: 'web'});
     window.addEventListener('flutter-first-frame', function () {
+      reportLoadResult('game_ready');
       document.getElementById('loading')?.remove();
     });
+    window.addEventListener('unhandledrejection', function (event) {
+      showLoadError(event.reason && event.reason.message ? event.reason.message : 'unhandled-rejection');
+    });
+
+    document.addEventListener('click', function (event) {
+      var target = event.target.closest('a');
+      if (!target) return;
+      if (target.matches('[data-google-play-app]')) {
+        gtag('event', 'google_play_click', {app_slug: target.dataset.googlePlayApp, placement: target.dataset.googlePlayPlacement, link_url: target.href});
+      }
+      if (target.matches('[data-app-select]')) {
+        gtag('event', 'app_select', {app_slug: target.dataset.appSelect, placement: target.dataset.appSelectPlacement, link_url: target.href});
+      }
+    });
+
+    var bootstrap = document.createElement('script');
+    bootstrap.src = 'flutter_bootstrap.js';
+    bootstrap.async = true;
+    bootstrap.addEventListener('error', function () { showLoadError('bootstrap-script'); });
+    document.body.appendChild(bootstrap);
   </script>
-  <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>

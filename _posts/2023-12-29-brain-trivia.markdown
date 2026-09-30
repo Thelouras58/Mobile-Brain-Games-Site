@@ -9,8 +9,9 @@ privacy_policy_url: /privacy/brain-trivia/
 directory_group: words-and-maths
 offer_price: 0
 verified_on: 2026-09-17
-last_modified_at: 2026-09-17
+last_modified_at: 2026-09-30
 store_name: Neuroscience Quiz - Trivia
+store_ads: Described as ad-free in the Google Play listing
 related_game_slugs:
   - word-sprint
   - quick-maths
@@ -34,11 +35,11 @@ cta_copy: "Open Google Play to install Brain Trivia."
 
 ## Test your trivia knowledge
 
-Brain Trivia is an Android quiz game for players who enjoy short question-and-answer challenges about the brain and related topics.
+Brain Trivia is an Android quiz game with questions about brain anatomy, neurons, cognitive skills, and related topics. The Google Play listing describes Easy, Medium, and Hard difficulty levels.
 
 ## How a quiz round works
 
-Read the question, consider the answer, and move to the next prompt. The format is built for players who like a question-and-answer puzzle rather than a visual matching or fast-tapping task. A short quiz round can be a simple way to explore a new fact during a game break.
+Read the question, consider the available answers, and move to the next prompt. Choose a difficulty that fits the kind of round you want. The format is built for players who like a question-and-answer puzzle rather than a visual matching or fast-tapping task.
 
 ## Curiosity first
 

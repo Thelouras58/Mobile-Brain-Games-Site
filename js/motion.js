@@ -3,15 +3,6 @@
   var imageCleanups = [];
   var observer;
   var stopped = false;
-  var downloadCount = document.querySelector('[data-download-count]');
-  var countFrame;
-  var waitingToCount = document.hidden;
-
-  function finishCount() {
-    if (countFrame !== undefined) window.cancelAnimationFrame(countFrame);
-    if (downloadCount) downloadCount.textContent = '80k';
-  }
-
   function inViewport(element) {
     var bounds = element.getBoundingClientRect();
     return bounds.bottom > 0 && bounds.top < window.innerHeight;
@@ -22,35 +13,6 @@
       image.classList.remove('motion-image-fade');
     });
   }
-
-  function startCount() {
-    if (!downloadCount) return;
-    if (document.hidden) {
-      waitingToCount = true;
-      return;
-    }
-    waitingToCount = false;
-    finishCount();
-    var countStart;
-    downloadCount.textContent = '0k';
-    function countDownloads(timestamp) {
-      if (document.hidden) {
-        finishCount();
-        return;
-      }
-      if (countStart === undefined) countStart = timestamp;
-      var progress = Math.min((timestamp - countStart) / 1200, 1);
-      // Even steps avoid lingering on 79k at the end of an eased count.
-      downloadCount.textContent = Math.round(80 * progress) + 'k';
-      if (progress < 1) countFrame = window.requestAnimationFrame(countDownloads);
-    }
-    countFrame = window.requestAnimationFrame(countDownloads);
-  }
-  startCount();
-  document.addEventListener('visibilitychange', function () {
-    if (document.hidden) finishCount();
-    else if (waitingToCount) startCount();
-  });
 
   if ('IntersectionObserver' in window) {
     observer = new IntersectionObserver(function (entries) {
@@ -110,7 +72,6 @@
 
   function stopMotion() {
     stopped = true;
-    finishCount();
     if (observer) observer.disconnect();
     pending.clear();
     imageCleanups.forEach(function (cleanup) { cleanup(); });
@@ -122,7 +83,6 @@
   window.addEventListener('pageshow', function (event) {
     if (event.persisted) {
       stopMotion();
-      startCount();
     }
   });
 }());

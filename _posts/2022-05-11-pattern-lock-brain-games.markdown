@@ -9,14 +9,14 @@ privacy_policy_url: /privacy/pattern-lock-brain-games/
 directory_group: memory
 offer_price: 0
 verified_on: 2026-09-17
-last_modified_at: 2026-09-17
+last_modified_at: 2026-09-30
 store_name: "Pattern Lock: Brain Games!"
 store_ads: Contains ads
 store_offline: "Yes, according to the Google Play listing"
 screenshot: /img/screenshots/pattern-lock.png
 screenshot_width: 296
 screenshot_height: 592
-screenshot_alt: Pattern Lock difficulty selection screen showing four levels
+screenshot_alt: Pattern Lock difficulty selection screen showing Easy, Medium, and Hard levels
 related_game_slugs:
   - simple-memory-game
   - quick-tap
@@ -46,11 +46,11 @@ Pattern Lock: Brain Games is a short Android puzzle game built around rememberin
 
 ## How do the two modes work?
 
-In **Remember the Pattern**, study a pattern shown briefly and draw it back. In **Draw the Numbers**, reproduce a number combination on the pattern lock. The second mode adds speed and accuracy to the task. A parent can demonstrate a short pattern before letting a child try it.
+In **Remember the Pattern**, study a pattern shown briefly and draw it back. In **Draw the Numbers**, reproduce a number combination on the pattern lock. The second mode adds speed and accuracy to the task. Release notes mention another mode called Hack The Pattern; check the current app version because the public store description still explains only the two modes above.
 
 ## Can it be played offline?
 
-The Google Play description says the game works offline. The listing also labels it as containing ads. Check both details again in the current listing before installing for family use.
+The Google Play description says the game works offline. The listing also labels it as containing ads. Check both details and the current intended-audience information before installing.
 
 ## Who it is for
 

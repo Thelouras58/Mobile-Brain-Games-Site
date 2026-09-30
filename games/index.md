@@ -14,6 +14,6 @@ Choose a game by the kind of challenge you enjoy. Each page explains how its app
 
 {% assign group_posts = site.posts | where: 'directory_group', group.id | sort: 'home_order' %}
 {% for game in group_posts %}
-- [{{ game.app_name }}]({{ game.url | relative_url }}) — {{ game.card_description }}
+- <a href="{{ game.url | relative_url }}" data-app-select="{{ game.slug }}" data-app-select-placement="games-directory">{{ game.app_name }}</a> — {{ game.card_description }}
 {% endfor %}
 {% endfor %}

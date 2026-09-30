@@ -9,7 +9,7 @@ permalink: /parents/
 
 ## Which game is the easiest place to begin?
 
-[Simple Memory Game]({{ '/games/simple-memory-game/' | relative_url }})—listed on Google Play as **Memory Match: Brain Games**—uses a familiar card-matching format. You can [try its browser version]({{ '/memory-match/' | relative_url }}) together before deciding whether to install the Android app. The Android listing says it works offline and has no in-app purchases; Google Play also labels it as containing ads.
+[Simple Memory Game]({{ '/games/simple-memory-game/' | relative_url }})—listed on Google Play as **Memory Match: Brain Games**—uses a familiar card-matching format. You can [try its browser version]({{ '/memory-match/' | relative_url }}) together before deciding whether to install the Android app. Google Play labels the Android version as containing ads. Purchase information currently differs between the store description and the app's latest privacy information, so check both the listing and purchase screen.
 
 ## What if we prefer numbers?
 
@@ -17,12 +17,12 @@ permalink: /parents/
 
 ## What if we prefer visual patterns?
 
-[Pattern Lock: Brain Games]({{ '/games/pattern-lock-brain-games/' | relative_url }}) has a recall mode and a number-drawing mode. The Google Play listing describes three difficulty levels, offline play, and ads. A parent can explain the pattern first and then let the player decide whether the pace feels comfortable.
+[Pattern Lock: Brain Games]({{ '/games/pattern-lock-brain-games/' | relative_url }}) has a recall mode and a number-drawing mode. The Google Play listing describes three difficulty levels, offline play, and ads. Its privacy policy says the app is not directed to children under 13, so review intended-audience information before treating it as a family option.
 
 ## What is in the full collection?
 
-[Mobile Brain Games Premium]({{ '/games/mobile-brain-games-premium/' | relative_url }}) is listed on Google Play as **Mobile Brain Training Games!** It is free to install and includes free mini-games; optional in-app purchases unlock additional games and features. Its activities span memory, attention, speed, rules, and words. Check the listing and in-app purchase screen before a child uses those features.
+[Mobile Brain Games Premium]({{ '/games/mobile-brain-games-premium/' | relative_url }}) is listed on Google Play as **Mobile Brain Training Games!** It is free to install and includes free mini-games; optional in-app purchases unlock additional games and features. Its privacy policy says the app is not directed to children under 13. Check the listing, intended-audience information, advertising details, and purchase screen before family use.
 
 ## What should I check before installing?
 
-Review each app's current Google Play page for its content rating, ads, purchases, device compatibility, and privacy information. These details can change. The game pages show facts checked on September 17, 2026, and link directly to the listings. For more activity ideas, see [Card-Matching Games for Kids and Families]({{ '/blog/card-matching-games-for-kids/' | relative_url }}) and the [Quick Maths guide]({{ '/blog/quick-maths-games-for-kids/' | relative_url }}).
+Review each app's current Google Play page and privacy policy for its intended audience, content rating, ads, purchases, device compatibility, and data information. These details can change and can differ between releases or regions. The game pages link directly to the current listings. For more activity ideas, see [Card-Matching Games for Kids and Families]({{ '/blog/card-matching-games-for-kids/' | relative_url }}) and the [Quick Maths guide]({{ '/blog/quick-maths-games-for-kids/' | relative_url }}).

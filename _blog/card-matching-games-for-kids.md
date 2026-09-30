@@ -4,7 +4,7 @@ title: "Card-Matching Games for Kids and Families"
 description: "Learn the rules of picture-pair matching, ways to play together, and what to check before installing Memory Match on Android."
 permalink: /blog/card-matching-games-for-kids/
 date: 2026-08-29
-last_modified_at: 2026-09-17
+last_modified_at: 2026-09-30
 keywords: "memory matching game, card matching game for kids, matching pairs Android"
 social_image: /img/screenshots/memory-match.png
 ---
@@ -29,6 +29,6 @@ Start with a small board. Turn over one card, name its picture, and then turn ov
 
 ## What should parents check?
 
-Google Play labels the Android app as containing ads. Its description says there are no in-app purchases. Those facts can change, so check the current listing before installing and supervise play as appropriate for your family. This is a game for enjoyment, not a test of a child's memory.
+Google Play labels the Android app as containing ads. Purchase information currently differs between the store description and the app's latest privacy information, so check the current listing and in-app purchase screen before installing. Review the current intended audience and supervise play as appropriate for your family. This is a game for enjoyment, not a test of a child's memory.
 
 For a different visual challenge, read [Pattern Memory Games: How They Work + 5 Challenges to Try]({{ '/blog/pattern-memory-games/' | relative_url }}). The [family guide]({{ '/parents/' | relative_url }}) compares the matching game with maths, pattern, and collection apps.

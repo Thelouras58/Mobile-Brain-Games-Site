@@ -11,9 +11,10 @@ privacy_policy_url: /privacy/mobile-brain-games-premium/
 directory_group: collection
 offer_price: 0
 verified_on: 2026-09-17
-last_modified_at: 2026-09-17
+last_modified_at: 2026-09-30
 store_name: "Mobile Brain Training Games!"
 store_purchases: Optional in-app purchases
+store_ads: Check the current Google Play listing; advertising information is being reconciled
 screenshot: /img/screenshots/brain-games.jpg
 screenshot_width: 266
 screenshot_height: 592
@@ -58,9 +59,9 @@ Optional in-app purchases unlock additional games—including Memory Flow, Rapid
 
 The app shows streaks, game-category breakdowns, and a Cognitive Balance Radar Chart. These describe your in-game activity; they are not an assessment of cognitive health or ability.
 
-## Is it suitable for family play?
+## Who is the collection for?
 
-The listing describes high-contrast themes, bold text, and large touch targets. A parent can start with the free games and judge whether the pace and wording suit their child. See the [family guide]({{ '/parents/' | relative_url }}) for a comparison with simpler matching and maths games.
+The listing describes high-contrast themes, bold text, and large touch targets. Players can start with the free games and judge whether the pace and wording suit them. Families should review the current intended-audience, content-rating, advertising, and purchase information before use. See the [family guide]({{ '/parents/' | relative_url }}) for a comparison with simpler matching and maths games.
 
 ## Available on Google Play
 
