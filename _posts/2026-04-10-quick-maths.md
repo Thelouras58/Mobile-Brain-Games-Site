@@ -8,10 +8,9 @@ slug: quick-maths
 privacy_policy_url: /privacy/quick-maths/
 directory_group: words-and-maths
 offer_price: 0
-verified_on: 2026-09-17
 last_modified_at: 2026-09-17
 store_name: "Quick Maths: Kids Brain Game"
-store_ads: Described as ad-free in the Google Play listing
+store_ads: "No"
 screenshot: /img/screenshots/quick-maths.png
 screenshot_width: 266
 screenshot_height: 592
@@ -40,11 +39,11 @@ cta_copy: "Open Google Play to install Quick Maths."
 
 ## What happens in a Quick Maths round?
 
-The Google Play listing calls this app **Quick Maths: Kids Brain Game**. A round presents ten arithmetic questions. Each question gives you ten seconds to choose the missing number or correct answer. The faster you respond, the more speed points you may earn.
+A round presents ten arithmetic questions. Each question gives you ten seconds to choose the missing number or correct answer. The faster you respond, the more speed points you may earn.
 
 ## Which difficulty should a player choose?
 
-The listing describes Easy, Medium, and Hard settings. Easy includes addition, subtraction, and multiplication tables. Medium adds carrying, borrowing, and division; Hard includes larger mental-arithmetic problems. Start with the level that matches the player's existing skills. The timer stays part of the format, so a child who wants untimed counting may prefer a different activity.
+Choose from Easy, Medium, and Hard settings. Easy includes addition, subtraction, and multiplication tables. Medium adds carrying, borrowing, and division; Hard includes larger mental-arithmetic problems. Start with the level that matches the player's existing skills. The timer stays part of the format, so a child who wants untimed counting may prefer a different activity.
 
 ## Can families play together?
 

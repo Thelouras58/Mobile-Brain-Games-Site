@@ -9,7 +9,7 @@ keywords: "fast word games, short word games, Android word game, word-finding ga
 social_image: /img/portfolio/wordsprint.png
 ---
 
-**Fast word games ask you to find words from the letters on screen.** Word Sprint, listed on Google Play as **Word Sprint: Fast Word Games!**, is the Mobile Brain Games option for timed word-finding rounds. Its store description says longer words score more points and the game works offline.
+**Fast word games ask you to find words from the letters on screen.** Word Sprint is the Mobile Brain Games option for quick word-finding rounds. Longer words score more points, and the game works offline.
 
 ## What makes a word game work for a short break?
 
@@ -31,6 +31,6 @@ These games are for players who enjoy letters, word patterns, and a puzzle that 
 
 ## Try Word Sprint
 
-[Word Sprint]({{ '/games/word-sprint/' | relative_url }}) is Mobile Brain Games' word-focused Android title. Visit its game page for the current Google Play link, store name, and availability.
+[Word Sprint]({{ '/games/word-sprint/' | relative_url }}) is Mobile Brain Games' word-focused Android title. Visit its game page to explore the rules and download it.
 
 For a different type of quick challenge, read [Quick Reaction Games for Short Breaks]({{ '/blog/quick-reaction-games/' | relative_url }}) or explore [Brain Trivia Games: Questions for Curious Players]({{ '/blog/brain-trivia-games-for-curious-players/' | relative_url }}).

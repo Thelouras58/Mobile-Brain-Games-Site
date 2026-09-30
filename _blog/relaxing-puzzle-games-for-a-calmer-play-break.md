@@ -9,7 +9,7 @@ keywords: "relaxing puzzle games, calm games Android, casual puzzle games, gentl
 social_image: /img/portfolio/calmquest.webp
 ---
 
-**A relaxing game is one whose pace and controls feel comfortable to you.** CalmQuest is listed on Google Play as **CalmQuest: Anti-stress Games**. Its description mentions breathing, colouring, puzzles, and fidget activities. These are play formats, not a claim that the app treats stress.
+**A relaxing game is one whose pace and controls feel comfortable to you.** CalmQuest combines guided breathing, pixel colouring, puzzles, and a simple virtual clicker. These are play formats, not a claim that the app treats stress.
 
 ## Choose the pace that suits you
 
@@ -27,6 +27,6 @@ Look for an activity with an understandable goal, controls that feel comfortable
 
 ## Try CalmQuest
 
-[CalmQuest]({{ '/games/calmquest/' | relative_url }}) is the collection's Android option for slower activities, including puzzles, colouring, and fidget play described in the listing. Try a short activity and decide whether its pace suits you. The game page links to current Google Play availability.
+[CalmQuest]({{ '/games/calmquest/' | relative_url }}) is the collection's Android option for slower activities, including puzzles, colouring, and simple fidget play. Try a short activity and decide whether its pace suits you.
 
 For a more visual recall challenge, read [Pattern Memory Games: How They Work + 5 Challenges to Try]({{ '/blog/pattern-memory-games/' | relative_url }}). If you want a faster format, see [Quick Reaction Games for Short Breaks]({{ '/blog/quick-reaction-games/' | relative_url }}).

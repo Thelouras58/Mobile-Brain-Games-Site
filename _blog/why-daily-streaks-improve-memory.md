@@ -19,7 +19,7 @@ A streak counts days on which you played. It is useful as a record of participat
 
 In-game times, scores, and completed rounds show what happened **in that game**. They may help you choose a comfortable difficulty or notice which card theme a player enjoys. Scores from different boards or difficulty levels may not be directly comparable.
 
-The Android listing for [Memory Match: Brain Games]({{ '/games/simple-memory-game/' | relative_url }}) describes personal stats, a calendar, and several difficulty levels. Its browser version lets you [try the matching format]({{ '/memory-match/' | relative_url }}) first.
+[Memory Match: Brain Games]({{ '/games/simple-memory-game/' | relative_url }}) includes personal stats, a play calendar, and several difficulty levels. Its browser version lets you [try the matching format]({{ '/memory-match/' | relative_url }}) first.
 
 ## How can I make a simple family routine?
 
@@ -34,4 +34,4 @@ The routine is a way to enjoy a game together. It does not need a daily target o
 
 A streak alone provides no evidence that memory improves in everyday life. It can encourage someone to return to a card-matching activity, and practice may make that particular game feel more familiar. Avoid treating the calendar or a score as a health assessment.
 
-Read [Card-Matching Games for Kids and Families]({{ '/blog/card-matching-games-for-kids/' | relative_url }}) for ways to play together. You can <a href="https://play.google.com/store/apps/details?id=mobile.brain.games.simplememorygame.simple_memory_game" data-google-play-app="simple-memory-game" data-google-play-placement="streak-article">view the Android app on Google Play</a> to check its current features and availability.
+Read [Card-Matching Games for Kids and Families]({{ '/blog/card-matching-games-for-kids/' | relative_url }}) for ways to play together, or [open the Memory Match game page]({{ '/games/simple-memory-game/' | relative_url }}) to explore its Android and browser versions.

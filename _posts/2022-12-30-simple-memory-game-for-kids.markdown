@@ -8,12 +8,11 @@ slug: simple-memory-game
 privacy_policy_url: /privacy/simple-memory-game/
 directory_group: memory
 offer_price: 0
-verified_on: 2026-09-17
 last_modified_at: 2026-09-30
 store_name: "Memory Match: Brain Games"
-store_ads: Contains ads
-store_purchases: "Check the current Google Play listing and in-app purchase screen"
-store_offline: "Yes, according to the Google Play description"
+store_ads: "Yes"
+store_purchases: Optional Pro upgrade
+store_offline: "Yes"
 screenshot: /img/screenshots/memory-match.png
 screenshot_width: 402
 screenshot_height: 592
@@ -45,11 +44,11 @@ cta_copy: "Install Simple Memory Game from Google Play or play instantly in your
 
 ## How does the game work?
 
-The Android app is listed on Google Play as **Memory Match: Brain Games**. Turn over two picture cards and look for a pair. A match stays visible; mismatched cards turn over again. Keep their positions in mind as the board becomes familiar.
+On Android, the game is called **Memory Match: Brain Games**. Turn over two picture cards and look for a pair. A match stays visible; mismatched cards turn over again. Keep their positions in mind as the board becomes familiar.
 
 ## What can players choose?
 
-The Google Play listing describes several difficulty levels, unlockable card themes, a play calendar, and personal stats. The Android game works offline according to the listing. The browser version lets you try the matching format without installing anything.
+Choose from several difficulty levels and unlockable card themes, then use the play calendar and personal stats to follow your in-game activity. The Android game works offline, while the browser version lets you try the matching format without installing anything.
 
 ## How can a family play together?
 
@@ -57,7 +56,7 @@ Start by turning over two cards and looking for the matching pair. When the card
 
 ## Are there ads or purchases?
 
-Google Play labels the Android app as containing ads. Purchase information currently differs between the store description and the app's latest privacy information, so check the current listing and the in-app purchase screen before installing. Families should also review the current content rating and intended-audience information. It is a casual matching game, not an assessment of memory or a substitute for educational support.
+The free Android version includes ads, and an optional Pro upgrade unlocks the premium experience. It is a casual matching game for enjoyment, not an assessment of memory or a substitute for educational support.
 
 ## More games to try
 

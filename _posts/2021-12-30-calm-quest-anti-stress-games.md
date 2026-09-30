@@ -8,7 +8,6 @@ slug: calmquest
 privacy_policy_url: /privacy/calmquest/
 directory_group: calm-and-reflection
 offer_price: 0
-verified_on: 2026-09-17
 last_modified_at: 2026-09-30
 store_name: "CalmQuest: Anti-stress Games"
 related_game_slugs:

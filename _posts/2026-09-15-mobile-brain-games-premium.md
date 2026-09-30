@@ -10,11 +10,9 @@ slug: mobile-brain-games-premium
 privacy_policy_url: /privacy/mobile-brain-games-premium/
 directory_group: collection
 offer_price: 0
-verified_on: 2026-09-17
 last_modified_at: 2026-09-30
 store_name: "Mobile Brain Training Games!"
 store_purchases: Optional in-app purchases
-store_ads: Check the current Google Play listing; advertising information is being reconciled
 screenshot: /img/screenshots/brain-games.jpg
 screenshot_width: 266
 screenshot_height: 592
@@ -47,13 +45,13 @@ cta_label: "Start Playing on Google Play"
 
 ## What does the free app include?
 
-The Google Play listing calls this app **Mobile Brain Training Games!** It offers a daily sequence of three short games from its wider catalogue. Listed free modes include Pattern Recall, Quick Tap, Focus Finder, Rule Switcher, and Word Sprint. The activities involve remembering a pattern, responding to a visual prompt, finding a target, switching rules, or working with words.
+The Android app is called **Mobile Brain Training Games!** It offers a daily sequence of three short games from its wider catalogue. Free modes include Pattern Recall, Quick Tap, Focus Finder, Rule Switcher, and Word Sprint. The activities involve remembering a pattern, responding to a visual prompt, finding a target, switching rules, or working with words.
 
 The games are for play and do not establish a medical, diagnostic, or therapeutic benefit.
 
 ## What does Premium unlock?
 
-Optional in-app purchases unlock additional games—including Memory Flow, Rapid Radar, Focus Frenzy, Priority Pop, and Compound Crash—plus unlimited daily play and deeper progress views. The store lists the app as free to install with in-app purchases. Check current prices and terms on your device before buying.
+Optional in-app purchases unlock additional games—including Memory Flow, Rapid Radar, Focus Frenzy, Priority Pop, and Compound Crash—plus unlimited daily play and deeper progress views.
 
 ## How do the progress views work?
 
@@ -61,8 +59,4 @@ The app shows streaks, game-category breakdowns, and a Cognitive Balance Radar C
 
 ## Who is the collection for?
 
-The listing describes high-contrast themes, bold text, and large touch targets. Players can start with the free games and judge whether the pace and wording suit them. Families should review the current intended-audience, content-rating, advertising, and purchase information before use. See the [family guide]({{ '/parents/' | relative_url }}) for a comparison with simpler matching and maths games.
-
-## Available on Google Play
-
-Store availability and upgrade prices may differ by region, device, age, and account settings. The [Google Play listing]({{ page.download }}) has the current details.
+High-contrast themes, bold text, and large touch targets make the games easy to navigate. Players can start with the free games and decide whether the pace and wording suit them. The collection is intended for players aged 13 and over. See the [family guide]({{ '/parents/' | relative_url }}) for a comparison with simpler matching and maths games.

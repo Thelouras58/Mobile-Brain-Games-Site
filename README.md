@@ -15,7 +15,7 @@ check runs on pull requests.
 
 ## Updating app facts
 
-Check the current Google Play listing linked by each product's `download`
+Verify each product's download URL and public feature details before publishing.
 field. Keep `store_name`, `offer_price`, and any ads, purchase, or offline
 details consistent with that listing. Change `verified_on` and
 `last_modified_at` only after reviewing the facts and updating the page.

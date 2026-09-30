@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Choosing a Mobile Brain Game for Your Family"
-description: "Compare matching, pattern, maths, and mixed brain games on Android using current gameplay and Google Play details."
+description: "Compare matching, pattern, maths, and mixed brain games on Android by play style, pace, and age range."
 permalink: /parents/
 ---
 
@@ -9,20 +9,20 @@ permalink: /parents/
 
 ## Which game is the easiest place to begin?
 
-[Simple Memory Game]({{ '/games/simple-memory-game/' | relative_url }})—listed on Google Play as **Memory Match: Brain Games**—uses a familiar card-matching format. You can [try its browser version]({{ '/memory-match/' | relative_url }}) together before deciding whether to install the Android app. Google Play labels the Android version as containing ads. Purchase information currently differs between the store description and the app's latest privacy information, so check both the listing and purchase screen.
+[Simple Memory Game]({{ '/games/simple-memory-game/' | relative_url }}), called **Memory Match: Brain Games** on Android, uses a familiar card-matching format. It works offline, includes several difficulty levels and card themes, and offers an optional Pro upgrade. You can [try the browser version]({{ '/memory-match/' | relative_url }}) together before installing it.
 
 ## What if we prefer numbers?
 
-[Quick Maths]({{ '/games/quick-maths/' | relative_url }})—listed as **Quick Maths: Kids Brain Game**—is for players ready for mental arithmetic under a timer. Its Google Play description says a round has ten questions and gives ten seconds for each answer, with easy, medium, and hard difficulty levels. It is not an untimed counting game. The listing describes it as ad-free.
+[Quick Maths]({{ '/games/quick-maths/' | relative_url }}) is for players ready for mental arithmetic under a timer. A round has ten questions and gives ten seconds for each answer, with Easy, Medium, and Hard difficulty levels. It is an ad-free game, but it is not an untimed counting activity.
 
 ## What if we prefer visual patterns?
 
-[Pattern Lock: Brain Games]({{ '/games/pattern-lock-brain-games/' | relative_url }}) has a recall mode and a number-drawing mode. The Google Play listing describes three difficulty levels, offline play, and ads. Its privacy policy says the app is not directed to children under 13, so review intended-audience information before treating it as a family option.
+[Pattern Lock: Brain Games]({{ '/games/pattern-lock-brain-games/' | relative_url }}) has a recall mode, a number-drawing mode, three difficulty levels, and offline play. It includes ads and is intended for players aged 13 and over.
 
 ## What is in the full collection?
 
-[Mobile Brain Games Premium]({{ '/games/mobile-brain-games-premium/' | relative_url }}) is listed on Google Play as **Mobile Brain Training Games!** It is free to install and includes free mini-games; optional in-app purchases unlock additional games and features. Its privacy policy says the app is not directed to children under 13. Check the listing, intended-audience information, advertising details, and purchase screen before family use.
+[Mobile Brain Games Premium]({{ '/games/mobile-brain-games-premium/' | relative_url }}) combines short memory, focus, speed, rule-switching, and word games. It is free to install, with optional upgrades that unlock more games, unlimited daily play, and deeper progress views. It is intended for players aged 13 and over.
 
-## What should I check before installing?
+## How should we choose?
 
-Review each app's current Google Play page and privacy policy for its intended audience, content rating, ads, purchases, device compatibility, and data information. These details can change and can differ between releases or regions. The game pages link directly to the current listings. For more activity ideas, see [Card-Matching Games for Kids and Families]({{ '/blog/card-matching-games-for-kids/' | relative_url }}) and the [Quick Maths guide]({{ '/blog/quick-maths-games-for-kids/' | relative_url }}).
+Choose by the activity, pace, and age range that fit the player. Memory Match offers the most familiar starting point, Quick Maths suits players comfortable with timed arithmetic, and Pattern Lock or the full collection provide broader challenges for ages 13 and over. For more activity ideas, see [Card-Matching Games for Kids and Families]({{ '/blog/card-matching-games-for-kids/' | relative_url }}) and the [Quick Maths guide]({{ '/blog/quick-maths-games-for-kids/' | relative_url }}).

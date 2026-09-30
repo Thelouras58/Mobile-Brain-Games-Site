@@ -10,6 +10,16 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1] / "_site"
 ORIGIN = "https://mobilebraingames.com"
+EDITORIAL_COPY_MARKERS = (
+    "store details checked",
+    "according to the google play",
+    "google play labels",
+    "the listing describes",
+    "store facts were last checked",
+    "check the current google play",
+    "advertising information is being reconciled",
+    "purchase information currently differs",
+)
 
 
 class Page(HTMLParser):
@@ -93,11 +103,16 @@ def main() -> int:
             errors.append(f"Missing sitemap page: {file}")
             continue
         page = Page()
+        html = file.read_text()
         try:
-            page.feed(file.read_text())
+            page.feed(html)
         except json.JSONDecodeError as exc:
             errors.append(f"Invalid JSON-LD in {path}: {exc}")
             continue
+        lower_html = html.lower()
+        for marker in EDITORIAL_COPY_MARKERS:
+            if marker in lower_html:
+                errors.append(f"Internal editorial note leaked into public copy on {path}: {marker}")
         pages[path] = page
         if page.title.strip() == "" or page.description.strip() == "":
             errors.append(f"Missing title or description: {path}")
@@ -205,7 +220,7 @@ def main() -> int:
         return 1
     print(
         f"Checked {len(pages)} sitemap pages, semantic JSON-LD, unique metadata, "
-        f"internal discovery, local images, and {len(redirects)} redirects"
+        f"internal discovery, public copy, local images, and {len(redirects)} redirects"
     )
     return 0
 

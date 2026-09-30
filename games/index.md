@@ -5,7 +5,7 @@ description: "Browse Mobile Brain Games by game type, from card matching and tim
 permalink: /games/
 ---
 
-Choose a game by the kind of challenge you enjoy. Each page explains how its app works and links to the current Google Play listing. Availability may vary by region and device. Parents can use the [family guide]({{ '/parents/' | relative_url }}) to compare selected titles.
+Choose a game by the kind of challenge you enjoy. Open any game to see how it plays, explore related titles, and download it for Android. Parents can use the [family guide]({{ '/parents/' | relative_url }}) to compare selected games.
 
 {% for group in site.data.game_groups %}
 ## {{ group.title }}

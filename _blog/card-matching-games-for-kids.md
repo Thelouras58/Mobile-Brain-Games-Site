@@ -11,7 +11,7 @@ social_image: /img/screenshots/memory-match.png
 
 **A card-matching game asks players to turn over two picture cards and find a pair.** A matching pair remains visible; different cards turn over again. The rule is simple enough to explain while playing together, though the right board size and pace depend on the player.
 
-<figure class="article-figure"><img src="{{ '/img/screenshots/memory-match.png' | relative_url }}" alt="Picture-pair matching board shown in the Memory Match Android listing" loading="lazy" width="402" height="592"><figcaption>The Android game's matching board, shown in its Google Play screenshots.</figcaption></figure>
+<figure class="article-figure"><img src="{{ '/img/screenshots/memory-match.png' | relative_url }}" alt="Picture-pair matching board in Memory Match" loading="lazy" width="402" height="592"><figcaption>A Memory Match card board on Android.</figcaption></figure>
 
 ## How can we start a round?
 
@@ -25,10 +25,10 @@ Start with a small board. Turn over one card, name its picture, and then turn ov
 
 ## Which Android game can we try?
 
-[Simple Memory Game]({{ '/games/simple-memory-game/' | relative_url }}) appears on Google Play as **Memory Match: Brain Games**. Its listing describes difficulty levels, card themes, offline play, and personal stats. You can also [play the browser version]({{ '/memory-match/' | relative_url }}) to see the matching format first.
+[Simple Memory Game]({{ '/games/simple-memory-game/' | relative_url }}), called **Memory Match: Brain Games** on Android, includes several difficulty levels, card themes, offline play, a play calendar, and personal stats. You can also [play the browser version]({{ '/memory-match/' | relative_url }}) to try the matching format first.
 
 ## What should parents check?
 
-Google Play labels the Android app as containing ads. Purchase information currently differs between the store description and the app's latest privacy information, so check the current listing and in-app purchase screen before installing. Review the current intended audience and supervise play as appropriate for your family. This is a game for enjoyment, not a test of a child's memory.
+The free Android version includes ads and offers an optional Pro upgrade. Families can choose a comfortable difficulty and supervise play as appropriate. This is a game for enjoyment, not a test of a child's memory.
 
 For a different visual challenge, read [Pattern Memory Games: How They Work + 5 Challenges to Try]({{ '/blog/pattern-memory-games/' | relative_url }}). The [family guide]({{ '/parents/' | relative_url }}) compares the matching game with maths, pattern, and collection apps.

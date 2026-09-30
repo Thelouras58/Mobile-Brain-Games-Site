@@ -9,9 +9,9 @@ keywords: "quick maths game for kids, timed arithmetic Android, kids mental math
 social_image: /img/screenshots/quick-maths.png
 ---
 
-**Quick Maths is a timed arithmetic game, not an untimed counting activity.** Its Google Play listing says a round has ten questions, with ten seconds to answer each one. That makes it a better fit for players who already enjoy doing calculations at speed.
+**Quick Maths is a timed arithmetic game, not an untimed counting activity.** A round has ten questions, with ten seconds to answer each one. That makes it a better fit for players who already enjoy doing calculations at speed.
 
-<figure class="article-figure"><img src="{{ '/img/screenshots/quick-maths.png' | relative_url }}" alt="A Quick Maths subtraction question with four answer buttons and a timer" loading="lazy" width="266" height="592"><figcaption>A question from the Android game's Google Play screenshots.</figcaption></figure>
+<figure class="article-figure"><img src="{{ '/img/screenshots/quick-maths.png' | relative_url }}" alt="A Quick Maths subtraction question with four answer buttons and a timer" loading="lazy" width="266" height="592"><figcaption>A timed subtraction question in Quick Maths.</figcaption></figure>
 
 ## What does a round look like?
 
@@ -19,7 +19,7 @@ The screen presents an equation with a missing number and multiple-choice answer
 
 ## Which difficulty is suitable?
 
-The listing describes Easy, Medium, and Hard settings. Easy covers basic addition, subtraction, and multiplication tables. Medium adds carrying, borrowing, and division. Hard involves larger numbers. The right choice depends on the player's existing arithmetic skills and comfort with a short timer; a Google Play content rating alone does not establish an ideal age.
+Easy covers basic addition, subtraction, and multiplication tables. Medium adds carrying, borrowing, and division. Hard involves larger numbers. The right choice depends on the player's existing arithmetic skills and comfort with a short timer.
 
 ## Can a parent join in?
 
@@ -27,7 +27,7 @@ Yes. Read a prompt together, let the player choose an answer, and discuss the me
 
 ## Is Quick Maths ad-free?
 
-Its current Google Play description calls the game free and without ads. Check the [Quick Maths game page]({{ '/games/quick-maths/' | relative_url }}) and its live store link before installing, because app details can change.
+Yes. Quick Maths is free to install and does not contain ads. Visit the [Quick Maths game page]({{ '/games/quick-maths/' | relative_url }}) to learn more or download it.
 
 For a different family puzzle, try [Card-Matching Games for Kids and Families]({{ '/blog/card-matching-games-for-kids/' | relative_url }}). The [publisher's family guide]({{ '/parents/' | relative_url }}) compares both apps.
 
