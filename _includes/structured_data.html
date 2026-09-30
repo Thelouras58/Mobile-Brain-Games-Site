@@ -18,10 +18,10 @@
       "publisher": {"@id": {{ site.url | append: '/#organization' | jsonify }}}
     },
     {
-      "@type": {% if page.layout == 'blog' %}"BlogPosting"{% elsif page.download %}"SoftwareApplication"{% elsif page.url == '/blog/' or page.url == '/games/' %}"CollectionPage"{% else %}"WebPage"{% endif %},
+      "@type": {% if page.url == '/blog/' or page.url == '/games/' %}"CollectionPage"{% elsif page.layout == 'blog' %}"BlogPosting"{% elsif page.download %}"SoftwareApplication"{% else %}"WebPage"{% endif %},
       "@id": {{ page.url | absolute_url | append: '#main' | jsonify }},
       "url": {{ page.url | absolute_url | jsonify }},
-      {% if page.layout == 'blog' %}
+      {% if page.layout == 'blog' and page.url != '/blog/' %}
       "headline": {{ page.title | jsonify }},
       "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
       "dateModified": {{ page.last_modified_at | default: page.date | date_to_xmlschema | jsonify }},
@@ -50,7 +50,7 @@
       "@id": {{ page.url | absolute_url | append: '#breadcrumb' | jsonify }},
       "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "Home", "item": {{ site.url | append: '/' | jsonify }}}{% if page.layout == 'blog' or page.url == '/blog/' %},
-        {"@type": "ListItem", "position": 2, "name": "Blog", "item": {{ '/blog/' | absolute_url | jsonify }}}{% if page.layout == 'blog' %},
+        {"@type": "ListItem", "position": 2, "name": "Blog", "item": {{ '/blog/' | absolute_url | jsonify }}}{% if page.layout == 'blog' and page.url != '/blog/' %},
         {"@type": "ListItem", "position": 3, "name": {{ page.title | jsonify }}, "item": {{ page.url | absolute_url | jsonify }}}{% endif %}{% elsif page.download or page.url == '/games/' %},
         {"@type": "ListItem", "position": 2, "name": "Games", "item": {{ '/games/' | absolute_url | jsonify }}}{% if page.download %},
         {"@type": "ListItem", "position": 3, "name": {{ page.app_name | jsonify }}, "item": {{ page.url | absolute_url | jsonify }}}{% endif %}{% else %},

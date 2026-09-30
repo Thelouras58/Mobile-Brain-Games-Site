@@ -9,8 +9,42 @@
 
   function finishCount() {
     if (countFrame !== undefined) window.cancelAnimationFrame(countFrame);
-    if (downloadCount) downloadCount.textContent = '80k';
+    if (downloadCount) downloadCount.textContent = '80K+';
   }
+
+  function startCount() {
+    if (!downloadCount) return;
+    if (document.hidden) {
+      waitingToCount = true;
+      return;
+    }
+    waitingToCount = false;
+    finishCount();
+    downloadCount.classList.remove('download-count--complete');
+    var countStart;
+    downloadCount.textContent = '0K+';
+    function countDownloads(timestamp) {
+      if (document.hidden) {
+        finishCount();
+        return;
+      }
+      if (countStart === undefined) countStart = timestamp;
+      var progress = Math.min((timestamp - countStart) / 1200, 1);
+      downloadCount.textContent = Math.round(80 * progress) + 'K+';
+      if (progress < 1) {
+        countFrame = window.requestAnimationFrame(countDownloads);
+      } else {
+        downloadCount.classList.add('download-count--complete');
+      }
+    }
+    countFrame = window.requestAnimationFrame(countDownloads);
+  }
+
+  startCount();
+  document.addEventListener('visibilitychange', function () {
+    if (document.hidden) finishCount();
+    else if (waitingToCount) startCount();
+  });
 
   function inViewport(element) {
     var bounds = element.getBoundingClientRect();
@@ -22,35 +56,6 @@
       image.classList.remove('motion-image-fade');
     });
   }
-
-  function startCount() {
-    if (!downloadCount) return;
-    if (document.hidden) {
-      waitingToCount = true;
-      return;
-    }
-    waitingToCount = false;
-    finishCount();
-    var countStart;
-    downloadCount.textContent = '0k';
-    function countDownloads(timestamp) {
-      if (document.hidden) {
-        finishCount();
-        return;
-      }
-      if (countStart === undefined) countStart = timestamp;
-      var progress = Math.min((timestamp - countStart) / 1200, 1);
-      // Even steps avoid lingering on 79k at the end of an eased count.
-      downloadCount.textContent = Math.round(80 * progress) + 'k';
-      if (progress < 1) countFrame = window.requestAnimationFrame(countDownloads);
-    }
-    countFrame = window.requestAnimationFrame(countDownloads);
-  }
-  startCount();
-  document.addEventListener('visibilitychange', function () {
-    if (document.hidden) finishCount();
-    else if (waitingToCount) startCount();
-  });
 
   if ('IntersectionObserver' in window) {
     observer = new IntersectionObserver(function (entries) {

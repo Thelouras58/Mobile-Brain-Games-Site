@@ -10,7 +10,7 @@ keywords: "brain games, memory games, pattern games, word games, reaction games,
 
 **Choose by the activity you want to play:** match picture pairs, repeat a pattern, find words, answer timed arithmetic, react to prompts, or take a calmer break. Mobile Brain Games publishes a separate Android title for each of these formats and a broader collection app.
 
-This post is a practical map of the collection. It explains what each game is for and links to its individual page, where you can find a fuller description and the currently available store link.
+This post is a practical map of the collection. It explains what each game is for and links to its individual page for a fuller description and download option.
 
 ## Choose a game by challenge type
 
@@ -46,11 +46,11 @@ There is no single best Mobile Brain Games title for everyone. A useful way to c
 - Choose **Quick Maths** when you want numbers and arithmetic.
 - Choose **Brain Trivia** for quiz questions, or **CalmQuest** for a gentler session.
 
-Every game page explains the title's format and provides the relevant store destination when one is available. Availability can differ by platform and region, so check the destination page before installing or purchasing.
+Every game page explains the title's format, key features, and related challenges so you can compare the collection before downloading.
 
 ## Start with Mobile Brain Games Premium
 
-[Mobile Brain Games Premium]({{ '/games/mobile-brain-games-premium/' | relative_url }}) appears on Google Play as **Mobile Brain Training Games!** The app is free to install and includes free games, while optional in-app purchases unlock additional games and features. Its game page explains the difference.
+[Mobile Brain Games Premium]({{ '/games/mobile-brain-games-premium/' | relative_url }}) combines several challenge types in one app. It is free to install and includes free games, while optional upgrades unlock additional games and features.
 
 For a parent choosing among matching, maths, pattern, and collection apps, see the [family guide]({{ '/parents/' | relative_url }}). The [games directory]({{ '/games/' | relative_url }}) lists the whole collection by activity.
 

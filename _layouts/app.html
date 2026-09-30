@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="{{ page.lang | default: site.lang }}">
 {% include head.html %}
-<body>
+<body data-page-app="{{ page.slug }}">
   {% include nav.html %}
   {% assign app_icon = page.icon %}
   {% if app_icon == nil %}{% assign app_icon = '/img/portfolio/' | append: page.img %}{% endif %}
@@ -16,17 +16,17 @@
           <p class="eyebrow">{% if page.web_play_url %}Android and web game{% else %}Android game{% endif %}</p>
           <h1>{{ page.h1 | default: page.app_name }}</h1>
           <p class="lead">{{ page.summary }}</p>
-          {% if page.store_name and page.store_name != page.app_name %}<p class="store-alias">Listed on Google Play as <strong>{{ page.store_name }}</strong>.</p>{% endif %}
+          {% if page.store_name and page.store_name != page.app_name %}<p class="store-alias">Android app name: <strong>{{ page.store_name }}</strong></p>{% endif %}
           <div class="button-group">
             <a class="button" href="{{ page.download }}" target="_blank" rel="noopener noreferrer" data-google-play-app="{{ page.slug }}" data-google-play-placement="app-hero">{% if page.web_play_url %}Download for Android{% elsif page.cta_label %}{{ page.cta_label }}{% else %}Get {{ page.app_name }} on Google Play{% endif %}</a>
-            {% if page.web_play_url %}<a class="button button--secondary" href="{{ page.web_play_url | relative_url }}">Play on Web</a>{% endif %}
+            {% if page.web_play_url %}<a class="button button--secondary" href="{{ page.web_play_url | relative_url }}" data-web-play-app="{{ page.slug }}" data-web-play-placement="app-hero">Play on Web</a>{% endif %}
           </div>
         </div>
       </div>
       {% if page.screenshot %}
       <figure class="app-screenshot" data-reveal>
         <img src="{{ page.screenshot | relative_url }}" alt="{{ page.screenshot_alt }}" loading="lazy" decoding="async" width="{{ page.screenshot_width }}" height="{{ page.screenshot_height }}" data-image-fade>
-        <figcaption>Screenshot from the app's Google Play listing.</figcaption>
+        <figcaption>Gameplay screenshot.</figcaption>
       </figure>
       {% endif %}
       <div class="prose">{{ content }}</div>
@@ -40,7 +40,6 @@
           {% if page.store_ads %}<div><dt>Ads</dt><dd>{{ page.store_ads }}</dd></div>{% endif %}
           {% if page.store_offline %}<div><dt>Offline play</dt><dd>{{ page.store_offline }}</dd></div>{% endif %}
         </dl>
-        <p class="source-note">Store details checked {{ page.verified_on | date: "%B %-d, %Y" }}. <a href="{{ page.download }}" target="_blank" rel="noopener noreferrer" data-google-play-app="{{ page.slug }}" data-google-play-placement="store-details">Check the current Google Play listing</a> for availability and changes.</p>
       </section>
       <section class="app-page__skills" aria-labelledby="skills-heading">
         <h2 id="skills-heading">Skills engaged while playing</h2>
@@ -54,7 +53,7 @@
         <p>{{ page.cta_copy }}</p>
         <div class="button-group">
           <a class="button" href="{{ page.download }}" target="_blank" rel="noopener noreferrer" data-google-play-app="{{ page.slug }}" data-google-play-placement="app-bottom">{% if page.web_play_url %}Download for Android{% elsif page.cta_label %}{{ page.cta_label }}{% else %}Download {{ page.app_name }} on Google Play{% endif %}</a>
-          {% if page.web_play_url %}<a class="button button--secondary" href="{{ page.web_play_url | relative_url }}">Play on Web</a>{% endif %}
+          {% if page.web_play_url %}<a class="button button--secondary" href="{{ page.web_play_url | relative_url }}" data-web-play-app="{{ page.slug }}" data-web-play-placement="app-bottom">Play on Web</a>{% endif %}
         </div>
       </section>
       {% if page.privacy_policy_url %}

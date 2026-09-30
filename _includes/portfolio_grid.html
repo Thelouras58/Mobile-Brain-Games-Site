@@ -8,14 +8,14 @@
         <h3 id="premium-heading">Mobile Brain Training Games!</h3>
         <p>Free to install on Android, with optional Premium games and features available through in-app purchases.</p>
       </div>
-      <a class="button button--premium" href="{{ '/games/mobile-brain-games-premium/' | relative_url }}" data-premium-placement="home-featured"><span class="button__icon" aria-hidden="true">→</span> Explore Premium</a>
+      <a class="button button--premium" href="{{ '/games/mobile-brain-games-premium/' | relative_url }}" data-app-select="mobile-brain-games-premium" data-app-select-placement="home-featured"><span class="button__icon" aria-hidden="true">→</span> Explore Premium</a>
     </aside>
     <div class="game-grid">
       {% assign ordered_games = site.posts | sort: "home_order" %}
       {% for post in ordered_games %}
       {% if post.portfolio_visible != false %}
       <article class="game-card" data-reveal>
-        <a href="{{ post.url | relative_url }}" aria-label="Learn about {{ post.app_name }}">
+        <a href="{{ post.url | relative_url }}" aria-label="Learn about {{ post.app_name }}" data-app-select="{{ post.slug }}" data-app-select-placement="home-grid">
           <div class="game-card__media">
             <img src="{{ '/img/portfolio/' | append: post.img | relative_url }}" alt="{{ post.alt }}" loading="lazy" decoding="async" width="640" height="640" data-image-fade>
           </div>

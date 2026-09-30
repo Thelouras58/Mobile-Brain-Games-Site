@@ -8,8 +8,7 @@ slug: calmquest
 privacy_policy_url: /privacy/calmquest/
 directory_group: calm-and-reflection
 offer_price: 0
-verified_on: 2026-09-17
-last_modified_at: 2026-09-17
+last_modified_at: 2026-09-30
 store_name: "CalmQuest: Anti-stress Games"
 related_game_slugs:
   - simple-memory-game
@@ -26,7 +25,7 @@ cognitive_skills:
   - Visual observation
   - Patient problem-solving
 card_description: "Relaxing Android games for a calm break."
-summary: "A collection of relaxed Android game challenges for a calmer play session."
+summary: "Four Android activities: guided breathing, a puzzle, pixel colouring, and a virtual clicker."
 download: https://play.google.com/store/apps/details?id=mobile.brain.games.antistress.anti_stress_game
 description: "Explore CalmQuest, an Android collection of relaxed casual challenges for players looking for an uncomplicated game break."
 cta_copy: "Open Google Play to install CalmQuest."
@@ -34,11 +33,11 @@ cta_copy: "Open Google Play to install CalmQuest."
 
 ## Relax and play
 
-CalmQuest is a collection of relaxed game challenges for players who want an uncomplicated Android puzzle-game break.
+CalmQuest combines four Android activities: a guided breathing counter, a puzzle game, pixel colouring, and a virtual clicker.
 
 ## A gentler game break
 
-Choose a short challenge, follow its simple goal, and decide for yourself whether to continue after a round. CalmQuest is designed around an uncomplicated casual-game format for moments when a fast timer or high-pressure task is not what you want to play.
+Choose the breathing activity to follow a slower prompt, solve a puzzle, fill a pixel-art design with colour, or use the simple clicker. Decide for yourself whether the pace feels comfortable and whether to continue. These are casual activities rather than medical or therapeutic tools.
 
 ## Who may enjoy CalmQuest?
 

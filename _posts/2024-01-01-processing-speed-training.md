@@ -8,7 +8,6 @@ slug: processing-speed-training
 privacy_policy_url: /privacy/processing-speed-training/
 directory_group: reactions
 offer_price: 0
-verified_on: 2026-09-17
 last_modified_at: 2026-09-17
 store_name: Brain Game - Reaction & Speed
 related_game_slugs:

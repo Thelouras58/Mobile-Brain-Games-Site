@@ -9,7 +9,7 @@ keywords: "brain trivia game, brain quiz game Android, neuroscience trivia, quiz
 social_image: /img/portfolio/trivia.png
 ---
 
-**A brain trivia game presents a question and asks you to choose an answer.** The Mobile Brain Games title is listed on Google Play as **Neuroscience Quiz - Trivia**. It is a casual quiz about the brain and related topics, not a source of medical guidance.
+**A brain trivia game presents a question and asks you to choose an answer.** Brain Trivia is a casual quiz about the brain and related topics, with Easy, Medium, and Hard difficulty levels. It is designed for curiosity and play, not as a source of medical guidance.
 
 ## What to expect from a brain trivia game
 
@@ -31,7 +31,7 @@ The brain is a complex organ with many specialised parts. Introductory resources
 
 ## Try Brain Trivia
 
-[Brain Trivia]({{ '/games/brain-trivia/' | relative_url }}) is Mobile Brain Games' Android quiz title, with short question-and-answer challenges about the brain and related topics. See the game page for its current Google Play destination and availability.
+[Brain Trivia]({{ '/games/brain-trivia/' | relative_url }}) is Mobile Brain Games' Android quiz title, with short question-and-answer challenges about the brain and related topics. Visit the game page to explore its format and download it.
 
 For another language-based challenge, try [Word Sprint]({{ '/games/word-sprint/' | relative_url }}) or read [Fast Word Games for Short Breaks]({{ '/blog/fast-word-games-for-short-breaks/' | relative_url }}).
 

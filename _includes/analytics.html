@@ -9,11 +9,33 @@
   gtag('config', 'G-JT3YJPBX97');
 
   document.addEventListener('click', function (event) {
-    var cta = event.target.closest('[data-google-play-app]');
-    if (cta) {
+    var target = event.target.closest('a');
+    if (!target) return;
+
+    var storeLink = target.closest('[data-google-play-app], a[href*="play.google.com/store/apps/details"]');
+    if (storeLink) {
       gtag('event', 'google_play_click', {
-        app_slug: cta.dataset.googlePlayApp,
-        placement: cta.dataset.googlePlayPlacement || 'unknown'
+        app_slug: storeLink.dataset.googlePlayApp || document.body.dataset.pageApp || 'unknown',
+        placement: storeLink.dataset.googlePlayPlacement || 'content-link',
+        link_url: storeLink.href
+      });
+    }
+
+    var webPlayLink = target.closest('[data-web-play-app]');
+    if (webPlayLink) {
+      gtag('event', 'web_play_click', {
+        app_slug: webPlayLink.dataset.webPlayApp,
+        placement: webPlayLink.dataset.webPlayPlacement || 'unknown',
+        link_url: webPlayLink.href
+      });
+    }
+
+    var appLink = target.closest('[data-app-select]');
+    if (appLink) {
+      gtag('event', 'app_select', {
+        app_slug: appLink.dataset.appSelect,
+        placement: appLink.dataset.appSelectPlacement || 'unknown',
+        link_url: appLink.href
       });
     }
   });

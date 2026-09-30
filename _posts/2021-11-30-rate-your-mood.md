@@ -9,8 +9,7 @@ slug: rate-your-mood
 privacy_policy_url: /privacy/rate-your-mood/
 directory_group: calm-and-reflection
 offer_price: 0
-verified_on: 2026-09-17
-last_modified_at: 2026-09-17
+last_modified_at: 2026-09-30
 store_name: "Rate your Mood daily!"
 schema_category: LifestyleApplication
 related_game_slugs:
@@ -33,11 +32,11 @@ cta_copy: "Open Google Play to install Rate Your Mood."
 
 ## A simple daily check-in
 
-Rate Your Mood offers a quick way to record how you feel each day. Return whenever you want a brief personal check-in.
+Rate Your Mood offers a quick way to record how you feel each day on a one-to-five scale represented by expressive faces. Return whenever you want a brief personal check-in.
 
 ## How to use the check-in
 
-Open the app when you want to note how you feel, choose the response that best reflects that moment, and return on another day if you want to add another entry. The format is deliberately simple, so it can fit into a short daily routine.
+Open the app when you want to note how you feel, choose the response that best reflects that moment, and return on another day to add another entry. The app includes mood history, a statistics chart, light and dark themes, and an option to reset the stored history.
 
 ## A personal reflection tool
 
