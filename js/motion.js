@@ -21,7 +21,6 @@
     waitingToCount = false;
     finishCount();
     downloadCount.classList.remove('download-count--complete');
-    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     var countStart;
     downloadCount.textContent = '0K+';
     function countDownloads(timestamp) {
