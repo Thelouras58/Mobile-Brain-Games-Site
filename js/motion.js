@@ -3,6 +3,50 @@
   var imageCleanups = [];
   var observer;
   var stopped = false;
+  var downloadCount = document.querySelector('[data-download-count]');
+  var countFrame;
+  var waitingToCount = document.hidden;
+
+  function finishCount() {
+    if (countFrame !== undefined) window.cancelAnimationFrame(countFrame);
+    if (downloadCount) downloadCount.textContent = '80K+';
+  }
+
+  function startCount() {
+    if (!downloadCount) return;
+    if (document.hidden) {
+      waitingToCount = true;
+      return;
+    }
+    waitingToCount = false;
+    finishCount();
+    downloadCount.classList.remove('download-count--complete');
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var countStart;
+    downloadCount.textContent = '0K+';
+    function countDownloads(timestamp) {
+      if (document.hidden) {
+        finishCount();
+        return;
+      }
+      if (countStart === undefined) countStart = timestamp;
+      var progress = Math.min((timestamp - countStart) / 1200, 1);
+      downloadCount.textContent = Math.round(80 * progress) + 'K+';
+      if (progress < 1) {
+        countFrame = window.requestAnimationFrame(countDownloads);
+      } else {
+        downloadCount.classList.add('download-count--complete');
+      }
+    }
+    countFrame = window.requestAnimationFrame(countDownloads);
+  }
+
+  startCount();
+  document.addEventListener('visibilitychange', function () {
+    if (document.hidden) finishCount();
+    else if (waitingToCount) startCount();
+  });
+
   function inViewport(element) {
     var bounds = element.getBoundingClientRect();
     return bounds.bottom > 0 && bounds.top < window.innerHeight;
@@ -72,6 +116,7 @@
 
   function stopMotion() {
     stopped = true;
+    finishCount();
     if (observer) observer.disconnect();
     pending.clear();
     imageCleanups.forEach(function (cleanup) { cleanup(); });
@@ -83,6 +128,7 @@
   window.addEventListener('pageshow', function (event) {
     if (event.persisted) {
       stopMotion();
+      startCount();
     }
   });
 }());
