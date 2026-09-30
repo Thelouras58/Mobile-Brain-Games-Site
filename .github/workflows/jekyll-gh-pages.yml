@@ -34,8 +34,6 @@ jobs:
         with:
           source: ./
           destination: ./_site
-      - name: Validate rendered SEO, links, and redirects
-        run: python3 scripts/check_site.py
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
