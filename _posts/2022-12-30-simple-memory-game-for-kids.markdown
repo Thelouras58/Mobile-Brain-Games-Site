@@ -33,7 +33,7 @@ cognitive_skills:
   - Short-term memory
   - Concentration
   - Matching and categorisation
-card_description: "A free card-matching game for Android."
+card_description: "A free card-matching game for Android and Web."
 summary: "An Android card-matching game with colourful pairs and repeatable rounds. Free to install and also playable in a browser."
 download: https://play.google.com/store/apps/details?id=mobile.brain.games.simplememorygame.simple_memory_game
 web_play_url: /memory-match/
