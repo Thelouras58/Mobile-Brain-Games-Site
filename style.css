@@ -129,4 +129,10 @@ body.has-android-smart-banner{padding-bottom:calc(76px + env(safe-area-inset-bot
 @media (hover:hover) and (pointer:fine){.game-card>a:hover{border-color:var(--accent)}}
 @keyframes mbg-reveal{from{opacity:.85;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 @keyframes mbg-image-fade{from{opacity:.85}to{opacity:1}}
+@media (max-width:620px){
+  .game-card>a{display:flex;flex-direction:column}
+  .game-card__media{flex-shrink:0}
+  .game-card__content{display:flex;flex-direction:column;flex:1}
+  .game-card__cta{margin-top:auto}
+}
 @media (max-width:620px){.site-nav__inner{flex-wrap:wrap;justify-content:center;gap:0;min-height:4.5rem;padding:.5rem 0}.site-nav__brand{width:100%;text-align:center}.site-nav__links{justify-content:center;flex-wrap:wrap;gap:.7rem;font-size:.9rem}.site-nav__links a{min-height:34px}.hero__content{padding:4rem 0}.hero__heading span{white-space:normal}.section{padding:3.5rem 0}.featured-game{align-items:flex-start;flex-direction:column}.game-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:.75rem;margin-top:1.5rem}.game-card__content{padding:.75rem}.game-card__content h3{font-size:1rem}.game-card__content p{display:none}.game-card__content span{font-size:.85rem}.app-page__intro{grid-template-columns:1fr}.app-page__icon{max-width:220px}.app-page__details dl,.fact-grid{grid-template-columns:1fr}}
