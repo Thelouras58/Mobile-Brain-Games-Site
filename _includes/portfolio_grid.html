@@ -2,7 +2,7 @@
   <div class="content-width">
     <p class="eyebrow">Game collection</p>
     <h2 id="games-heading">Find a brain game for your next break</h2>
-    <aside class="featured-game" aria-labelledby="premium-heading">
+    <aside class="featured-game" aria-labelledby="premium-heading" data-reveal>
       <div>
         <p class="eyebrow">Featured app</p>
         <h3 id="premium-heading">Mobile Brain Training Games!</h3>
@@ -14,10 +14,10 @@
       {% assign ordered_games = site.posts | sort: "home_order" %}
       {% for post in ordered_games %}
       {% if post.portfolio_visible != false %}
-      <article class="game-card">
+      <article class="game-card" data-reveal>
         <a href="{{ post.url | relative_url }}" aria-label="Learn about {{ post.app_name }}">
           <div class="game-card__media">
-            <img src="{{ '/img/portfolio/' | append: post.img | relative_url }}" alt="{{ post.alt }}" loading="lazy" decoding="async" width="640" height="640">
+            <img src="{{ '/img/portfolio/' | append: post.img | relative_url }}" alt="{{ post.alt }}" loading="lazy" decoding="async" width="640" height="640" data-image-fade>
           </div>
           <div class="game-card__content">
             <h3>{{ post.app_name }}</h3>

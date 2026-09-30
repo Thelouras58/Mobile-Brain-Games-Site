@@ -1,11 +1,13 @@
 ---
 ---
-:root{--ink:#172b3a;--muted:#55616b;--paper:#fff;--surface:#f4f7f8;--accent:#147e68;--accent-dark:#0e5a4b;--line:#dce4e8;--max:1120px}
+:root{--ink:#172b3a;--muted:#55616b;--paper:#fff;--surface:#f4f7f8;--accent:#147e68;--accent-dark:#0e5a4b;--line:#dce4e8;--max:1120px;--motion-press:70ms;--motion-fade:110ms;--motion-feedback:150ms;--motion-reveal:240ms;--motion-standard:cubic-bezier(.2,0,.38,.9);--motion-entrance:cubic-bezier(0,0,.38,.9)}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;color:var(--ink);background:var(--paper);font:16px/1.6 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
 a{color:var(--accent-dark);text-underline-offset:3px}
 a:hover{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+.button:focus-visible{outline-color:var(--accent-dark)}
 h1,h2,h3{margin:0 0 .65rem;line-height:1.15;color:var(--ink)}
 h1{font-size:clamp(2.25rem,5vw,4.25rem);letter-spacing:-.045em}
 h2{font-size:clamp(1.7rem,3vw,2.6rem);letter-spacing:-.03em}
@@ -23,12 +25,16 @@ h3{font-size:1.2rem}
 .hero__heading{font-size:clamp(1rem,4.8vw,4.25rem)}
 .hero__heading span{display:block;white-space:nowrap}
 .hero__content>p:not(.eyebrow){font-size:1.2rem;margin:1rem auto 2rem;max-width:680px}
+.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+.download-count{display:inline-block;width:3ch;text-align:center;font-variant-numeric:tabular-nums}
 .hero__logo{width:94px;height:94px;border-radius:22px;margin-bottom:1.5rem}
 .eyebrow{margin:0 0 .65rem;color:var(--accent-dark);font-size:.8rem;font-weight:800;letter-spacing:.11em;text-transform:uppercase}
 .hero .eyebrow{color:#d7fff5}
 .button{display:inline-flex;align-items:center;justify-content:center;gap:.45rem;padding:.75rem 1rem;border-radius:.4rem;background:var(--accent);color:#fff!important;font-weight:750;text-decoration:none}
 .button:hover{background:var(--accent-dark)}
 .button--light{background:#fff;color:var(--accent-dark)!important}
+.button--light:hover{background:#e4f4ef}
+.hero .button:focus-visible{outline-color:#fff}
 .button--secondary{background:var(--ink)}
 .button--secondary:hover{background:var(--secondary-dark,#233140)}
 .button--premium{background:#172b3a;box-shadow:0 10px 22px rgba(23,43,58,.18)}
@@ -45,8 +51,9 @@ h3{font-size:1.2rem}
 .featured-game p:last-child{margin:0;color:var(--muted)}
 .featured-game .button{flex:none}
 .game-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(225px,1fr));gap:1.25rem;margin-top:2rem}
-.game-card{overflow:hidden;border:1px solid var(--line);border-radius:.65rem;background:#fff}
-.game-card>a{display:block;height:100%;color:inherit;text-decoration:none}
+.game-card{border-radius:.65rem}
+.game-card>a{display:block;height:100%;overflow:hidden;border:1px solid var(--line);border-radius:inherit;background:#fff;color:inherit;text-decoration:none}
+.game-card>a:focus-visible{border-color:var(--accent);outline-color:var(--accent-dark)}
 .game-card__media{aspect-ratio:1/1;overflow:hidden;background:var(--surface)}
 .game-card__media img{display:block;width:100%;height:100%;object-fit:cover}
 .game-card__content{padding:1.1rem}
@@ -76,6 +83,7 @@ h3{font-size:1.2rem}
 .app-page__privacy a:hover{border-color:var(--accent);color:var(--accent-dark)}
 .related-links{display:flex;flex-wrap:wrap;gap:.75rem}
 .related-links a{padding:.65rem .85rem;border:1px solid var(--line);border-radius:.4rem;background:#fff;text-decoration:none;font-weight:650}
+.related-links a:hover{border-color:var(--accent)}
 .site-footer{padding:3rem 0;background:var(--ink);color:#dbe4e8}
 .site-footer a{color:#fff}
 .site-footer__brand{margin:0;font-weight:800;color:#fff}
@@ -107,4 +115,18 @@ body.has-android-smart-banner{padding-bottom:calc(76px + env(safe-area-inset-bot
 .fact-grid>div{padding:1rem;background:var(--surface);border-radius:.5rem}
 .fact-grid dt{font-weight:750}
 .fact-grid dd{margin:.3rem 0 0}
+/* Motion is opt-in; content never depends on JavaScript to become visible. */
+  .button:not(.android-smart-banner__cta){transition:background-color var(--motion-feedback) var(--motion-standard),transform var(--motion-press) var(--motion-standard)}
+  .button:not(.android-smart-banner__cta):active{transform:translateY(1px)}
+  .site-nav__links a{transition:color var(--motion-feedback) var(--motion-standard)}
+  .related-links a{transition:color var(--motion-feedback) var(--motion-standard),border-color var(--motion-feedback) var(--motion-standard)}
+  .motion-reveal{animation:mbg-reveal var(--motion-reveal) var(--motion-entrance)}
+  .motion-image-fade{animation:mbg-image-fade var(--motion-fade) var(--motion-entrance)}
+@media (hover:hover) and (pointer:fine){
+  .game-card>a{transition:transform var(--motion-feedback) var(--motion-standard),border-color var(--motion-feedback) var(--motion-standard)}
+  .game-card>a:hover{transform:translateY(-2px)}
+}
+@media (hover:hover) and (pointer:fine){.game-card>a:hover{border-color:var(--accent)}}
+@keyframes mbg-reveal{from{opacity:.85;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@keyframes mbg-image-fade{from{opacity:.85}to{opacity:1}}
 @media (max-width:620px){.site-nav__inner{flex-wrap:wrap;justify-content:center;gap:0;min-height:4.5rem;padding:.5rem 0}.site-nav__brand{width:100%;text-align:center}.site-nav__links{justify-content:center;flex-wrap:wrap;gap:.7rem;font-size:.9rem}.site-nav__links a{min-height:34px}.hero__content{padding:4rem 0}.hero__heading span{white-space:normal}.section{padding:3.5rem 0}.featured-game{align-items:flex-start;flex-direction:column}.game-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:.75rem;margin-top:1.5rem}.game-card__content{padding:.75rem}.game-card__content h3{font-size:1rem}.game-card__content p{display:none}.game-card__content span{font-size:.85rem}.app-page__intro{grid-template-columns:1fr}.app-page__icon{max-width:220px}.app-page__details dl,.fact-grid{grid-template-columns:1fr}}

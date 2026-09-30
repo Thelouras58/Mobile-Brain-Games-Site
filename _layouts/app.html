@@ -24,8 +24,8 @@
         </div>
       </div>
       {% if page.screenshot %}
-      <figure class="app-screenshot">
-        <img src="{{ page.screenshot | relative_url }}" alt="{{ page.screenshot_alt }}" loading="lazy" decoding="async" width="{{ page.screenshot_width }}" height="{{ page.screenshot_height }}">
+      <figure class="app-screenshot" data-reveal>
+        <img src="{{ page.screenshot | relative_url }}" alt="{{ page.screenshot_alt }}" loading="lazy" decoding="async" width="{{ page.screenshot_width }}" height="{{ page.screenshot_height }}" data-image-fade>
         <figcaption>Screenshot from the app's Google Play listing.</figcaption>
       </figure>
       {% endif %}
@@ -49,7 +49,7 @@
           {% for skill in page.cognitive_skills %}<li>{{ skill }}</li>{% endfor %}
         </ul>
       </section>
-      <section class="app-page__cta" aria-labelledby="download-heading">
+      <section class="app-page__cta" aria-labelledby="download-heading" data-reveal>
         <h2 id="download-heading">Ready to play?</h2>
         <p>{{ page.cta_copy }}</p>
         <div class="button-group">
