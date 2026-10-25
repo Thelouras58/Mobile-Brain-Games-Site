@@ -1,6 +1,6 @@
 ---
 layout: app
-title: "Simple Memory Game: Card Matching Game for Android"
+title: "Simple Memory Game: Card Matching Game for Android and iOS"
 app_name: "Simple Memory Game"
 home_order: 2
 permalink: /games/simple-memory-game/
@@ -16,7 +16,7 @@ store_offline: "Yes"
 screenshot: /img/screenshots/memory-match.png
 screenshot_width: 402
 screenshot_height: 592
-screenshot_alt: Memory Match card-matching game shown on an Android phone
+screenshot_alt: Memory Match card-matching gameplay
 related_game_slugs:
   - quick-maths
   - pattern-lock-brain-games
@@ -33,22 +33,23 @@ cognitive_skills:
   - Short-term memory
   - Concentration
   - Matching and categorisation
-card_description: "A free card-matching game for Android and Web."
-summary: "An Android card-matching game with colourful pairs and repeatable rounds. Free to install and also playable in a browser."
+card_description: "A free card-matching game for Android, iOS, and Web."
+summary: "A card-matching game for Android and iOS with colourful pairs and repeatable rounds. Free to install and also playable in a browser."
 download: https://play.google.com/store/apps/details?id=mobile.brain.games.simplememorygame.simple_memory_game
+ios_download: https://apps.apple.com/us/app/simple-memory-training-game/id6786673240
 web_play_url: /memory-match/
-description: "Find matching picture pairs in Memory Match: Brain Games on Android, or try the card game in a browser before installing."
-keywords: "memory matching game Android, card matching game for kids, memory game"
-cta_copy: "Install Simple Memory Game from Google Play or play instantly in your browser."
+description: "Find matching picture pairs in Memory Match: Brain Games on Android and iOS, or try the card game in a browser before installing."
+keywords: "memory matching game Android iOS, card matching game for kids, memory game"
+cta_copy: "Install Simple Memory Game from Google Play or the App Store, or play instantly in your browser."
 ---
 
 ## How does the game work?
 
-On Android, the game is called **Memory Match: Brain Games**. Turn over two picture cards and look for a pair. A match stays visible; mismatched cards turn over again. Keep their positions in mind as the board becomes familiar.
+Turn over two picture cards and look for a pair. A match stays visible; mismatched cards turn over again. Keep their positions in mind as the board becomes familiar.
 
 ## What can players choose?
 
-Choose from several difficulty levels and unlockable card themes, then use the play calendar and personal stats to follow your in-game activity. The Android game works offline, while the browser version lets you try the matching format without installing anything.
+Choose from several difficulty levels and unlockable card themes, then use the play calendar and personal stats to follow your in-game activity. The mobile game works offline, while the browser version lets you try the matching format without installing anything.
 
 ## How can a family play together?
 
@@ -56,7 +57,7 @@ Start by turning over two cards and looking for the matching pair. When the card
 
 ## Are there ads or purchases?
 
-The free Android version includes ads, and an optional Pro upgrade unlocks the premium experience. It is a casual matching game for enjoyment, not an assessment of memory or a substitute for educational support.
+The free mobile version includes ads, and an optional Pro upgrade unlocks the premium experience. It is a casual matching game for enjoyment, not an assessment of memory or a substitute for educational support.
 
 ## More games to try
 

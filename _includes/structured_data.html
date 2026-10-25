@@ -32,7 +32,7 @@
       "name": {{ page.store_name | default: page.app_name | jsonify }},
       "alternateName": {{ page.app_name | jsonify }},
       "applicationCategory": {{ page.schema_category | default: 'GameApplication' | jsonify }},
-      "operatingSystem": "Android",
+      "operatingSystem": {% if page.ios_download %}["Android", "iOS"]{% else %}"Android"{% endif %},
       "downloadUrl": {{ page.download | jsonify }},
       "publisher": {"@id": {{ site.url | append: '/#organization' | jsonify }}},
       "image": {{ page.social_image | default: site.social_image | absolute_url | jsonify }},
