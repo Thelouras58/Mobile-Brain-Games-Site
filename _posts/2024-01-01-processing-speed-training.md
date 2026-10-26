@@ -8,7 +8,7 @@ slug: processing-speed-training
 privacy_policy_url: /privacy/processing-speed-training/
 directory_group: reactions
 offer_price: 0
-last_modified_at: 2026-09-17
+last_modified_at: 2026-10-26
 store_name: Brain Game - Reaction & Speed
 related_game_slugs:
   - quick-tap
@@ -26,6 +26,7 @@ cognitive_skills:
   - Decision-making
 card_description: "A fast-paced Android game challenge."
 summary: "A quick Android game for players who enjoy speed-based challenges."
+web_play_url: /flame/
 download: https://play.google.com/store/apps/details?id=mobile.brain.games.flame
 description: "Try Processing Speed Training, an Android game with quick, fast-moving challenges for players who enjoy shorter sessions."
 cta_copy: "Open Google Play to install Processing Speed Training."

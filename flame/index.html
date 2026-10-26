@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/flame/">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Play Flame online. Fly through the skies with jetpacks, wings and elemental magic.">
+  <link rel="canonical" href="https://mobilebraingames.com/flame/">
+  <link rel="stylesheet" href="/style.css">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="flame">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>Play Flame Online | Mobile Brain Games</title>
+  <link rel="manifest" href="manifest.json">
+  <style>
+    :root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#101d2c;color:#f4f7fc;font:16px/1.5 system-ui,sans-serif}
+    a{color:#bfe5ff}.content-width{width:min(100% - 2rem,1280px);margin-inline:auto}.site-nav,.site-footer{background:#192c40}.site-nav__inner{min-height:56px;display:flex;align-items:center;justify-content:space-between;gap:1rem}.site-nav__links{display:flex;gap:1rem}.site-nav__brand{font-weight:800;text-decoration:none;color:white}
+    .hero{text-align:center;padding:2rem 0 1rem}.hero h1{margin:.2rem 0;font-size:clamp(1.6rem,4vw,2.7rem)}.hero p{margin:.25rem 0 0}.game-shell{border:1px solid #64748b;border-radius:12px;overflow:hidden;background:#101d2c}.game-toolbar{height:36px;display:flex;align-items:center;justify-content:flex-end;background:#192c40}.game-toolbar button{min-width:120px;min-height:44px;padding:0 1rem;border:0;background:#5936a2;color:white;font-weight:700;cursor:pointer;z-index:3}.game-host{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;touch-action:none}.game-host flutter-view{width:100%;height:100%}#loading{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:1rem;background:#101d2c;z-index:2}.game-guide{display:grid;grid-template-columns:1fr 1fr;gap:2rem;padding:2rem 0 3rem}.site-footer{padding:1.5rem 0}
+    .expanded{position:fixed;inset:0;z-index:9999;width:100%;max-width:none;border:0;border-radius:0;padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);display:flex;flex-direction:column}.expanded .game-toolbar{flex:none}.expanded .game-host{flex:1;min-height:0;aspect-ratio:auto}body.game-expanded{overflow:hidden}
+    @media(max-width:700px){.site-nav__inner{flex-wrap:wrap;padding:.5rem 0}.game-guide{grid-template-columns:1fr}.hero{padding:1rem 0}.game-host{min-height:320px}}
+  </style>
+</head>
+<body>
+  <nav class="site-nav" aria-label="Main navigation"><div class="content-width site-nav__inner"><a class="site-nav__brand" href="/">Mobile Brain Games</a><div class="site-nav__links"><a href="/games/">Games</a><a href="/parents/">For parents</a><a href="/blog/">Blog</a></div></div></nav>
+  <main>
+    <header class="hero content-width"><h1>Play Flame online</h1><p>Fly, dodge, collect, and survive.</p></header>
+    <section class="content-width game-shell" id="game-shell" aria-label="Flame browser game">
+      <div class="game-toolbar"><button id="expand-game" type="button" aria-expanded="false">Expand game</button></div>
+      <div class="game-host" id="flutter-host"><div id="loading" role="status" aria-live="polite">Loading Flame…</div></div>
+    </section>
+    <noscript><p class="content-width">Flame needs JavaScript to run.</p></noscript>
+    <section class="content-width game-guide"><div><h2>How to play</h2><p>Use WASD or arrow keys to fly. Left-click the playfield to BLAST, E for your pilot's skill, Q for NOVA, and Escape to pause. Attacks follow the direction your pilot faces.</p></div><div><h2>On touch screens</h2><p>Touch the left half to steer and use another finger on the attack buttons. Rotate to landscape for the best view. Progress is saved in this browser; clearing browser data may erase it.</p></div></section>
+  </main>
+  <footer class="site-footer"><div class="content-width">Mobile Brain Games · <a href="/games/">Games</a></div></footer>
+  <script>
+    const shell=document.getElementById('game-shell');
+    const expand=document.getElementById('expand-game');
+    let savedScrollY=0;
+    expand.addEventListener('click',()=>{
+      const entering=!shell.classList.contains('expanded');
+      if(entering) savedScrollY=window.scrollY;
+      shell.classList.toggle('expanded',entering);
+      document.body.classList.toggle('game-expanded',entering);
+      expand.textContent=entering?'Exit expanded view':'Expand game';
+      expand.setAttribute('aria-expanded',String(entering));
+      window.dispatchEvent(new Event('flame-layout-change'));
+      if(!entering) window.scrollTo(0,savedScrollY);
+    });
+    const loading=document.getElementById('loading');
+    function retry(text){loading.innerHTML='';const box=document.createElement('div');const message=document.createElement('p');message.textContent=text;const button=document.createElement('button');button.textContent='Retry';button.onclick=()=>location.reload();box.append(message,button);loading.append(box)}
+    const timer=setTimeout(()=>retry('Still loading Flame…'),30000);
+    window.addEventListener('flutter-first-frame',()=>{clearTimeout(timer);loading.remove()},{once:true});
+    const script=document.createElement('script');script.src='flutter_bootstrap.js';script.async=true;
+    script.onerror=()=>{clearTimeout(timer);retry('Flame could not load. Check your connection and retry.')};
+    document.body.append(script);
+  </script>
+</body>
+</html>
