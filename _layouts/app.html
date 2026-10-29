@@ -13,14 +13,14 @@
           <img src="{{ app_icon | relative_url }}" alt="{{ page.alt }}" width="640" height="640" decoding="async">
         </div>
         <div>
-          <p class="eyebrow">{% if page.ios_download %}Android, iOS{% if page.web_play_url %} and web{% endif %} game{% elsif page.web_play_url %}Android and web game{% else %}Android game{% endif %}</p>
+          <p class="eyebrow">{% if page.ios_download %}Android, iOS{% if page.web_play_url %} and {% if page.web_play_desktop_only %}desktop web{% else %}web{% endif %}{% endif %} game{% elsif page.web_play_url %}Android and {% if page.web_play_desktop_only %}desktop web{% else %}web{% endif %} game{% else %}Android game{% endif %}</p>
           <h1>{{ page.h1 | default: page.app_name }}</h1>
           <p class="lead">{{ page.summary }}</p>
           {% if page.store_name and page.store_name != page.app_name and page.ios_download == nil %}<p class="store-alias">Android app name: <strong>{{ page.store_name }}</strong></p>{% endif %}
           <div class="button-group">
             <a class="button" href="{{ page.download }}" target="_blank" rel="noopener noreferrer" data-google-play-app="{{ page.slug }}" data-google-play-placement="app-hero">{% if page.web_play_url %}Download for Android{% elsif page.cta_label %}{{ page.cta_label }}{% else %}Get {{ page.app_name }} on Google Play{% endif %}</a>
             {% if page.ios_download %}<a class="button" href="{{ page.ios_download }}" target="_blank" rel="noopener noreferrer">Download for iOS</a>{% endif %}
-          {% if page.web_play_url %}<a class="button button--secondary" href="{{ page.web_play_url | relative_url }}" data-web-play-app="{{ page.slug }}" data-web-play-placement="app-hero">Play on Web</a>{% endif %}
+            {% if page.web_play_url %}<a class="button button--secondary" href="{{ page.web_play_url | relative_url }}" data-web-play-app="{{ page.slug }}" data-web-play-placement="app-hero"{% if page.web_play_desktop_only %} data-desktop-web-play hidden{% endif %}>Play on Web</a>{% endif %}
           </div>
         </div>
       </div>
@@ -34,7 +34,7 @@
       <section class="app-page__details" aria-labelledby="details-heading">
         <h2 id="details-heading">{% if page.slug == 'rate-your-mood' %}App details{% else %}Game details{% endif %}</h2>
         <dl>
-          <div><dt>Platform</dt><dd>{% if page.ios_download %}Android and iOS{% if page.web_play_url %}, and Web{% endif %}{% elsif page.web_play_url %}Android and Web{% else %}Android{% endif %}</dd></div>
+          <div><dt>Platform</dt><dd>{% if page.ios_download %}Android and iOS{% if page.web_play_url %}, and {% if page.web_play_desktop_only %}Desktop web{% else %}Web{% endif %}{% endif %}{% elsif page.web_play_url %}Android and {% if page.web_play_desktop_only %}Desktop web{% else %}Web{% endif %}{% else %}Android{% endif %}</dd></div>
           <div><dt>Game type</dt><dd>{{ page.game_type }}</dd></div>
           <div><dt>Best for</dt><dd>{{ page.audience }}</dd></div>
           <div><dt>Download cost</dt><dd>Free to install{% if page.store_purchases %}; {{ page.store_purchases | downcase }}{% endif %}</dd></div>
@@ -55,7 +55,7 @@
         <div class="button-group">
           <a class="button" href="{{ page.download }}" target="_blank" rel="noopener noreferrer" data-google-play-app="{{ page.slug }}" data-google-play-placement="app-bottom">{% if page.web_play_url %}Download for Android{% elsif page.cta_label %}{{ page.cta_label }}{% else %}Download {{ page.app_name }} on Google Play{% endif %}</a>
           {% if page.ios_download %}<a class="button" href="{{ page.ios_download }}" target="_blank" rel="noopener noreferrer">Download for iOS</a>{% endif %}
-          {% if page.web_play_url %}<a class="button button--secondary" href="{{ page.web_play_url | relative_url }}" data-web-play-app="{{ page.slug }}" data-web-play-placement="app-bottom">Play on Web</a>{% endif %}
+          {% if page.web_play_url %}<a class="button button--secondary" href="{{ page.web_play_url | relative_url }}" data-web-play-app="{{ page.slug }}" data-web-play-placement="app-bottom"{% if page.web_play_desktop_only %} data-desktop-web-play hidden{% endif %}>Play on Web</a>{% endif %}
         </div>
       </section>
       {% if page.privacy_policy_url %}
@@ -90,5 +90,6 @@
     <button class="android-smart-banner__dismiss" type="button" aria-label="Dismiss download banner">×</button>
   </aside>
   {% include js.html %}
+  {% if page.web_play_desktop_only %}<script defer src="{{ '/js/desktop-web-play.js' | relative_url }}"></script>{% endif %}
 </body>
 </html>

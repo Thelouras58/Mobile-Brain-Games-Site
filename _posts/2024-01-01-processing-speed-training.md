@@ -27,6 +27,7 @@ cognitive_skills:
 card_description: "A fast-paced Android game challenge."
 summary: "A quick Android game for players who enjoy speed-based challenges."
 web_play_url: /flame/
+web_play_desktop_only: true
 download: https://play.google.com/store/apps/details?id=mobile.brain.games.flame
 description: "Try Processing Speed Training, an Android game with quick, fast-moving challenges for players who enjoy shorter sessions."
 cta_copy: "Open Google Play to install Processing Speed Training."
