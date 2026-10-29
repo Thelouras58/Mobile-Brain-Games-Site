@@ -56,6 +56,7 @@
   <footer class="site-footer"><div class="content-width">Mobile Brain Games · <a href="/games/">Games</a></div></footer>
   <script src="/js/desktop-web-play.js"></script>
   <script>
+    (function () {
     const shell=document.getElementById('game-shell');
     const gate=document.getElementById('device-gate');
     const guide=document.getElementById('game-guide');
@@ -82,6 +83,7 @@
     script.onerror=()=>{clearTimeout(timer);retry('Flame could not load. Check your connection and retry.')};
     document.body.append(script);
     matchMedia('(hover: hover) and (pointer: fine)').addEventListener('change',function(){if(!eligible()) location.reload();});
+    })();
   </script>
 </body>
 </html>
