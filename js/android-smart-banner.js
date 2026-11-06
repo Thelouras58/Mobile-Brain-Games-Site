@@ -10,6 +10,8 @@
   if (isIOS && iosDownload) {
     var link = banner.querySelector('.android-smart-banner__cta');
     link.href = iosDownload;
+    link.setAttribute('data-store', 'app_store');
+    link.setAttribute('data-store-placement', 'smart_banner');
     link.removeAttribute('data-google-play-app');
     link.removeAttribute('data-google-play-placement');
     banner.querySelector('.android-smart-banner__content span').textContent = 'Available on the App Store';

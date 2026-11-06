@@ -5,7 +5,7 @@
     <aside class="featured-game" aria-labelledby="premium-heading" data-reveal>
       <div>
         <p class="eyebrow">Featured app</p>
-        <h3 id="premium-heading">Mobile Brain Training Games Premium!</h3>
+        <h3 id="premium-heading">Mobile Brain Games Premium</h3>
         <p>Free to install on Android, with optional Premium games and features available through in-app purchases.</p>
       </div>
       <a class="button button--premium" href="{{ '/games/mobile-brain-games-premium/' | relative_url }}" data-app-select="mobile-brain-games-premium" data-app-select-placement="home-featured"><span class="button__icon" aria-hidden="true">→</span> Explore Premium</a>
@@ -22,6 +22,7 @@
           <div class="game-card__content">
             <h3>{{ post.app_name }}</h3>
             <p>{{ post.card_description }}</p>
+            <p class="game-card__platforms">{% if post.platforms %}{% for platform in post.platforms %}{% if platform.id == 'android' %}Android{% elsif platform.id == 'ios' %}iOS{% elsif platform.desktop_only %}Desktop web{% else %}Web{% endif %}{% unless forloop.last %} · {% endunless %}{% endfor %}{% elsif post.ios_download %}Android · iOS{% if post.web_play_url %} · Web{% endif %}{% elsif post.web_play_url %}Android · {% if post.web_play_desktop_only %}Desktop web{% else %}Web{% endif %}{% else %}Android{% endif %}</p>
             <span class="game-card__cta">Explore</span>
           </div>
         </a>

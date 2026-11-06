@@ -1,2 +1,5 @@
 vendor/
 _site/
+.bundle/
+__pycache__/
+*.pyc

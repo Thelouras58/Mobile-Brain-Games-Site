@@ -12,6 +12,19 @@
     var target = event.target.closest('a');
     if (!target) return;
 
+    var canonicalStoreLink = target.closest('[data-store-app], a[href*="play.google.com/store/apps/details"], a[href*="apps.apple.com/"]');
+    if (canonicalStoreLink) {
+      var store = canonicalStoreLink.dataset.store;
+      if (!store) store = canonicalStoreLink.href.indexOf('apps.apple.com/') !== -1 ? 'app_store' : 'google_play';
+      gtag('event', 'store_click', {
+        app_slug: canonicalStoreLink.dataset.storeApp || canonicalStoreLink.dataset.googlePlayApp || document.body.dataset.pageApp || 'unknown',
+        store: store,
+        placement: canonicalStoreLink.dataset.storePlacement || canonicalStoreLink.dataset.googlePlayPlacement || 'content_link',
+        page_path: window.location.pathname,
+        link_url: canonicalStoreLink.href
+      });
+    }
+
     var storeLink = target.closest('[data-google-play-app], a[href*="play.google.com/store/apps/details"]');
     if (storeLink) {
       gtag('event', 'google_play_click', {
