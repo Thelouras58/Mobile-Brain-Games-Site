@@ -8,8 +8,22 @@ slug: processing-speed-training
 privacy_policy_url: /privacy/processing-speed-training/
 directory_group: reactions
 offer_price: 0
-last_modified_at: 2026-10-26
+last_modified_at: 2026-11-06
 store_name: Brain Game - Reaction & Speed
+platforms:
+  - id: android
+    name: "Brain Game - Reaction & Speed"
+    url: https://play.google.com/store/apps/details?id=mobile.brain.games.flame
+    verified_on: 2026-11-06
+    source: https://play.google.com/store/apps/details?id=mobile.brain.games.flame
+    verification_method: public_listing
+  - id: web
+    name: "Flame"
+    url: /flame/
+    desktop_only: true
+    verified_on: 2026-11-06
+    source: /flame/
+    verification_method: direct_testing
 related_game_slugs:
   - quick-tap
   - pattern-lock-brain-games
@@ -24,8 +38,8 @@ cognitive_skills:
   - Visual attention
   - Response speed
   - Decision-making
-card_description: "A fast-paced Android game challenge."
-summary: "A quick Android game for players who enjoy speed-based challenges."
+card_description: "An Android reaction game with a separate desktop browser challenge."
+summary: "Brain Game - Reaction & Speed is an Android title; Flame is a separate keyboard-and-mouse browser challenge available from this page."
 web_play_url: /flame/
 web_play_desktop_only: true
 download: https://play.google.com/store/apps/details?id=mobile.brain.games.flame
@@ -33,13 +47,15 @@ description: "Try Processing Speed Training, an Android game with quick, fast-mo
 cta_copy: "Open Google Play to install Processing Speed Training."
 ---
 
-## A fast-paced challenge
+## An Android reaction game
 
-Processing Speed Training is an Android game for players who enjoy quick rounds and a fast-moving challenge.
+Processing Speed Training is the website name used for the Android title currently listed on Google Play as **Brain Game - Reaction & Speed**. The public listing describes it as a fast reaction and processing-speed game. This wording reflects the listing checked on November 6, 2026 rather than a new device test.
 
-## A focused, repeatable format
+## What is the Flame browser game?
 
-The game is built around short visual challenges that ask you to follow the current prompt and make a decision. Each round is a chance to begin again without committing to a lengthy session. Its pace is best suited to players who enjoy quick-moving casual games.
+Flame is a separate desktop browser challenge linked from this page. It uses keyboard-and-mouse controls for flying, dodging, collecting, and attacking. The browser experience should not be treated as a feature-for-feature copy of the Android listing.
+
+Web play is available on a desktop or laptop with a keyboard and mouse or trackpad. The Android download remains available for mobile devices.
 
 ## Choosing a fast game
 

@@ -1,8 +1,8 @@
 ---
 layout: app
-title: "Mobile Brain Training Games! | Android Game Collection"
+title: "Mobile Brain Games Premium | Android Game Collection"
 app_name: "Mobile Brain Games Premium"
-h1: "Mobile Brain Games Premium: Daily Brain Training for Android"
+h1: "Mobile Brain Games Premium: Daily Puzzle Collection for Android"
 home_order: 0
 portfolio_visible: false
 permalink: /games/mobile-brain-games-premium/
@@ -10,13 +10,23 @@ slug: mobile-brain-games-premium
 privacy_policy_url: /privacy/mobile-brain-games-premium/
 directory_group: collection
 offer_price: 0
-last_modified_at: 2026-09-30
-store_name: "Mobile Brain Training Games!"
+last_modified_at: 2026-11-06
+store_name: "Mobile Brain Games: Premium"
+store_ads: "Yes"
 store_purchases: Optional in-app purchases
+platforms:
+  - id: android
+    name: "Mobile Brain Games: Premium"
+    url: https://play.google.com/store/apps/details?id=mobile.brain.games.mobile_brain_games_premium
+    ads: "Contains ads"
+    purchases: "Offers in-app purchases"
+    verified_on: 2026-11-06
+    source: https://play.google.com/store/apps/details?id=mobile.brain.games.mobile_brain_games_premium
+    verification_method: public_listing
 screenshot: /img/screenshots/brain-games.jpg
 screenshot_width: 266
 screenshot_height: 592
-screenshot_alt: Mobile Brain Training Games catalogue with memory and attention games
+screenshot_alt: Mobile Brain Games Premium catalogue with memory and attention games
 related_game_slugs:
   - simple-memory-game
   - quick-maths
@@ -37,7 +47,7 @@ cognitive_skills:
 summary: "An Android collection of short memory, focus, speed, rule-switching, and word games. Free to install, with optional Premium upgrades."
 card_description: "A free-to-install collection of short games with optional Premium upgrades."
 download: https://play.google.com/store/apps/details?id=mobile.brain.games.mobile_brain_games_premium
-description: "Explore short daily games in Mobile Brain Training Games! for Android. Free to install, with optional in-app Premium games and features."
+description: "Explore short daily puzzles in Mobile Brain Games Premium for Android. Free to install, with optional in-app Premium games and features."
 keywords: "Mobile Brain Games Premium, Android brain training game, brain games premium, memory games Android, focus games Android, daily brain workout, processing speed game, executive function game, language games Android, Google Play brain games"
 cta_copy: "Open Google Play to install the free app. Optional Premium upgrades are available in the app; check current pricing before buying."
 cta_label: "Start Playing on Google Play"
@@ -45,7 +55,7 @@ cta_label: "Start Playing on Google Play"
 
 ## What does the free app include?
 
-The Android app is called **Mobile Brain Training Games!** It offers a daily sequence of three short games from its wider catalogue. Free modes include Pattern Recall, Quick Tap, Focus Finder, Rule Switcher, and Word Sprint. The activities involve remembering a pattern, responding to a visual prompt, finding a target, switching rules, or working with words.
+The Android app is currently listed on Google Play as **Mobile Brain Games: Premium**. It offers a daily sequence of three short games from its wider catalogue. Free modes include Pattern Recall, Quick Tap, Focus Finder, Rule Switcher, and Word Sprint. The activities involve remembering a pattern, responding to a visual prompt, finding a target, switching rules, or working with words.
 
 The games are for play and do not establish a medical, diagnostic, or therapeutic benefit.
 
@@ -59,4 +69,4 @@ The app shows streaks, game-category breakdowns, and a Cognitive Balance Radar C
 
 ## Who is the collection for?
 
-High-contrast themes, bold text, and large touch targets make the games easy to navigate. Players can start with the free games and decide whether the pace and wording suit them. The collection is intended for players aged 13 and over. See the [family guide]({{ '/parents/' | relative_url }}) for a comparison with simpler matching and maths games.
+The Google Play description highlights high-contrast themes, bold text, and large touch targets. Players can start with the free games and decide whether the pace and wording suit them. These listing details were checked on November 6, 2026 and were not established through a new device test. See the [family guide]({{ '/parents/' | relative_url }}) for a comparison with simpler matching and maths games.

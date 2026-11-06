@@ -8,9 +8,17 @@ slug: quick-maths
 privacy_policy_url: /privacy/quick-maths/
 directory_group: words-and-maths
 offer_price: 0
-last_modified_at: 2026-09-17
+last_modified_at: 2026-11-06
 store_name: "Quick Maths: Kids Brain Game"
 store_ads: "No"
+platforms:
+  - id: android
+    name: "Quick Maths: Kids Brain Game"
+    url: https://play.google.com/store/apps/details?id=mobile.brain.games.quickmaths
+    ads: "No"
+    verified_on: 2026-11-06
+    source: https://play.google.com/store/apps/details?id=mobile.brain.games.quickmaths
+    verification_method: public_listing
 screenshot: /img/screenshots/quick-maths.png
 screenshot_width: 266
 screenshot_height: 592

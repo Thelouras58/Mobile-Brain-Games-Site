@@ -1,0 +1,41 @@
+---
+permalink: /404.html
+sitemap: false
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, follow">
+  <title>Page Not Found | Mobile Brain Games</title>
+  <link rel="icon" type="image/png" href="{{ '/favicon.png' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
+</head>
+<body>
+  <nav class="site-nav" aria-label="Primary navigation">
+    <div class="site-nav__inner">
+      <a class="site-nav__brand" href="{{ '/' | relative_url }}">Mobile Brain Games</a>
+      <div class="site-nav__links">
+        <a href="{{ '/games/' | relative_url }}">Games</a>
+        <a href="{{ '/parents/' | relative_url }}">For parents</a>
+        <a href="{{ '/blog/' | relative_url }}">Blog</a>
+      </div>
+    </div>
+  </nav>
+  <main class="guide-page">
+    <article class="content-width content-width--narrow prose guide-page__article">
+      <p class="eyebrow">404 error</p>
+      <h1>Page not found</h1>
+      <p class="lead">The page may have moved, or the address may be incorrect.</p>
+      <p><a class="button" href="{{ '/' | relative_url }}">Return home</a></p>
+      <h2>Keep exploring</h2>
+      <ul>
+        <li><a href="{{ '/games/' | relative_url }}">Browse every game</a></li>
+        <li><a href="{{ '/memory-match/' | relative_url }}">Play Memory Match online</a></li>
+        <li><a href="{{ '/blog/' | relative_url }}">Read the Mobile Brain Games blog</a></li>
+      </ul>
+    </article>
+  </main>
+</body>
+</html>

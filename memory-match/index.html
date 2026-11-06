@@ -4,9 +4,9 @@
   <base href="/memory-match/">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Play Memory Match online for free. Turn over cards, find matching picture pairs, choose a difficulty, and try the Android game when you want offline play.">
+  <meta name="description" content="Play Memory Match online for free. Turn over cards, find matching picture pairs, choose a difficulty, and play without installing an app.">
   <meta name="theme-color" content="#3F51B5">
-  <title>Play Memory Match Online | Mobile Brain Games</title>
+  <title>Play Memory Match Online Free | Mobile Brain Games</title>
   <link rel="canonical" href="https://mobilebraingames.com/memory-match/">
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
@@ -14,11 +14,11 @@
   <link rel="stylesheet" href="/style.css">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://mobilebraingames.com/memory-match/">
-  <meta property="og:title" content="Play Memory Match Online | Mobile Brain Games">
+  <meta property="og:title" content="Play Memory Match Online Free | Mobile Brain Games">
   <meta property="og:description" content="Turn over cards and find the matching picture pairs in a free browser game.">
   <meta property="og:image" content="https://mobilebraingames.com/img/screenshots/memory-match.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Play Memory Match Online | Mobile Brain Games">
+  <meta name="twitter:title" content="Play Memory Match Online Free | Mobile Brain Games">
   <meta name="twitter:description" content="Turn over cards and find the matching picture pairs in a free browser game.">
   <meta name="twitter:image" content="https://mobilebraingames.com/img/screenshots/memory-match.png">
   <meta name="mobile-web-app-capable" content="yes">
@@ -113,10 +113,11 @@
         <p>The browser game stores game progress on this device. Clearing browser data may reset local progress.</p>
       </div>
       <aside class="game-guide__panel">
-        <h2>Prefer the Android game?</h2>
-        <p>Memory Match: Brain Games brings the same pair-finding format to Android, with offline play, extra themes, personal stats, and an optional Pro upgrade.</p>
+        <h2>Prefer a mobile app?</h2>
+        <p>See the product page for current Android and iOS names, availability, and verified feature differences.</p>
         <div class="web-game-links">
-          <a class="button" href="https://play.google.com/store/apps/details?id=mobile.brain.games.simplememorygame.simple_memory_game" target="_blank" rel="noopener noreferrer" data-google-play-app="simple-memory-game" data-google-play-placement="web-game">Get the Android game</a>
+          <a class="button" href="https://play.google.com/store/apps/details?id=mobile.brain.games.simplememorygame.simple_memory_game" target="_blank" rel="noopener noreferrer" data-store-app="simple-memory-game" data-store="google_play" data-store-placement="web_game" data-google-play-app="simple-memory-game" data-google-play-placement="web-game">Get the Android game</a>
+          <a class="button" href="https://apps.apple.com/us/app/simple-memory-training-game/id6786673240" target="_blank" rel="noopener noreferrer" data-store-app="simple-memory-game" data-store="app_store" data-store-placement="web_game">Get the iOS game</a>
           <a class="button button--secondary" href="/games/simple-memory-game/" data-app-select="simple-memory-game" data-app-select-placement="web-game">View game details</a>
         </div>
       </aside>
@@ -138,29 +139,35 @@
     gtag('config', 'G-JT3YJPBX97');
 
     var loadFinished = false;
+    var loadAttemptId = Date.now().toString(36) + '-' + Math.random().toString(36).slice(2, 8);
+    var loadTimer;
     function reportLoadResult(name, detail) {
-      if (loadFinished) return;
+      if (loadFinished) return false;
       loadFinished = true;
-      gtag('event', name, {app_slug: 'simple-memory-game', platform: 'web', detail: detail || ''});
+      if (loadTimer) clearTimeout(loadTimer);
+      gtag('event', name, {app_slug: 'simple-memory-game', platform: 'web', load_attempt_id: loadAttemptId, detail: detail || ''});
+      return true;
     }
     function showLoadError(detail) {
-      reportLoadResult('game_load_error', detail);
+      if (!reportLoadResult('game_load_error', detail)) return;
       var loading = document.getElementById('loading');
       if (loading) loading.innerHTML = '<div class="game-load-error"><h2>The game did not load</h2><p>Check your connection and try again.</p><button class="button" type="button" onclick="location.reload()">Try again</button></div>';
     }
 
-    gtag('event', 'game_load_start', {app_slug: 'simple-memory-game', platform: 'web'});
+    gtag('event', 'game_load_start', {app_slug: 'simple-memory-game', platform: 'web', load_attempt_id: loadAttemptId});
+    loadTimer = setTimeout(function () { showLoadError('ready-timeout'); }, 30000);
     window.addEventListener('flutter-first-frame', function () {
       reportLoadResult('game_ready');
+      document.title = 'Play Memory Match Online Free | Mobile Brain Games';
       document.getElementById('loading')?.remove();
-    });
-    window.addEventListener('unhandledrejection', function (event) {
-      showLoadError(event.reason && event.reason.message ? event.reason.message : 'unhandled-rejection');
     });
 
     document.addEventListener('click', function (event) {
       var target = event.target.closest('a');
       if (!target) return;
+      if (target.matches('[data-store-app]')) {
+        gtag('event', 'store_click', {app_slug: target.dataset.storeApp, store: target.dataset.store, placement: target.dataset.storePlacement, page_path: window.location.pathname, link_url: target.href});
+      }
       if (target.matches('[data-google-play-app]')) {
         gtag('event', 'google_play_click', {app_slug: target.dataset.googlePlayApp, placement: target.dataset.googlePlayPlacement, link_url: target.href});
       }

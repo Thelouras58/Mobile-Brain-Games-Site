@@ -9,8 +9,15 @@ slug: rate-your-mood
 privacy_policy_url: /privacy/rate-your-mood/
 directory_group: calm-and-reflection
 offer_price: 0
-last_modified_at: 2026-09-30
+last_modified_at: 2026-11-06
 store_name: "Rate your Mood daily!"
+platforms:
+  - id: android
+    name: "Rate your Mood daily!"
+    url: https://play.google.com/store/apps/details?id=mobile.brain.games.rateyourmood.rate_your_mood
+    verified_on: 2026-11-06
+    source: https://play.google.com/store/apps/details?id=mobile.brain.games.rateyourmood.rate_your_mood
+    verification_method: public_listing
 schema_category: LifestyleApplication
 related_game_slugs:
   - calmquest
