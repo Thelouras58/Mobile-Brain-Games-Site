@@ -37,6 +37,6 @@ Notice that the sequence jumps between distant parts of the grid. Reading each r
 
 ## How does this relate to Quick Tap?
 
-[Quick Tap]({{ '/games/quick-tap/' | relative_url }}), listed on Google Play as **Brain Game: Focus & Reaction!**, uses a 1–25 number-grid round. Players find and tap the numbers in order on Android. The product page describes the current game and links to its store listing.
+[Quick Tap]({{ '/games/quick-tap/' | relative_url }}) uses a 1–25 number-grid round. Find and tap the numbers in order on Android. To try a different game in your browser, [play Memory Match online]({{ '/memory-match/' | relative_url }}).
 
 For a broader look at short number-grid and action formats, read [Quick Reaction Games for Short Breaks]({{ '/blog/quick-reaction-games/' | relative_url }}). When you are ready to try the 1–25 format, [explore Quick Tap]({{ '/games/quick-tap/' | relative_url }}).

@@ -59,7 +59,7 @@ In **Remember the Pattern**, study a pattern shown briefly and draw it back. In 
 
 ## Can it be played offline?
 
-The Google Play listing describes Pattern Lock as free, playable offline, and supported by ads. These details were checked on November 6, 2026; they reflect the public listing rather than a new device test.
+Pattern Lock is a free Android game that works offline.
 
 ## Can Pattern Lock be played in a browser?
 

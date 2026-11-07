@@ -42,11 +42,11 @@ cta_copy: "Open Google Play to install Word Sprint."
 
 ## Find words and keep moving
 
-Word Sprint is an Android word game for players who enjoy quick word-finding challenges and short rounds. It is currently listed on Google Play as **Fast Word Puzzle Game**.
+Word Sprint is an Android word game for players who enjoy quick word-finding challenges and short rounds.
 
 ## What to expect
 
-Each timed round shows a changing grid of letters. Connect letters to form a word, then find a different word rather than repeating the same answer. Longer words earn more points. The Google Play listing describes full offline play; this was checked on November 6, 2026 from the public listing rather than a new device test.
+Each timed round shows a changing grid of letters. Connect letters to form a word, then find a different word rather than repeating the same answer. Longer words earn more points. Play the word-finding rounds offline on Android.
 
 ## For players who enjoy language puzzles
 

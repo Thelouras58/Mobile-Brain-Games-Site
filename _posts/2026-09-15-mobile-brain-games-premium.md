@@ -55,7 +55,7 @@ cta_label: "Start Playing on Google Play"
 
 ## What does the free app include?
 
-The Android app is currently listed on Google Play as **Mobile Brain Games: Premium**. It offers a daily sequence of three short games from its wider catalogue. Free modes include Pattern Recall, Quick Tap, Focus Finder, Rule Switcher, and Word Sprint. The activities involve remembering a pattern, responding to a visual prompt, finding a target, switching rules, or working with words.
+The Android app offers a daily sequence of three short games from its wider catalogue. Free modes include Pattern Recall, Quick Tap, Focus Finder, Rule Switcher, and Word Sprint. The activities involve remembering a pattern, responding to a visual prompt, finding a target, switching rules, or working with words.
 
 The games are for play and do not establish a medical, diagnostic, or therapeutic benefit.
 
@@ -69,4 +69,4 @@ The app shows streaks, game-category breakdowns, and a Cognitive Balance Radar C
 
 ## Who is the collection for?
 
-The Google Play description highlights high-contrast themes, bold text, and large touch targets. Players can start with the free games and decide whether the pace and wording suit them. These listing details were checked on November 6, 2026 and were not established through a new device test. See the [family guide]({{ '/parents/' | relative_url }}) for a comparison with simpler matching and maths games.
+The Google Play description highlights high-contrast themes, bold text, and large touch targets. Players can start with the free games and decide whether the pace and wording suit them. See the [family guide]({{ '/parents/' | relative_url }}) for a comparison with simpler matching and maths games.

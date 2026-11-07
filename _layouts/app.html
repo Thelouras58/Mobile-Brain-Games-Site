@@ -23,8 +23,6 @@
           <p class="eyebrow">{% if ios_download %}Android, iOS{% if web_play_url %} and {% if web_play_desktop_only %}desktop web{% else %}web{% endif %}{% endif %} game{% elsif web_play_url %}Android and {% if web_play_desktop_only %}desktop web{% else %}web{% endif %} game{% else %}Android game{% endif %}</p>
           <h1>{{ page.h1 | default: page.app_name }}</h1>
           <p class="lead">{{ page.summary }}</p>
-          {% if android_platform.name and android_platform.name != page.app_name %}<p class="store-alias">Google Play name: <strong>{{ android_platform.name }}</strong></p>{% elsif page.store_name and page.store_name != page.app_name %}<p class="store-alias">Google Play name: <strong>{{ page.store_name }}</strong></p>{% endif %}
-          {% if ios_platform.name and ios_platform.name != page.app_name %}<p class="store-alias">App Store name: <strong>{{ ios_platform.name }}</strong></p>{% endif %}
           <div class="button-group">
             <a class="button" href="{{ android_download }}" target="_blank" rel="noopener noreferrer" data-store-app="{{ page.slug }}" data-store="google_play" data-store-placement="app_hero" data-google-play-app="{{ page.slug }}" data-google-play-placement="app-hero">{% if web_play_url %}Download for Android{% elsif page.cta_label %}{{ page.cta_label }}{% else %}Get {{ page.app_name }} on Google Play{% endif %}</a>
             {% if ios_download %}<a class="button" href="{{ ios_download }}" target="_blank" rel="noopener noreferrer" data-store-app="{{ page.slug }}" data-store="app_store" data-store-placement="app_hero">Download for iOS</a>{% endif %}
@@ -47,7 +45,7 @@
           <div><dt>Best for</dt><dd>{{ page.audience }}</dd></div>
           {% if page.platforms %}
             {% for platform in page.platforms %}
-              <div><dt>{{ platform.name | default: platform.id }}</dt><dd>{% if platform.id == 'web' %}{% if platform.desktop_only %}Desktop browser{% else %}Web browser{% endif %}{% else %}{{ platform.id | capitalize }}{% endif %}{% if platform.ads %}; ads: {{ platform.ads | downcase }}{% endif %}{% if platform.purchases %}; purchases: {{ platform.purchases | downcase }}{% endif %}{% if platform.offline %}; offline: {{ platform.offline | downcase }}{% endif %}</dd></div>
+              <div><dt>{{ platform.id | capitalize }}</dt><dd>{% if platform.id == 'web' %}{% if platform.desktop_only %}Desktop browser{% else %}Web browser{% endif %}{% else %}{{ platform.id | capitalize }}{% endif %}{% if platform.offline %}; Offline play{% endif %}</dd></div>
             {% endfor %}
           {% else %}
             <div><dt>Download cost</dt><dd>Free to install{% if page.store_purchases %}; {{ page.store_purchases | downcase }}{% endif %}</dd></div>

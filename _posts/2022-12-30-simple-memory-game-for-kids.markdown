@@ -73,19 +73,15 @@ cta_copy: "Install Simple Memory Game from Google Play or the App Store, or play
 
 ## How does the game work?
 
-Turn over two picture cards and look for a pair. A match stays visible; mismatched cards turn over again. Keep their positions in mind as the board becomes familiar. The Android listing calls the game **Memory Match: Brain Games**; the iOS listing calls it **Simple Memory Training Game**.
+Turn over two picture cards and look for a pair. A match stays visible; mismatched cards turn over again. Keep their positions in mind as the board becomes familiar.
 
 ## What can players choose?
 
-The current Android listing describes Matching, Sequence Recall, and Play Together modes, along with daily challenges, history, and personal statistics. The iOS listing describes picture matching, four difficulty levels, a calendar, history, and emoji themes. Both listings describe offline play. The [browser version]({{ '/memory-match/' | relative_url }}) offers picture matching without an app installation.
+On Android, choose picture matching, sequence recall, or Play Together, then explore daily challenges and personal stats. On iPhone and iPad, match picture pairs across four difficulty levels, with a calendar, history, and emoji themes. Both mobile versions support offline play. The [browser version]({{ '/memory-match/' | relative_url }}) offers picture matching without an app installation.
 
 ## How can a family play together?
 
 Start by turning over two cards and looking for the matching pair. When the cards differ, notice their pictures and positions before trying again. Players can move at their own pace, and families can take turns or talk through what they remember. The web version lets visitors try the card-matching format in a browser.
-
-## Do the Android and iOS versions have the same business model?
-
-No. Google Play labels the Android listing as containing ads and offering in-app purchases, although its description also contains conflicting “No In-App Purchases” text. The App Store listing describes the iOS version as having no ads and no in-app purchases. These listing facts were checked on November 6, 2026; they were not established through a new device test. Both versions are casual matching games for enjoyment, not assessments of memory or substitutes for educational support.
 
 ## More games to try
 

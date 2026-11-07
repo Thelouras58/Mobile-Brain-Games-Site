@@ -35,6 +35,6 @@ For a complete illustrated example, read [Memory Matching Strategies: A Worked E
 
 ## What should parents check?
 
-The Android listing identifies ads and in-app purchases, while the iOS listing describes **Simple Memory Training Game** as having no ads or in-app purchases. Store details can change, so use the linked product page and listings for current platform information. Families can choose a comfortable difficulty and supervise play as appropriate. This is a game for enjoyment, not a test of a child's memory.
+Families can choose a comfortable difficulty and supervise play as appropriate. This is a game for enjoyment, not a test of a child's memory.
 
 For a different visual challenge, read [Pattern Memory Games: How They Work + 5 Challenges to Try]({{ '/blog/pattern-memory-games/' | relative_url }}). The [family guide]({{ '/parents/' | relative_url }}) compares the matching game with maths, pattern, and collection apps.
