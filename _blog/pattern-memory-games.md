@@ -4,12 +4,14 @@ title: "Pattern Memory Games: How They Work + 5 Challenges to Try"
 description: "Try five specific visual-pattern challenges and learn how Pattern Lock's recall and number modes work on Android."
 permalink: /blog/pattern-memory-games/
 date: 2026-08-30
-last_modified_at: 2026-09-30
+last_modified_at: 2026-11-06
 keywords: "pattern memory game, visual pattern challenges, pattern lock game Android"
 social_image: /img/screenshots/pattern-lock.png
 ---
 
 **A pattern game shows a route or group of positions and asks you to repeat it.** Some games gradually add more steps or shorten the viewing time. Pattern Lock: Brain Games also has a separate number-drawing mode on Android.
+
+<figure class="article-figure"><img src="{{ '/img/guides/pattern-route-practice.svg' | relative_url }}" alt="Illustrative numbered route joining four points around a square" loading="lazy" width="560" height="360"><figcaption>An illustrative four-point route for the paper exercise below, not an in-game screenshot.</figcaption></figure>
 
 <figure class="article-figure"><img src="{{ '/img/screenshots/pattern-lock.png' | relative_url }}" alt="Pattern Lock difficulty selection with Easy, Medium, and Hard options" loading="lazy" width="296" height="592"><figcaption>Easy, Medium, and Hard difficulty choices in Pattern Lock.</figcaption></figure>
 
@@ -27,6 +29,6 @@ There is no need to time these examples. Change the length to fit the player and
 
 ## How does the Android app differ?
 
-[Pattern Lock: Brain Games]({{ '/games/pattern-lock-brain-games/' | relative_url }}) has a **Remember the Pattern** mode, in which players recall a displayed route, and a **Draw the Numbers** mode, in which they reproduce number combinations. **Hack The Pattern** adds another variation. The game has three difficulty levels, works offline, includes ads, and is intended for players aged 13 and over.
+[Pattern Lock: Brain Games]({{ '/games/pattern-lock-brain-games/' | relative_url }}) offers two core modes: **Remember the Pattern**, where players recall a displayed route, and **Draw the Numbers**, where they reproduce number combinations. **Hack The Pattern** adds another variation. The Android game is playable offline.
 
-For pair-finding play, see [Card-Matching Games for Kids and Families]({{ '/blog/card-matching-games-for-kids/' | relative_url }}). For help comparing the two apps, visit the [family guide]({{ '/parents/' | relative_url }}).
+For pair-finding play, see [Card-Matching Games for Kids and Families]({{ '/blog/card-matching-games-for-kids/' | relative_url }}). The focused comparison [Pattern Memory vs Card Matching]({{ '/blog/pattern-memory-vs-card-matching/' | relative_url }}) explains how the two round formats differ. For help comparing more games, visit the [family guide]({{ '/parents/' | relative_url }}).

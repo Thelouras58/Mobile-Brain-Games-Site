@@ -6,6 +6,7 @@ lang: en
 description: "Explore puzzle, memory, word, and reaction games from Mobile Brain Games."
 keywords: "brain games, memory games, puzzle games, word games, reaction games"
 meta_author: Mobile Brain Games
+author: Mobile Brain Games
 social_image: img/profile.png
 
 # Footer settings
@@ -34,6 +35,10 @@ collections:
 plugins:
   - jekyll-sitemap
   - jekyll-feed
+exclude:
+  - docs
+  - scripts
+  - tests
 feed:
   collections:
     blog:

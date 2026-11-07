@@ -1,3 +1,5 @@
+{% assign native_platforms = page.platforms | where_exp: "platform", "platform.id != 'web'" %}
+{% assign web_platform = page.platforms | where: 'id', 'web' | first %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -29,22 +31,34 @@
       "publisher": {"@id": {{ site.url | append: '/#organization' | jsonify }}},
       "image": {{ page.social_image | default: site.social_image | absolute_url | jsonify }},
       {% elsif page.download %}
-      "name": {{ page.store_name | default: page.app_name | jsonify }},
-      "alternateName": {{ page.app_name | jsonify }},
+      "name": {{ page.app_name | jsonify }},
+      "alternateName": {% if native_platforms and native_platforms.size > 0 %}[{% for platform in native_platforms %}{{ platform.name | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}]{% else %}{{ page.store_name | default: page.app_name | jsonify }}{% endif %},
       "applicationCategory": {{ page.schema_category | default: 'GameApplication' | jsonify }},
-      "operatingSystem": {% if page.ios_download %}["Android", "iOS"]{% else %}"Android"{% endif %},
-      "downloadUrl": {{ page.download | jsonify }},
+      "operatingSystem": {% if native_platforms and native_platforms.size > 0 %}[{% for platform in native_platforms %}{% if platform.id == 'android' %}"Android"{% elsif platform.id == 'ios' %}"iOS"{% else %}{{ platform.id | jsonify }}{% endif %}{% unless forloop.last %},{% endunless %}{% endfor %}]{% elsif page.ios_download %}["Android", "iOS"]{% else %}"Android"{% endif %},
+      "downloadUrl": {% if native_platforms and native_platforms.size > 0 %}[{% for platform in native_platforms %}{{ platform.url | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}]{% else %}{{ page.download | jsonify }}{% endif %},
       "publisher": {"@id": {{ site.url | append: '/#organization' | jsonify }}},
       "image": {{ page.social_image | default: site.social_image | absolute_url | jsonify }},
       {% if page.offer_price != nil %}
-      "offers": {"@type": "Offer", "price": {{ page.offer_price | jsonify }}, "url": {{ page.download | jsonify }}},
+      "offers": {% if native_platforms and native_platforms.size > 0 %}[{% for platform in native_platforms %}{"@type": "Offer", "price": {{ page.offer_price | jsonify }}, "url": {{ platform.url | jsonify }}}{% unless forloop.last %},{% endunless %}{% endfor %}]{% else %}{"@type": "Offer", "price": {{ page.offer_price | jsonify }}, "url": {{ page.download | jsonify }}}{% endif %},
       {% endif %}
       {% else %}
       "name": {{ page.title | default: site.title | jsonify }},
       {% endif %}
       "description": {{ page.description | default: site.description | jsonify }},
       "isPartOf": {"@id": {{ site.url | append: '/#website' | jsonify }}}
-    }{% unless page.url == '/' %},
+    }{% if web_platform %},
+    {
+      "@type": "WebApplication",
+      "@id": {{ web_platform.url | absolute_url | append: '#web-app' | jsonify }},
+      "name": {{ web_platform.name | jsonify }},
+      "url": {{ web_platform.url | absolute_url | jsonify }},
+      "description": {{ web_platform.name | append: ' browser game.' | jsonify }},
+      "applicationCategory": "GameApplication",
+      "operatingSystem": "Web browser",
+      "browserRequirements": "Requires JavaScript",
+      "publisher": {"@id": {{ site.url | append: '/#organization' | jsonify }}},
+      "isPartOf": {"@id": {{ site.url | append: '/#website' | jsonify }}}
+    }{% endif %}{% unless page.url == '/' %},
     {
       "@type": "BreadcrumbList",
       "@id": {{ page.url | absolute_url | append: '#breadcrumb' | jsonify }},

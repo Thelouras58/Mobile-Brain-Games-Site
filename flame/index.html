@@ -44,25 +44,36 @@
 <body>
   <nav class="site-nav" aria-label="Main navigation"><div class="content-width site-nav__inner"><a class="site-nav__brand" href="/">Mobile Brain Games</a><div class="site-nav__links"><a href="/games/">Games</a><a href="/parents/">For parents</a><a href="/blog/">Blog</a></div></div></nav>
   <main>
-    <header class="hero content-width"><h1>Play Flame online</h1><p>Fly, dodge, collect, and survive.</p></header>
+    <header class="hero content-width"><h1>Play Flame online on desktop</h1><p>Fly, dodge, collect, and survive with a keyboard and mouse or trackpad.</p></header>
     <section class="content-width game-shell" id="game-shell" aria-label="Flame browser game" hidden>
       <div class="game-toolbar"><button id="expand-game" type="button" aria-expanded="false">Expand game</button></div>
       <div class="game-host" id="flutter-host"><div id="loading" role="status" aria-live="polite">Loading Flame…</div></div>
     </section>
-    <section class="content-width" id="device-gate" hidden><h2>Web play is available on desktop or laptop with a keyboard and mouse or trackpad</h2><p>Install the Android game or return to Processing Speed Training.</p><p><a href="https://play.google.com/store/apps/details?id=mobile.brain.games.flame">Get the Android game</a> · <a href="/games/processing-speed-training/">Return to Processing Speed Training</a></p></section>
+    <section class="content-width" id="device-gate" hidden><h2>Web play requires a desktop or laptop</h2><p>The browser game uses a keyboard and mouse or trackpad. You can still read the controls below, install the separate Android game, or return to its product page.</p><p><a href="https://play.google.com/store/apps/details?id=mobile.brain.games.flame" data-store-app="processing-speed-training" data-store="google_play" data-store-placement="web_game" data-google-play-app="processing-speed-training" data-google-play-placement="web-game">Get the Android game</a> · <a href="/games/processing-speed-training/">View Android game details</a></p></section>
     <noscript><p class="content-width">Enable JavaScript to check whether web play is available on this device.</p></noscript>
-    <section class="content-width game-guide" id="game-guide" hidden><div><h2>How to play</h2><p>Use WASD or arrow keys to fly. Left-click the playfield to BLAST, E for your pilot's skill, Q for NOVA, and Escape to pause. Attacks follow the direction your pilot faces.</p></div><div><h2>Progress</h2><p>Progress is saved in this browser; clearing browser data may erase it.</p></div></section>
+    <section class="content-width game-guide" id="game-guide"><div><h2>Desktop controls</h2><p>Use WASD or arrow keys to fly. Left-click the playfield to BLAST, E for your pilot's skill, Q for NOVA, and Escape to pause. Attacks follow the direction your pilot faces.</p></div><div><h2>Progress</h2><p>Progress is saved in this browser; clearing browser data may erase it.</p></div></section>
   </main>
   <footer class="site-footer"><div class="content-width">Mobile Brain Games · <a href="/games/">Games</a></div></footer>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JT3YJPBX97"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JT3YJPBX97');
+  </script>
   <script src="/js/desktop-web-play.js"></script>
   <script>
     (function () {
     const shell=document.getElementById('game-shell');
     const gate=document.getElementById('device-gate');
-    const guide=document.getElementById('game-guide');
     const eligible=window.mbgDesktopWebPlayEligible;
     if(!eligible || !eligible()) { gate.hidden=false; return; }
-    shell.hidden=false; guide.hidden=false;
+    shell.hidden=false;
+    const loadAttemptId=Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,8);
+    let loadFinished=false;
+    let timer;
+    function reportLoadResult(name,detail){if(loadFinished)return false;loadFinished=true;if(timer)clearTimeout(timer);gtag('event',name,{app_slug:'processing-speed-training',platform:'web',load_attempt_id:loadAttemptId,detail:detail||''});return true}
+    gtag('event','game_load_start',{app_slug:'processing-speed-training',platform:'web',load_attempt_id:loadAttemptId});
     const expand=document.getElementById('expand-game');
     let savedScrollY=0;
     expand.addEventListener('click',()=>{
@@ -76,14 +87,17 @@
       if(!entering) window.scrollTo(0,savedScrollY);
     });
     const loading=document.getElementById('loading');
-    function retry(text){loading.innerHTML='';const box=document.createElement('div');const message=document.createElement('p');message.textContent=text;const button=document.createElement('button');button.textContent='Retry';button.onclick=()=>location.reload();box.append(message,button);loading.append(box)}
-    const timer=setTimeout(()=>retry('Still loading Flame…'),30000);
-    window.addEventListener('flutter-first-frame',()=>{clearTimeout(timer);loading.remove()},{once:true});
+    function retry(text,detail){if(!reportLoadResult('game_load_error',detail))return;loading.innerHTML='';const box=document.createElement('div');const message=document.createElement('p');message.textContent=text;const button=document.createElement('button');button.textContent='Retry';button.onclick=()=>location.reload();box.append(message,button);loading.append(box)}
+    timer=setTimeout(()=>retry('Flame is taking too long to load. Check your connection and retry.','ready-timeout'),30000);
+    window.addEventListener('flutter-first-frame',()=>{reportLoadResult('game_ready');document.title='Play Flame Online | Mobile Brain Games';loading.remove()},{once:true});
     const script=document.createElement('script');script.src='flutter_bootstrap.js';script.async=true;
-    script.onerror=()=>{clearTimeout(timer);retry('Flame could not load. Check your connection and retry.')};
+    script.onerror=()=>retry('Flame could not load. Check your connection and retry.','bootstrap-script');
     document.body.append(script);
     matchMedia('(hover: hover) and (pointer: fine)').addEventListener('change',function(){if(!eligible()) location.reload();});
     })();
+  </script>
+  <script>
+    document.addEventListener('click',function(event){var target=event.target.closest('[data-store-app]');if(!target)return;gtag('event','store_click',{app_slug:target.dataset.storeApp,store:target.dataset.store,placement:target.dataset.storePlacement,page_path:window.location.pathname,link_url:target.href});if(target.matches('[data-google-play-app]'))gtag('event','google_play_click',{app_slug:target.dataset.googlePlayApp,placement:target.dataset.googlePlayPlacement,link_url:target.href});});
   </script>
 </body>
 </html>

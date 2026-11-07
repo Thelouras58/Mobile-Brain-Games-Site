@@ -1,10 +1,10 @@
 ---
 layout: blog
 title: "Card-Matching Games for Kids and Families"
-description: "Learn the rules of picture-pair matching, ways to play together, and what to check before installing Memory Match on Android."
+description: "Learn picture-pair matching rules, ways to play together, and how to choose among the Android, iOS, and browser versions."
 permalink: /blog/card-matching-games-for-kids/
 date: 2026-08-29
-last_modified_at: 2026-09-30
+last_modified_at: 2026-11-06
 keywords: "memory matching game, card matching game for kids, matching pairs Android"
 social_image: /img/screenshots/memory-match.png
 ---
@@ -23,12 +23,18 @@ Start with a small board. Turn over one card, name its picture, and then turn ov
 - **Name the pictures.** A word such as “fox” or “tree” can make a pair easier to discuss.
 - **Change the difficulty.** If the board feels crowded, choose an easier level before starting again.
 
-## Which Android game can we try?
+## What does a turn-taking example look like?
 
-[Simple Memory Game]({{ '/games/simple-memory-game/' | relative_url }}), called **Memory Match: Brain Games** on Android, includes several difficulty levels, card themes, offline play, a play calendar, and personal stats. You can also [play the browser version]({{ '/memory-match/' | relative_url }}) to try the matching format first.
+Suppose the first player reveals a fox at top-left and a tree at bottom-right. The cards turn back because they do not match, but everyone can name those two positions. The second player then reveals a tree at top-middle. Instead of choosing another unknown card, they can select bottom-right to complete the known tree pair. Continue with the same rule: each player turns over two cards, and every reveal can help a later turn.
+
+For a complete illustrated example, read [Memory Matching Strategies: A Worked Example]({{ '/blog/memory-matching-strategies/' | relative_url }}).
+
+## Which version can we try?
+
+[Simple Memory Game]({{ '/games/simple-memory-game/' | relative_url }}) links to the current Android and iOS listings and explains the available versions. You can also [play Memory Match in your browser]({{ '/memory-match/' | relative_url }}) to try the pair-finding format without installing an app.
 
 ## What should parents check?
 
-The free Android version includes ads and offers an optional Pro upgrade. Families can choose a comfortable difficulty and supervise play as appropriate. This is a game for enjoyment, not a test of a child's memory.
+Families can choose a comfortable difficulty and supervise play as appropriate. This is a game for enjoyment, not a test of a child's memory.
 
 For a different visual challenge, read [Pattern Memory Games: How They Work + 5 Challenges to Try]({{ '/blog/pattern-memory-games/' | relative_url }}). The [family guide]({{ '/parents/' | relative_url }}) compares the matching game with maths, pattern, and collection apps.

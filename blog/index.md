@@ -1,13 +1,13 @@
 ---
 layout: blog
 title: "Mobile Brain Games Blog: Puzzle & Memory Game Posts"
-description: "Posts about puzzle, memory, word, maths, and reaction games from Mobile Brain Games."
+description: "Practical guides to pattern, matching, word, maths, and reaction games, with worked examples and links to games you can play or download."
 permalink: /blog/
 ---
 
 ## Latest posts
 
-The Mobile Brain Games blog shares practical overviews of the game collection and the different challenge styles it includes.
+The Mobile Brain Games blog explains how different game formats work, with illustrated examples, platform information, and links to games you can play or download.
 
 {% assign blog_posts = site.blog | sort: "date" | reverse %}
 {% for post in blog_posts %}

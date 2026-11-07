@@ -8,9 +8,17 @@ slug: brain-trivia
 privacy_policy_url: /privacy/brain-trivia/
 directory_group: words-and-maths
 offer_price: 0
-last_modified_at: 2026-09-30
+last_modified_at: 2026-11-06
 store_name: Neuroscience Quiz - Trivia
 store_ads: "No"
+platforms:
+  - id: android
+    name: "Neuroscience Quiz - Trivia"
+    url: https://play.google.com/store/apps/details?id=mobile.brain.games.brain_trivia
+    ads: "No"
+    verified_on: 2026-11-06
+    source: https://play.google.com/store/apps/details?id=mobile.brain.games.brain_trivia
+    verification_method: public_listing
 related_game_slugs:
   - word-sprint
   - quick-maths

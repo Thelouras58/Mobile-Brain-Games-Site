@@ -1,18 +1,18 @@
 # Mobile Brain Games
 
-> Mobile Brain Games publishes free Android puzzle, memory, word, maths, reaction, and trivia games.
+> Mobile Brain Games publishes puzzle, memory, word, maths, reaction, and trivia games for Android, with selected iOS and browser experiences.
 
 ## Main pages
 
-- [Mobile Brain Games](https://mobilebraingames.com/): Android game collection and publisher overview.
+- [Mobile Brain Games](https://mobilebraingames.com/): Game collection and publisher overview.
 - [Blog](https://mobilebraingames.com/blog/): Posts about the game types in the collection.
 - [Which Mobile Brain Game Should You Play?](https://mobilebraingames.com/blog/which-mobile-brain-game-should-you-play/): An overview of the collection, game formats, and related titles.
-- [Games directory](https://mobilebraingames.com/games/): All currently listed Android apps.
+- [Games directory](https://mobilebraingames.com/games/): Current games and their supported platforms.
 - [For parents](https://mobilebraingames.com/parents/): Verified details for choosing family-friendly game activities.
 
 ## Android games
 
-- [Mobile Brain Training Games!](https://mobilebraingames.com/games/mobile-brain-games-premium/): Free-to-install collection with optional Premium upgrades.
+- [Mobile Brain Games Premium](https://mobilebraingames.com/games/mobile-brain-games-premium/): Free-to-install collection with optional Premium upgrades.
 - [Pattern Lock: Brain Games](https://mobilebraingames.com/games/pattern-lock-brain-games/): Pattern and number puzzles.
 - [Simple Memory Game](https://mobilebraingames.com/games/simple-memory-game/): Card-matching game.
 - [Quick Tap](https://mobilebraingames.com/games/quick-tap/): Fast reaction game.
@@ -26,6 +26,11 @@
 ## Browser play
 
 - [Memory Match](https://mobilebraingames.com/memory-match/): Browser version of the matching game.
+- [Flame](https://mobilebraingames.com/flame/): Separate desktop keyboard-and-mouse challenge linked from Processing Speed Training.
+
+## iOS game
+
+- [Simple Memory Training Game](https://mobilebraingames.com/games/simple-memory-game/): The iOS version of the picture-pair matching game, linked from the product page.
 
 ## Contact
 

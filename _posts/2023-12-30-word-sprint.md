@@ -8,9 +8,17 @@ slug: word-sprint
 privacy_policy_url: /privacy/word-sprint/
 directory_group: words-and-maths
 offer_price: 0
-last_modified_at: 2026-09-30
-store_name: "Word Sprint: Fast Word Games!"
+last_modified_at: 2026-11-06
+store_name: "Fast Word Puzzle Game"
 store_offline: "Yes"
+platforms:
+  - id: android
+    name: "Fast Word Puzzle Game"
+    url: https://play.google.com/store/apps/details?id=mobile.brain.games.wordsprint.word_sprint
+    offline: "Yes"
+    verified_on: 2026-11-06
+    source: https://play.google.com/store/apps/details?id=mobile.brain.games.wordsprint.word_sprint
+    verification_method: public_listing
 related_game_slugs:
   - brain-trivia
   - quick-tap
@@ -26,7 +34,7 @@ cognitive_skills:
   - Vocabulary recall
   - Focused attention
 card_description: "A quick word game for Android puzzle fans."
-summary: "A fast Android word game for players who enjoy finding words."
+summary: "A timed Android word game where players connect letters, find unique words, and score more for longer answers."
 download: https://play.google.com/store/apps/details?id=mobile.brain.games.wordsprint.word_sprint
 description: "Discover Word Sprint, an Android word game with quick word-finding rounds for players who enjoy short language puzzles."
 cta_copy: "Open Google Play to install Word Sprint."
@@ -38,7 +46,7 @@ Word Sprint is an Android word game for players who enjoy quick word-finding cha
 
 ## What to expect
 
-Each round shows a changing grid of letters. Find a word, then look for a different word rather than repeating the same answer. Longer words earn more points, and the game works offline. The short format makes it easy to begin with one round and decide whether to continue.
+Each timed round shows a changing grid of letters. Connect letters to form a word, then find a different word rather than repeating the same answer. Longer words earn more points. Play the word-finding rounds offline on Android.
 
 ## For players who enjoy language puzzles
 

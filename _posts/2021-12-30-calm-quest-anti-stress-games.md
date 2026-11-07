@@ -8,8 +8,15 @@ slug: calmquest
 privacy_policy_url: /privacy/calmquest/
 directory_group: calm-and-reflection
 offer_price: 0
-last_modified_at: 2026-09-30
+last_modified_at: 2026-11-06
 store_name: "CalmQuest: Anti-stress Games"
+platforms:
+  - id: android
+    name: "CalmQuest: Anti-stress Games"
+    url: https://play.google.com/store/apps/details?id=mobile.brain.games.antistress.anti_stress_game
+    verified_on: 2026-11-06
+    source: https://play.google.com/store/apps/details?id=mobile.brain.games.antistress.anti_stress_game
+    verification_method: public_listing
 related_game_slugs:
   - simple-memory-game
   - pattern-lock-brain-games

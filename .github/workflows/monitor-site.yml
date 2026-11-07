@@ -1,0 +1,28 @@
+name: Monitor production site
+
+on:
+  schedule:
+    - cron: "17 5 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: production-site-monitor
+  cancel-in-progress: false
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check critical public pages
+        run: python3 scripts/smoke_site.py --attempts 3 --timeout 15
+  store-destinations:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check external store destinations (advisory)
+        run: python3 scripts/check_store_destinations.py --attempts 2 --timeout 15
