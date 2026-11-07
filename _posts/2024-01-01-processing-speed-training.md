@@ -49,7 +49,7 @@ cta_copy: "Open Google Play to install Processing Speed Training."
 
 ## An Android reaction game
 
-Processing Speed Training is the website name used for the Android title currently listed on Google Play as **Brain Game - Reaction & Speed**. The public listing describes it as a fast reaction and processing-speed game. This wording reflects the listing checked on November 6, 2026 rather than a new device test.
+Processing Speed Training offers fast reaction and processing-speed challenges for short play sessions on Android.
 
 ## What is the Flame browser game?
 

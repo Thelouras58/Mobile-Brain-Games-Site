@@ -19,7 +19,7 @@ A streak counts days on which you played. It is useful as a record of participat
 
 In-game times, scores, and completed rounds show what happened **in that game**. They may help you choose a comfortable difficulty or notice which card theme a player enjoys. Scores from different boards or difficulty levels may not be directly comparable.
 
-[Memory Match: Brain Games]({{ '/games/simple-memory-game/' | relative_url }}) includes personal stats, a play calendar, and several difficulty levels. Its browser version lets you [try the matching format]({{ '/memory-match/' | relative_url }}) first.
+[Memory Match]({{ '/games/simple-memory-game/' | relative_url }}) includes personal stats, a play calendar, and several difficulty levels. Its browser version lets you [try the matching format]({{ '/memory-match/' | relative_url }}) first.
 
 ## How can I make a simple family routine?
 

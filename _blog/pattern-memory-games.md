@@ -29,6 +29,6 @@ There is no need to time these examples. Change the length to fit the player and
 
 ## How does the Android app differ?
 
-[Pattern Lock: Brain Games]({{ '/games/pattern-lock-brain-games/' | relative_url }}) has two core modes: **Remember the Pattern**, in which players recall a displayed route, and **Draw the Numbers**, in which they reproduce number combinations. The public listing also describes **Hack The Pattern** as an additional variation. The Android listing identifies offline play and ads. These are listing details, not a claim that every feature was tested on every device.
+[Pattern Lock: Brain Games]({{ '/games/pattern-lock-brain-games/' | relative_url }}) offers two core modes: **Remember the Pattern**, where players recall a displayed route, and **Draw the Numbers**, where they reproduce number combinations. **Hack The Pattern** adds another variation. The Android game is playable offline.
 
 For pair-finding play, see [Card-Matching Games for Kids and Families]({{ '/blog/card-matching-games-for-kids/' | relative_url }}). The focused comparison [Pattern Memory vs Card Matching]({{ '/blog/pattern-memory-vs-card-matching/' | relative_url }}) explains how the two round formats differ. For help comparing more games, visit the [family guide]({{ '/parents/' | relative_url }}).

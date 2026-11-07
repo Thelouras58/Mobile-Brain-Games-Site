@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Choosing a Mobile Brain Game for Your Family"
-description: "Compare matching, pattern, maths, and mixed games by activity, pace, platform, ads, and purchase information."
+description: "Compare matching, pattern, maths, and mixed games by activity, pace, and platform."
 permalink: /parents/
 ---
 
@@ -9,7 +9,7 @@ permalink: /parents/
 
 ## Which game is the easiest place to begin?
 
-[Simple Memory Game]({{ '/games/simple-memory-game/' | relative_url }}) uses a familiar card-matching format. It is called **Memory Match: Brain Games** on Android and **Simple Memory Training Game** on iOS. Both public listings describe offline play, but their ads and purchase information differs. You can [try the browser version]({{ '/memory-match/' | relative_url }}) together before installing it.
+[Simple Memory Game]({{ '/games/simple-memory-game/' | relative_url }}) uses a familiar card-matching format on Android and iOS. You can [try the browser version]({{ '/memory-match/' | relative_url }}) together before installing it.
 
 ## What if we prefer numbers?
 
@@ -17,7 +17,7 @@ permalink: /parents/
 
 ## What if we prefer visual patterns?
 
-[Pattern Lock: Brain Games]({{ '/games/pattern-lock-brain-games/' | relative_url }}) has two core games—pattern recall and number drawing—plus an additional Hack The Pattern variation named in the current release notes. The Google Play listing describes offline play and includes ads. Review the current store rating and the game's instructions when deciding whether it suits a particular player.
+[Pattern Lock: Brain Games]({{ '/games/pattern-lock-brain-games/' | relative_url }}) offers pattern recall and number drawing, plus the Hack The Pattern variation. It is an offline Android game. Review the game's instructions when deciding whether it suits a particular player.
 
 ## What is in the full collection?
 
