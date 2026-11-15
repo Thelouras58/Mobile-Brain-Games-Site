@@ -28,6 +28,18 @@ class CheckSiteTest(unittest.TestCase):
     def test_good_site_passes(self) -> None:
         self.assertEqual([], CHECK_SITE.validate_site(self.site))
 
+    def test_flame_requires_denied_consent(self) -> None:
+        path = self.site / "flame" / "index.html"
+        path.write_text(path.read_text().replace("analytics_storage: 'denied'", "analytics_storage: 'granted'"))
+        errors = CHECK_SITE.validate_site(self.site)
+        self.assertTrue(any("missing denied consent default" in error for error in errors), errors)
+
+    def test_flame_rejects_unconditional_analytics_tag(self) -> None:
+        path = self.site / "flame" / "index.html"
+        path.write_text(path.read_text().replace("</head>", '<script src="https://www.googletagmanager.com/gtag/js?id=test"></script></head>'))
+        errors = CHECK_SITE.validate_site(self.site)
+        self.assertTrue(any("consent controller" in error for error in errors), errors)
+
     def test_broken_canonical_fails(self) -> None:
         replacement = ROOT / "tests" / "fixtures" / "broken-canonical" / "index.html"
         shutil.copy2(replacement, self.site / "index.html")

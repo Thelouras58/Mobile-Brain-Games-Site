@@ -7,6 +7,7 @@ import argparse
 from dataclasses import dataclass, field
 from html.parser import HTMLParser
 import json
+import re
 from pathlib import Path
 import sys
 from urllib.parse import unquote, urljoin, urlparse
@@ -282,6 +283,15 @@ def validate_site(root: Path) -> list[str]:
             errors.append(f"{path.relative_to(root)}: standalone browser game page is missing")
         else:
             source = path.read_text(encoding="utf-8")
+            # Flame now owns analytics consent inside the Flutter application.
+            # Its HTML must default to denied and must not load a remote tag.
+            if path.parent.name == "flame":
+                for storage in ("analytics_storage", "ad_storage", "ad_user_data", "ad_personalization"):
+                    if not re.search(rf"{storage}\s*:\s*['\"]denied['\"]", source):
+                        errors.append(f"{path.relative_to(root)}: missing denied consent default for {storage}")
+                if re.search(r"<script[^>]+src=['\"][^'\"]*(?:googletagmanager|google-analytics)", source, re.I):
+                    errors.append(f"{path.relative_to(root)}: analytics tag must be loaded by the consent controller")
+                continue
             for event in ("store_click", "game_load_start", "game_ready", "game_load_error", "page_path"):
                 if event not in source:
                     errors.append(f"{path.relative_to(root)}: missing analytics contract token {event!r}")
