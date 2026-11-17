@@ -2,13 +2,13 @@
 layout: app
 title: "Processing Speed Training: Fast Android Game"
 app_name: "Processing Speed Training"
-home_order: 6
+home_order: 3
 permalink: /games/processing-speed-training/
 slug: processing-speed-training
 privacy_policy_url: /privacy/processing-speed-training/
 directory_group: reactions
 offer_price: 0
-last_modified_at: 2026-11-06
+last_modified_at: 2026-11-17
 store_name: Brain Game - Reaction & Speed
 platforms:
   - id: android
@@ -29,9 +29,13 @@ related_game_slugs:
   - pattern-lock-brain-games
 related_article_urls:
   - /blog/quick-reaction-games/
-img: flame.webp
+img: processing-speed-training.webp
 alt: "Processing Speed Training app icon"
-social_image: /img/portfolio/flame.webp
+social_image: /img/portfolio/processing-speed-training.webp
+feature_graphic: /img/screenshots/processing-speed-training-feature.webp
+feature_graphic_width: 1024
+feature_graphic_height: 500
+feature_graphic_alt: "Jetpack hero flying toward a fiery rock boss in a desert landscape"
 game_type: Speed challenge
 audience: Players who enjoy fast Android game rounds
 cognitive_skills:

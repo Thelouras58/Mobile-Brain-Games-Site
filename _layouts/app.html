@@ -30,6 +30,11 @@
           </div>
         </div>
       </div>
+      {% if page.feature_graphic %}
+      <figure class="app-feature-graphic" data-reveal>
+        <img src="{{ page.feature_graphic | relative_url }}" alt="{{ page.feature_graphic_alt }}" loading="lazy" decoding="async" width="{{ page.feature_graphic_width }}" height="{{ page.feature_graphic_height }}" data-image-fade>
+      </figure>
+      {% endif %}
       {% if page.screenshot %}
       <figure class="app-screenshot" data-reveal>
         <img src="{{ page.screenshot | relative_url }}" alt="{{ page.screenshot_alt }}" loading="lazy" decoding="async" width="{{ page.screenshot_width }}" height="{{ page.screenshot_height }}" data-image-fade>

@@ -2,7 +2,7 @@
 layout: app
 title: "Word Sprint: Fast Word Game for Android"
 app_name: "Word Sprint"
-home_order: 3
+home_order: 6
 permalink: /games/word-sprint/
 slug: word-sprint
 privacy_policy_url: /privacy/word-sprint/
