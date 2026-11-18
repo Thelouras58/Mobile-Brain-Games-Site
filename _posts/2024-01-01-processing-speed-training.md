@@ -8,7 +8,7 @@ slug: processing-speed-training
 privacy_policy_url: /privacy/processing-speed-training/
 directory_group: reactions
 offer_price: 0
-last_modified_at: 2026-11-17
+last_modified_at: 2026-11-18
 store_name: Brain Game - Reaction & Speed
 platforms:
   - id: android
@@ -55,15 +55,19 @@ cta_copy: "Open Google Play to install Processing Speed Training."
 
 Processing Speed Training offers fast reaction and processing-speed challenges for short play sessions on Android.
 
+Take to the skies in an Endless Flight, an endless flying game filled with arcade action, magical pilots and boss battles. Dodge fireballs, blast enemies, collect coins and see how far you can fly before your hearts run out.
+
+One more flight could mean a new personal best, a new pilot or your first victory over a powerful guardian.
+
 ## What is the Flame browser game?
 
 Flame is a separate desktop browser challenge linked from this page. It uses keyboard-and-mouse controls for flying, dodging, collecting, and attacking. The browser experience should not be treated as a feature-for-feature copy of the Android listing.
 
 Web play is available on a desktop or laptop with a keyboard and mouse or trackpad. The Android download remains available for mobile devices.
 
-## Choosing a fast game
+## Build a new adventure each flight
 
-Try this title when a brisk visual challenge sounds more appealing than a word, card-matching, or number puzzle. It is a game for entertainment, not a diagnostic or training tool.
+This roguelike adventure combines lasting unlocks with a fresh build each run. Unlocked pilots and starting boosts remain available, while coins, purchased equipment and chosen perks reset after each flight. Try a different combination on your next attempt.
 
 ## Related challenges
 
