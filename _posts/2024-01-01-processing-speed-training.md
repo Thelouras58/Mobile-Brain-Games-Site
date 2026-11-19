@@ -63,7 +63,7 @@ One more flight could mean a new personal best, a new pilot or your first victor
 
 Flame is a separate desktop browser challenge linked from this page. It uses keyboard-and-mouse controls for flying, dodging, collecting, and attacking. The browser experience should not be treated as a feature-for-feature copy of the Android listing.
 
-Web play is available on a desktop or laptop with a keyboard and mouse or trackpad. The Android download remains available for mobile devices.
+Web play is available on desktop, laptop, and tablet. The web version cannot be played on mobile phones; download the Android app to play on your phone.
 
 ## Build a new adventure each flight
 

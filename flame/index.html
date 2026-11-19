@@ -46,6 +46,7 @@
   <style>
     :root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#101d2c;color:#f4f7fc;font:16px/1.5 system-ui,sans-serif}
     a{color:#bfe5ff}.content-width{width:min(100% - 2rem,1280px);margin-inline:auto}.site-nav,.site-footer{background:#192c40}.site-nav__inner{min-height:56px;display:flex;align-items:center;justify-content:space-between;gap:1rem}.site-nav__links{display:flex;gap:1rem}.site-nav__brand{font-weight:800;text-decoration:none;color:white}
+    [hidden]{display:none!important}.mobile-message{text-align:center;padding:2rem 1rem}.android-download{display:inline-block;background:#bfe5ff;color:#101d2c;padding:.8rem 1.2rem;border-radius:8px;font-weight:700;text-decoration:none}
     .hero{text-align:center;padding:2rem 0 1rem}.hero h1{margin:.2rem 0;font-size:clamp(1.6rem,4vw,2.7rem)}.hero p{margin:.25rem 0 0}.game-shell{border:1px solid #64748b;border-radius:12px;overflow:hidden;background:#101d2c}.game-host{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;touch-action:none}.game-host flutter-view{width:100%;height:100%}#loading{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:1rem;background:#101d2c;z-index:2}.game-guide{display:grid;grid-template-columns:1fr 1fr;gap:2rem;padding:2rem 0 3rem}.site-footer{padding:1.5rem 0}
     @media(max-width:700px){.site-nav__inner{flex-wrap:wrap;padding:.5rem 0}.game-guide{grid-template-columns:1fr}.hero{padding:1rem 0}.game-host{min-height:320px}}
   </style>
@@ -53,22 +54,15 @@
 <body>
   <nav class="site-nav" aria-label="Main navigation"><div class="content-width site-nav__inner"><a class="site-nav__brand" href="/">Mobile Brain Games</a><div class="site-nav__links"><a href="/games/">Games</a><a href="/parents/">For parents</a><a href="/blog/">Blog</a></div></div></nav>
   <main>
-    <header class="hero content-width"><h1>Play Flame online</h1><p>Fly, dodge, collect, and survive.</p></header>
+    <header class="hero content-width"><h1>Play Flame online</h1><p>Fly, dodge, collect, and survive. Play in your browser on desktop or tablet.</p></header>
     <section class="content-width game-shell" id="game-shell" aria-label="Flame browser game">
       <div class="game-host" id="flutter-host"><div id="loading" role="status" aria-live="polite">Loading Flame…</div></div>
     </section>
+    <section class="content-width game-shell mobile-message" id="mobile-message" hidden aria-labelledby="mobile-title"><h2 id="mobile-title">Play Flame on Android</h2><p>The web version cannot be played on mobile phones. Browser gameplay is available only on desktop and tablet.</p><p>Download the Android app to play on your phone.</p><a class="android-download" href="https://play.google.com/store/apps/details?id=mobile.brain.games.flame">Download the Android app</a></section>
     <noscript><p class="content-width">Flame needs JavaScript to run.</p></noscript>
-    <section class="content-width game-guide"><div><h2>How to play</h2><p>Use WASD or arrow keys to fly. Left-click the playfield to BLAST, E for your pilot's skill, Q for NOVA, and Escape to pause. Attacks follow the direction your pilot faces.</p></div><div><h2>On touch screens</h2><p>Touch the left half to steer and use another finger on the attack buttons. Rotate to landscape for the best view. Progress is saved in this browser; clearing browser data may erase it.</p></div></section>
+    <section class="content-width game-guide" id="game-guide"><div><h2>How to play</h2><p>Use WASD or arrow keys to fly. Left-click the playfield to BLAST, E for your pilot's skill, Q for NOVA, and Escape to pause. Attacks follow the direction your pilot faces.</p></div><div><h2>On tablets</h2><p>Touch the left half to steer and use another finger on the attack buttons. Rotate to landscape for the best view. Progress is saved in this browser; clearing browser data may erase it.</p></div></section>
   </main>
   <footer class="site-footer"><div class="content-width">Mobile Brain Games · <a href="/games/">Games</a> · <a href="privacy.html">Flame privacy</a></div></footer>
-  <script>
-    const loading=document.getElementById('loading');
-    function retry(text){loading.innerHTML='';const box=document.createElement('div');const message=document.createElement('p');message.textContent=text;const button=document.createElement('button');button.textContent='Retry';button.onclick=()=>location.reload();box.append(message,button);loading.append(box)}
-    const timer=setTimeout(()=>retry('Still loading Flame…'),30000);
-    window.addEventListener('flutter-first-frame',()=>{clearTimeout(timer);loading.remove()},{once:true});
-    const script=document.createElement('script');script.src='flutter_bootstrap.js';script.async=true;
-    script.onerror=()=>{clearTimeout(timer);retry('Flame could not load. Check your connection and retry.')};
-    document.body.append(script);
-  </script>
+  <script src="/js/flame-player.js"></script>
 </body>
 </html>

@@ -6,6 +6,7 @@ namespace :site do
   end
 
   task :validate do
+    sh "node --test tests/flame-player.test.cjs"
     sh "python3 -m unittest tests/test_check_site.py"
     sh "python3 scripts/check_site.py --site _site"
     # External availability is checked separately by the advisory monitor. New
