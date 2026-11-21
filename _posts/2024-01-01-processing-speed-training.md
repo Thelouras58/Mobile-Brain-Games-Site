@@ -3,13 +3,13 @@ layout: app
 title: "Endless Flight: Arcade Game"
 app_name: "Endless Flight: Arcade Game"
 home_order: 3
-permalink: /games/endless-flight-arcade/
-slug: endless-flight-arcade
+permalink: /games/processing-speed-training/
+slug: processing-speed-training
 privacy_policy_url: /privacy/processing-speed-training/
 directory_group: reactions
 offer_price: 0
 last_modified_at: 2026-11-18
-store_name: Endless Flight: Arcade Game
+store_name: "Endless Flight: Arcade Game"
 platforms:
   - id: android
     name: "Brain Game - Reaction & Speed"
