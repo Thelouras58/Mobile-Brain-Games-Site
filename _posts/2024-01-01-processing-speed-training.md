@@ -1,15 +1,15 @@
 ---
 layout: app
-title: "Processing Speed Training: Fast Android Game"
-app_name: "Processing Speed Training"
+title: "Endless Flight: Arcade Game"
+app_name: "Endless Flight: Arcade Game"
 home_order: 3
-permalink: /games/processing-speed-training/
-slug: processing-speed-training
+permalink: /games/endless-flight-arcade/
+slug: endless-flight-arcade
 privacy_policy_url: /privacy/processing-speed-training/
 directory_group: reactions
 offer_price: 0
 last_modified_at: 2026-11-18
-store_name: Brain Game - Reaction & Speed
+store_name: Endless Flight: Arcade Game
 platforms:
   - id: android
     name: "Brain Game - Reaction & Speed"
@@ -30,7 +30,7 @@ related_game_slugs:
 related_article_urls:
   - /blog/quick-reaction-games/
 img: processing-speed-training.webp
-alt: "Processing Speed Training app icon"
+alt: "Endless Flight: Arcade Game app icon"
 social_image: /img/portfolio/processing-speed-training.webp
 feature_graphic: /img/screenshots/processing-speed-training-feature.webp
 feature_graphic_width: 1024
@@ -43,11 +43,11 @@ cognitive_skills:
   - Response speed
   - Decision-making
 card_description: "An Android reaction game with a separate desktop browser challenge."
-summary: "Brain Game - Reaction & Speed is an Android title; Flame is a separate keyboard-and-mouse browser challenge available from this page."
+summary: "Take to the skies in an Endless Flight, an endless flying game filled with arcade action, magical pilots and boss battles. Dodge fireballs, blast enemies, collect coins and see how far you can fly before your hearts run out."
 web_play_url: /flame/
 web_play_desktop_only: true
 download: https://play.google.com/store/apps/details?id=mobile.brain.games.flame
-description: "Try Processing Speed Training, an Android game with quick, fast-moving challenges for players who enjoy shorter sessions."
+description: "Take to the skies in an Endless Flight, an endless flying game filled with arcade action, magical pilots and boss battles. Dodge fireballs, blast enemies, collect coins and see how far you can fly before your hearts run out."
 cta_copy: "Open Google Play to install Processing Speed Training."
 ---
 
